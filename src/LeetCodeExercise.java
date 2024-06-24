@@ -5,6 +5,7 @@
 import java.util.Scanner;
 
 import easy.TwoSum;
+import easy.PalindromeNumber;
 
 class LeetCodeExercise 
 {
@@ -35,6 +36,10 @@ class LeetCodeExercise
               case 1:
                 twoSumReadme();
                 twoSum();
+                break;
+              case 9:
+                palindromeNumberReadme();
+                palindromeNumber();
                 break;
               default:
                 if (subKey != 0) {
@@ -103,6 +108,7 @@ class LeetCodeExercise
   {
     System.out.println("\n--------------- Easy -------------------");
     System.out.println("1. Two Sum");
+    System.out.println("9. Palindrome Number");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -130,9 +136,9 @@ class LeetCodeExercise
     int target = 6;
 
     System.out.println("twoSum([2, 3, 4], 6) = " + 
-                       Solution.twoSum(nums, target)[0] +
+                       TwoSum.twoSum(nums, target)[0] +
                        ", " +
-                       Solution.twoSum(nums, target)[1]);
+                       TwoSum.twoSum(nums, target)[1]);
 
   }
 
@@ -143,5 +149,26 @@ class LeetCodeExercise
     str += "You may assume that each input would have exactly one solution, and you may not use the same element twice.\n\n";
 
     str += "You can return the answer in any order.\n";
+
+    System.out.println(str);
+  }
+
+  public static void palindromeNumber()
+  {
+    int num  = 121;
+
+    System.out.println("isPalindrome((121)) = " + 
+                       PalindromeNumber.isPalindrome(121));
+
+    System.out.println("isPalindrome((123)) = " + 
+                       PalindromeNumber.isPalindrome(123));
+
+  }
+
+  public static void palindromeNumberReadme()
+  {
+    String str = "Given an integer x, return true if x is a palindrome, and false otherwise.\n";
+
+    System.out.println(str);
   }
 }
