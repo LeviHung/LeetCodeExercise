@@ -28,4 +28,27 @@ public class PalindromeNumber
         }
         return true;
     }
+
+    public static boolean isPalindromeOpt(int x) 
+    {
+        if (x <= 0 || x % 10 == 0) {
+            return false;
+        }
+
+        int origNumber = x;
+        int reverseNumber = 0;
+    
+        while (x > 0) {
+            int digit = x % 10;
+            reverseNumber = reverseNumber * 10 + digit;
+            x /= 10;
+        }
+
+        if (reverseNumber == origNumber) {
+            return true;
+
+        } else {
+            return false;
+        }
+    }
 }

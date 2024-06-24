@@ -163,6 +163,12 @@ class LeetCodeExercise
     System.out.println("isPalindrome((123)) = " + 
                        PalindromeNumber.isPalindrome(123));
 
+    System.out.println("isPalindromeOpt((121)) = " + 
+       PalindromeNumber.isPalindromeOpt(121));
+
+    System.out.println("isPalindromeOpt((123)) = " + 
+       PalindromeNumber.isPalindromeOpt(123));
+
   }
 
   public static void palindromeNumberReadme()
