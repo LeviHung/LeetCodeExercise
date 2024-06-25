@@ -51,4 +51,11 @@ public class PalindromeNumber
             return false;
         }
     }
+
+    public static void readme()
+    {
+        String str = "Given an integer x, return true if x is a palindrome, and false otherwise.\n";
+
+        System.out.println(str);
+    }
 }

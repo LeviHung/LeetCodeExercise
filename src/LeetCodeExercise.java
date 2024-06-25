@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import easy.TwoSum;
 import easy.PalindromeNumber;
+import easy.RomanToInteger;
 
 class LeetCodeExercise 
 {
@@ -34,12 +35,13 @@ class LeetCodeExercise
             keyboard.nextLine();
             switch (subKey) {
               case 1:
-                twoSumReadme();
                 twoSum();
                 break;
               case 9:
-                palindromeNumberReadme();
                 palindromeNumber();
+                break;
+              case 13:
+                romanToInteger();
                 break;
               default:
                 if (subKey != 0) {
@@ -109,7 +111,8 @@ class LeetCodeExercise
     System.out.println("\n--------------- Easy -------------------");
     System.out.println("1. Two Sum");
     System.out.println("9. Palindrome Number");
-    System.out.println("0. Go Back");
+    System.out.println("13. Roman to Integer");
+System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
   }
@@ -135,6 +138,7 @@ class LeetCodeExercise
     int [] nums = {2, 3, 4};
     int target = 6;
 
+    TwoSum.readme();
     System.out.println("twoSum([2, 3, 4], 6) = " + 
                        TwoSum.twoSum(nums, target)[0] +
                        ", " +
@@ -142,21 +146,11 @@ class LeetCodeExercise
 
   }
 
-  public static void twoSumReadme()
-  {
-    String str = "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\n";
-
-    str += "You may assume that each input would have exactly one solution, and you may not use the same element twice.\n\n";
-
-    str += "You can return the answer in any order.\n";
-
-    System.out.println(str);
-  }
-
   public static void palindromeNumber()
   {
     int num  = 121;
 
+    PalindromeNumber.readme();
     System.out.println("isPalindrome((121)) = " + 
                        PalindromeNumber.isPalindrome(121));
 
@@ -171,10 +165,15 @@ class LeetCodeExercise
 
   }
 
-  public static void palindromeNumberReadme()
+  public static void romanToInteger()
   {
-    String str = "Given an integer x, return true if x is a palindrome, and false otherwise.\n";
+    RomanToInteger.readme();
 
-    System.out.println(str);
+    System.out.println("romanToInt(\"XXVII\") = " + 
+                       RomanToInteger.romanToInt("XXVII"));
+    System.out.println("romanToInt(\"MCMXCIV\") = " + 
+     RomanToInteger.romanToInt("MCMXCIV"));
+
+    
   }
 }
