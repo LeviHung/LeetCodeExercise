@@ -7,6 +7,7 @@ import java.util.Scanner;
 import easy.TwoSum;
 import easy.PalindromeNumber;
 import easy.RomanToInteger;
+import easy.LongestCommonPrefix;
 
 class LeetCodeExercise 
 {
@@ -42,6 +43,9 @@ class LeetCodeExercise
                 break;
               case 13:
                 romanToInteger();
+                break;
+              case 14:
+                longestCommonPrefix();
                 break;
               default:
                 if (subKey != 0) {
@@ -112,7 +116,8 @@ class LeetCodeExercise
     System.out.println("1. Two Sum");
     System.out.println("9. Palindrome Number");
     System.out.println("13. Roman to Integer");
-System.out.println("0. Go Back");
+    System.out.println("14. Longes Common Prefix");
+    System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
   }
@@ -172,8 +177,27 @@ System.out.println("0. Go Back");
     System.out.println("romanToInt(\"XXVII\") = " + 
                        RomanToInteger.romanToInt("XXVII"));
     System.out.println("romanToInt(\"MCMXCIV\") = " + 
-     RomanToInteger.romanToInt("MCMXCIV"));
-
-    
+                       RomanToInteger.romanToInt("MCMXCIV"));
   }
+
+  public static void longestCommonPrefix()
+  {
+    LongestCommonPrefix.readme();
+
+    String [] strs = {"flower", "flow", "flight"};
+    
+    System.out.println("longestCommonPrefix(strs) = " + 
+      LongestCommonPrefix.longestCommonPrefix(strs));
+
+    String [] strs2 = {"dog","racecar","car"};
+
+    System.out.println("longestCommonPrefix(strs2) = " + 
+      LongestCommonPrefix.longestCommonPrefix(strs2));
+    
+    String [] strs3 = {"ab","a"};
+
+    System.out.println("longestCommonPrefixOpt(strs3) = " + 
+      LongestCommonPrefix.longestCommonPrefixOpt(strs3));
+  }
+
 }
