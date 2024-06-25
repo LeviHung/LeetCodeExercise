@@ -3,11 +3,13 @@
 // LeetCode Exercise
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 import easy.TwoSum;
 import easy.PalindromeNumber;
 import easy.RomanToInteger;
 import easy.LongestCommonPrefix;
+import easy.ValidParentheses;
 
 class LeetCodeExercise 
 {
@@ -46,6 +48,9 @@ class LeetCodeExercise
                 break;
               case 14:
                 longestCommonPrefix();
+                break;
+              case 20:
+                validParentheses();
                 break;
               default:
                 if (subKey != 0) {
@@ -117,6 +122,7 @@ class LeetCodeExercise
     System.out.println("9. Palindrome Number");
     System.out.println("13. Roman to Integer");
     System.out.println("14. Longes Common Prefix");
+    System.out.println("20. Valid Parentheses");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -185,19 +191,56 @@ class LeetCodeExercise
     LongestCommonPrefix.readme();
 
     String [] strs = {"flower", "flow", "flight"};
-    
-    System.out.println("longestCommonPrefix(strs) = " + 
-      LongestCommonPrefix.longestCommonPrefix(strs));
+
+    System.out.println("longestCommonPrefix(" + Arrays.toString(strs) + 
+                       ") = " + LongestCommonPrefix.longestCommonPrefix(strs));
 
     String [] strs2 = {"dog","racecar","car"};
 
-    System.out.println("longestCommonPrefix(strs2) = " + 
-      LongestCommonPrefix.longestCommonPrefix(strs2));
+    System.out.println("longestCommonPrefix(" + Arrays.toString(strs2) + 
+                      ") = " + LongestCommonPrefix.longestCommonPrefix(strs2));
     
     String [] strs3 = {"ab","a"};
 
-    System.out.println("longestCommonPrefixOpt(strs3) = " + 
-      LongestCommonPrefix.longestCommonPrefixOpt(strs3));
+    System.out.println("longestCommonPrefix(" + Arrays.toString(strs3) + 
+                   ") = " + LongestCommonPrefix.longestCommonPrefixOpt(strs3));
+  }
+  
+  public static void validParentheses()
+  {
+    ValidParentheses.readme();
+
+    String str = "()";
+
+    System.out.println("isValid(" + str + ") = " + 
+                       ValidParentheses.isValid(str));
+
+    String str2 = "()[]{}";
+
+    System.out.println("isValid(" + str2 + ") = " + 
+                       ValidParentheses.isValid(str2));
+
+    String str3 = "(]";
+
+    System.out.println("isValid(" + str3 + ") = " + 
+                       ValidParentheses.isValid(str3));
+
+    
+    String str4 = "{[]}";
+
+    System.out.println("isValid(" + str4 + ") = " + 
+                       ValidParentheses.isValid(str4));
+
+    String str5 = "]";
+
+    System.out.println("isValid(" + str5 + ") = " + 
+                       ValidParentheses.isValid(str5));
+
+    String str6 = "{[Str]}";
+
+    System.out.println("isValid(" + str6 + ") = " + 
+                       ValidParentheses.isValidOpt(str6));
+
   }
 
 }
