@@ -10,6 +10,8 @@ import easy.PalindromeNumber;
 import easy.RomanToInteger;
 import easy.LongestCommonPrefix;
 import easy.ValidParentheses;
+import easy.MergeTwoSortedLists;
+import easy.ListNode;
 
 class LeetCodeExercise 
 {
@@ -51,6 +53,9 @@ class LeetCodeExercise
                 break;
               case 20:
                 validParentheses();
+                break;
+              case 21:
+                mergeTwoSortedLists();
                 break;
               default:
                 if (subKey != 0) {
@@ -123,6 +128,7 @@ class LeetCodeExercise
     System.out.println("13. Roman to Integer");
     System.out.println("14. Longes Common Prefix");
     System.out.println("20. Valid Parentheses");
+    System.out.println("21. Merge Two Sorted Lists");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -241,6 +247,34 @@ class LeetCodeExercise
     System.out.println("isValid(" + str6 + ") = " + 
                        ValidParentheses.isValidOpt(str6));
 
+  }
+
+  public static void mergeTwoSortedLists()
+  {
+    MergeTwoSortedLists.readme();
+
+    // list1 = [1, 2, 4], list2 = [1, 3, 4]
+    ListNode node = new ListNode(4);
+    node = new ListNode(2, node);
+    ListNode list1 = new ListNode(1, node);
+
+    System.out.println("List 1: ");
+    list1.show();
+
+    node = new ListNode(4);
+    node = new ListNode(3, node);
+    ListNode list2 = new ListNode(1, node);
+
+    System.out.println("List 2: ");
+    list2.show();
+
+    System.out.println("mergeTwoLists(list1, list2): ");
+    ListNode list3 = MergeTwoSortedLists.mergeTwoLists(list1, list2);
+    list3.show();
+
+    System.out.println("mergeTwoListsOpt(list1, list2): ");
+ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
+    list4.show();
   }
 
 }
