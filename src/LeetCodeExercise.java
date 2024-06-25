@@ -12,6 +12,7 @@ import easy.LongestCommonPrefix;
 import easy.ValidParentheses;
 import easy.MergeTwoSortedLists;
 import easy.ListNode;
+import easy.RemoveDuplicateSortedArray;
 
 class LeetCodeExercise 
 {
@@ -56,6 +57,9 @@ class LeetCodeExercise
                 break;
               case 21:
                 mergeTwoSortedLists();
+                break;
+              case 26:
+                removeDuplicateSortedArray();
                 break;
               default:
                 if (subKey != 0) {
@@ -129,6 +133,7 @@ class LeetCodeExercise
     System.out.println("14. Longes Common Prefix");
     System.out.println("20. Valid Parentheses");
     System.out.println("21. Merge Two Sorted Lists");
+    System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -277,4 +282,21 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     list4.show();
   }
 
+    public static void removeDuplicateSortedArray()
+    {
+      RemoveDuplicateSortedArray.readme();
+
+      //nums = [1,1,2]
+      int [] nums = {1, 1, 2};
+      System.out.println("removeDuplicates(" + Arrays.toString(nums) + 
+       ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums) + 
+       " " + Arrays.toString(nums));
+
+      //[0,0,1,1,1,2,2,3,3,4]
+      int [] nums2 = {0,0,1,1,1,2,2,3,3,4};
+      System.out.println("removeDuplicates(" + Arrays.toString(nums2) + 
+       ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums2) + 
+       " " + Arrays.toString(nums2));
+
+    }
 }
