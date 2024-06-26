@@ -14,6 +14,7 @@ import easy.MergeTwoSortedLists;
 import easy.ListNode;
 import easy.RemoveDuplicateSortedArray;
 import easy.RemoveElement;
+import easy.FirstOccurrenceString;
 
 class LeetCodeExercise 
 {
@@ -64,6 +65,9 @@ class LeetCodeExercise
                 break;
               case 27:
                 removeElement();
+                break;
+              case 28:
+                findFirstOccurrenceString();
                 break;
               default:
                 if (subKey != 0) {
@@ -139,6 +143,7 @@ class LeetCodeExercise
     System.out.println("21. Merge Two Sorted Lists");
     System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("27. Remove Element");
+    System.out.println("28. Find the First Occurrence String");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -322,6 +327,51 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.println("removeDuplicates(" + Arrays.toString(nums2) + 
     ", " + val2 + ") = " + RemoveElement.removeElement(nums2, val2) + 
      " " + Arrays.toString(nums2));
+  }
+
+  public static void findFirstOccurrenceString()
+  {
+    FirstOccurrenceString.readme();
+    String haystack = "sadbutsad"; 
+    String needle = "sad";
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "leetcode";
+    needle = "leeto";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "mississippi";
+    needle = "issip";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "a";
+    needle = "a";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "aaa";
+    needle = "aaaa";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "mississippi";
+    needle = "sipp";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "mississippi";
+    needle = "sipp";
+
+    System.out.println("strStrOpt(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStrOpt(haystack, needle));
 
   }
 }
