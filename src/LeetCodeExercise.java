@@ -16,6 +16,7 @@ import easy.RemoveDuplicateSortedArray;
 import easy.RemoveElement;
 import easy.FirstOccurrenceString;
 import easy.SearchInsertPosition;
+import easy.LengthOfLastWord;
 
 class LeetCodeExercise 
 {
@@ -72,6 +73,9 @@ class LeetCodeExercise
                 break;
               case 35:
                 searchInsertPosition();
+                break;
+              case 58:
+                lengthOfLastWord();
                 break;
               default:
                 if (subKey != 0) {
@@ -149,6 +153,7 @@ class LeetCodeExercise
     System.out.println("27. Remove Element");
     System.out.println("28. Find the First Occurrence String");
     System.out.println("35. Search Insert Position");
+    System.out.println("58. Length of Last Word");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -417,4 +422,30 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
                 SearchInsertPosition.searchInsert(nums4, target4));
 
   }
+
+  public static void lengthOfLastWord()
+  {
+    LengthOfLastWord.readme();
+
+    // s = "Hello World" => 5
+    String s = "Hello World";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+                       LengthOfLastWord.lengthOfLastWord(s));
+
+    // s = "   fly me   to   the moon  " => 4
+    s = "   fly me   to   the moon  ";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+     LengthOfLastWord.lengthOfLastWord(s));
+
+    // s = "luffy is still joyboy" => 6
+    s = "luffy is still joyboy";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+     LengthOfLastWord.lengthOfLastWord(s));
+
+    s = "a";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+     LengthOfLastWord.lengthOfLastWord(s));
+
+  }
+  
 }
