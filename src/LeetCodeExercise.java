@@ -17,6 +17,7 @@ import easy.RemoveElement;
 import easy.FirstOccurrenceString;
 import easy.SearchInsertPosition;
 import easy.LengthOfLastWord;
+import easy.PlusOne;
 
 class LeetCodeExercise 
 {
@@ -76,6 +77,9 @@ class LeetCodeExercise
                 break;
               case 58:
                 lengthOfLastWord();
+                break;
+              case 66:
+                plusOne();
                 break;
               default:
                 if (subKey != 0) {
@@ -154,6 +158,7 @@ class LeetCodeExercise
     System.out.println("28. Find the First Occurrence String");
     System.out.println("35. Search Insert Position");
     System.out.println("58. Length of Last Word");
+    System.out.println("66. Plus One");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -445,6 +450,26 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     s = "a";
     System.out.println("lengthOfLastWord(" + s + ") = " + 
      LengthOfLastWord.lengthOfLastWord(s));
+
+  }
+
+  public static void plusOne()
+  {
+    PlusOne.readme();
+    // digits = [1,2,3] => [1,2,4]
+    int[] digits = {1, 2, 3};
+    System.out.println("plusOne(" + Arrays.toString(digits) + ") = " + 
+                       Arrays.toString(PlusOne.plusOne(digits)));
+
+    // digits = [4,3,2,1] => [4,3,2,2]
+    int[] digits2 = {4,3,2,1};
+    System.out.println("plusOne(" + Arrays.toString(digits2) + ") = " + 
+                       Arrays.toString(PlusOne.plusOne(digits2)));
+
+    // digits = [9] => [1,0]
+    int[] digits3 = {9};
+    System.out.println("plusOne(" + Arrays.toString(digits3) + ") = " + 
+                       Arrays.toString(PlusOne.plusOne(digits3)));
 
   }
   
