@@ -13,6 +13,7 @@ import easy.ValidParentheses;
 import easy.MergeTwoSortedLists;
 import easy.ListNode;
 import easy.RemoveDuplicateSortedArray;
+import easy.RemoveElement;
 
 class LeetCodeExercise 
 {
@@ -60,6 +61,9 @@ class LeetCodeExercise
                 break;
               case 26:
                 removeDuplicateSortedArray();
+                break;
+              case 27:
+                removeElement();
                 break;
               default:
                 if (subKey != 0) {
@@ -134,6 +138,7 @@ class LeetCodeExercise
     System.out.println("20. Valid Parentheses");
     System.out.println("21. Merge Two Sorted Lists");
     System.out.println("26. Remove Duplicates from Sorted Array");
+    System.out.println("27. Remove Element");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -299,4 +304,24 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
        " " + Arrays.toString(nums2));
 
     }
+
+  public static void removeElement()
+  {
+    RemoveElement.readme();
+
+    //nums = [1,1,2]
+    int [] nums = {3,2,2,3};
+    int val = 3;
+    System.out.println("removeElement(" + Arrays.toString(nums) + 
+     ", " + val + ") = " + RemoveElement.removeElement(nums, val) + 
+     " " + Arrays.toString(nums));
+
+    //[0,0,1,1,1,2,2,3,3,4]
+    int [] nums2 = {0,1,2,2,3,0,4,2};
+    int val2 = 2;
+    System.out.println("removeDuplicates(" + Arrays.toString(nums2) + 
+    ", " + val2 + ") = " + RemoveElement.removeElement(nums2, val2) + 
+     " " + Arrays.toString(nums2));
+
+  }
 }
