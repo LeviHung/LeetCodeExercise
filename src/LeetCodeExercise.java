@@ -15,6 +15,7 @@ import easy.ListNode;
 import easy.RemoveDuplicateSortedArray;
 import easy.RemoveElement;
 import easy.FirstOccurrenceString;
+import easy.SearchInsertPosition;
 
 class LeetCodeExercise 
 {
@@ -68,6 +69,9 @@ class LeetCodeExercise
                 break;
               case 28:
                 findFirstOccurrenceString();
+                break;
+              case 35:
+                searchInsertPosition();
                 break;
               default:
                 if (subKey != 0) {
@@ -144,6 +148,7 @@ class LeetCodeExercise
     System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("27. Remove Element");
     System.out.println("28. Find the First Occurrence String");
+    System.out.println("35. Search Insert Position");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -372,6 +377,44 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
 
     System.out.println("strStrOpt(" + haystack + ", " + needle + 
       ") = " + FirstOccurrenceString.strStrOpt(haystack, needle));
+
+  }
+
+  public static void searchInsertPosition()
+  {
+    SearchInsertPosition.readme();
+    
+    // nums = [1,3,5,6], target = 5 => 2
+    int [] nums = {2,3,5,6};
+    int target = 5;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums) + 
+                ", " + target + ") = " + 
+                SearchInsertPosition.searchInsert(nums, target));
+
+    // nums = [1,3,5,6], target = 2 => 1
+    int [] nums2 = {1,3,5,6};
+    int target2 = 2;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums2) + 
+                ", " + target2 + ") = " + 
+                SearchInsertPosition.searchInsert(nums2, target2));
+
+    // nums = [1,3,5,6], target = 7 => 4
+    int [] nums3 = {1,3,5,6};
+    int target3 = 7;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums3) + 
+                ", " + target3 + ") = " + 
+                SearchInsertPosition.searchInsert(nums3, target3));
+
+    // nums = [1], target = 0 => 0
+    int [] nums4 = {1};
+    int target4 = 2;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums4) + 
+                ", " + target4 + ") = " + 
+                SearchInsertPosition.searchInsert(nums4, target4));
 
   }
 }
