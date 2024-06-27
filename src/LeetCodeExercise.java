@@ -18,6 +18,7 @@ import easy.FirstOccurrenceString;
 import easy.SearchInsertPosition;
 import easy.LengthOfLastWord;
 import easy.PlusOne;
+import easy.AddBinary;
 
 class LeetCodeExercise 
 {
@@ -80,6 +81,9 @@ class LeetCodeExercise
                 break;
               case 66:
                 plusOne();
+                break;
+              case 67:
+                addBinary();
                 break;
               default:
                 if (subKey != 0) {
@@ -159,6 +163,7 @@ class LeetCodeExercise
     System.out.println("35. Search Insert Position");
     System.out.println("58. Length of Last Word");
     System.out.println("66. Plus One");
+    System.out.println("67. Add Binary");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -472,5 +477,39 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
                        Arrays.toString(PlusOne.plusOne(digits3)));
 
   }
-  
+
+  public static void addBinary()
+  {
+    AddBinary.readme();
+
+    String a = "11";
+    String b = "1";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    a = "0";
+    b = "0";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    a = "0";
+    b = "1";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    a = "1010";
+    b = "1011";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    
+    a =     "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101";
+    b = "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    System.out.println("addBinaryOpt(" + a + ", " + b + ") = " + 
+     AddBinary.addBinaryOpt(a, b));
+     
+    }
 }
