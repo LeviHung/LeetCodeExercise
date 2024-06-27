@@ -22,6 +22,7 @@ import easy.AddBinary;
 import easy.Sqrt;
 import easy.ClimbingStairs;
 import easy.RemoveDuplicateSortedList;
+import easy.MergeSortedArray;
 
 class LeetCodeExercise 
 {
@@ -96,6 +97,9 @@ class LeetCodeExercise
                 break;
               case 83:
                 removeDuplicateSortedList();
+                break;
+              case 88:
+                mergeSortedArray();
                 break;
               default:
                 if (subKey != 0) {
@@ -179,6 +183,7 @@ class LeetCodeExercise
     System.out.println("69. Sqrt");
     System.out.println("70. Climbing Stairs");
     System.out.println("83. Remove Duplicates for Sorted List");
+    System.out.println("88. Merge Sorted Array");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -587,5 +592,58 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.println("deleteDuplicates(list2): ");
     ListNode list4 = RemoveDuplicateSortedList.deleteDuplicates(list3);
     list4.show();
+  }
+
+  public static void mergeSortedArray()
+  {
+      MergeSortedArray.readme();
+
+    //nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+    int [] nums1 = {1, 2, 3, 0, 0, 0};
+    int m = 3;
+    int [] nums2 = {2, 5, 6};
+    int n = 3;
+
+    System.out.print("merge(" + Arrays.toString(nums1) + ", " + 
+                       Arrays.toString(nums2) + ") = ");
+    MergeSortedArray.merge(nums1, m, nums2, n);
+
+    System.out.println(Arrays.toString(nums1));
+
+    // nums1 = [1], m = 1, nums2 = [], n = 0
+    int [] nums3 = {1};
+    m = 1;
+    int [] nums4 = {};
+    n = 0;
+
+    System.out.print("merge(" + Arrays.toString(nums3) + ", " + 
+                       Arrays.toString(nums4) + ") = ");
+    MergeSortedArray.merge(nums3, m, nums4, n);
+
+    System.out.println(Arrays.toString(nums3));
+
+    // nums1 = [0], m = 0, nums2 = [1], n = 1
+    int [] nums5 = {0};
+    m = 0;
+    int [] nums6 = {1};
+    n = 1;
+
+    System.out.print("merge(" + Arrays.toString(nums5) + ", " + 
+                       Arrays.toString(nums6) + ") = ");
+    MergeSortedArray.merge(nums5, m, nums6, n);
+
+    System.out.println(Arrays.toString(nums5));
+
+    int [] nums7 = {2, 0};
+    m = 1;
+    int [] nums8 = {1};
+    n = 1;
+
+    System.out.print("merge(" + Arrays.toString(nums7) + ", " + 
+                       Arrays.toString(nums8) + ") = ");
+    MergeSortedArray.merge(nums7, m, nums8, n);
+
+    System.out.println(Arrays.toString(nums7));
+
   }
 }
