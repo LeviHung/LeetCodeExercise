@@ -20,6 +20,7 @@ import easy.LengthOfLastWord;
 import easy.PlusOne;
 import easy.AddBinary;
 import easy.Sqrt;
+import easy.ClimbingStairs;
 
 class LeetCodeExercise 
 {
@@ -88,6 +89,9 @@ class LeetCodeExercise
                 break;
               case 69:
                 sqrt();
+                break;
+              case 70:
+                climbingStairs();
                 break;
               default:
                 if (subKey != 0) {
@@ -169,6 +173,7 @@ class LeetCodeExercise
     System.out.println("66. Plus One");
     System.out.println("67. Add Binary");
     System.out.println("69. Sqrt");
+    System.out.println("70. Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -527,5 +532,25 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.println("Sqrt(" + a + ") = " + Sqrt.mySqrt(a));
 
     // x = 8 => 2 (2.8)
+  }
+
+  public static void climbingStairs()
+  {
+    ClimbingStairs.readme();
+    int n = 2;
+    // n = 2 => 2
+    System.out.println("climbStairs(" + n + ") = " + 
+                       ClimbingStairs.climbStairs(n));
+
+    n = 3;
+    // n = 3 => 3
+    System.out.println("climbStairs(" + n + ") = " +       
+                       ClimbingStairs.climbStairs(n));
+
+    n = 45;
+    // n = 3 => 3
+    System.out.println("climbStairs(" + n + ") = " +       
+                       ClimbingStairs.climbStairs(n));
+
   }
 }
