@@ -19,6 +19,7 @@ import easy.SearchInsertPosition;
 import easy.LengthOfLastWord;
 import easy.PlusOne;
 import easy.AddBinary;
+import easy.Sqrt;
 
 class LeetCodeExercise 
 {
@@ -84,6 +85,9 @@ class LeetCodeExercise
                 break;
               case 67:
                 addBinary();
+                break;
+              case 69:
+                sqrt();
                 break;
               default:
                 if (subKey != 0) {
@@ -164,6 +168,7 @@ class LeetCodeExercise
     System.out.println("58. Length of Last Word");
     System.out.println("66. Plus One");
     System.out.println("67. Add Binary");
+    System.out.println("69. Sqrt");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -512,4 +517,15 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
      AddBinary.addBinaryOpt(a, b));
      
     }
+
+  public static void sqrt()
+  {
+    Sqrt.readme();
+    int a = 2147483647;
+         // 2147483647
+    // x = 4 => 2
+    System.out.println("Sqrt(" + a + ") = " + Sqrt.mySqrt(a));
+
+    // x = 8 => 2 (2.8)
+  }
 }
