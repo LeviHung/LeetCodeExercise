@@ -21,6 +21,7 @@ import easy.PlusOne;
 import easy.AddBinary;
 import easy.Sqrt;
 import easy.ClimbingStairs;
+import easy.RemoveDuplicateSortedList;
 
 class LeetCodeExercise 
 {
@@ -92,6 +93,9 @@ class LeetCodeExercise
                 break;
               case 70:
                 climbingStairs();
+                break;
+              case 83:
+                removeDuplicateSortedList();
                 break;
               default:
                 if (subKey != 0) {
@@ -174,6 +178,7 @@ class LeetCodeExercise
     System.out.println("67. Add Binary");
     System.out.println("69. Sqrt");
     System.out.println("70. Climbing Stairs");
+    System.out.println("83. Remove Duplicates for Sorted List");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -322,23 +327,23 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     list4.show();
   }
 
-    public static void removeDuplicateSortedArray()
-    {
-      RemoveDuplicateSortedArray.readme();
+  public static void removeDuplicateSortedArray()
+  {
+    RemoveDuplicateSortedArray.readme();
 
-      //nums = [1,1,2]
-      int [] nums = {1, 1, 2};
-      System.out.println("removeDuplicates(" + Arrays.toString(nums) + 
-       ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums) + 
-       " " + Arrays.toString(nums));
+    //nums = [1,1,2]
+    int [] nums = {1, 1, 2};
+    System.out.println("removeDuplicates(" + Arrays.toString(nums) + 
+     ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums) + 
+     " " + Arrays.toString(nums));
 
-      //[0,0,1,1,1,2,2,3,3,4]
-      int [] nums2 = {0,0,1,1,1,2,2,3,3,4};
-      System.out.println("removeDuplicates(" + Arrays.toString(nums2) + 
-       ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums2) + 
-       " " + Arrays.toString(nums2));
+    //[0,0,1,1,1,2,2,3,3,4]
+    int [] nums2 = {0,0,1,1,1,2,2,3,3,4};
+    System.out.println("removeDuplicates(" + Arrays.toString(nums2) + 
+     ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums2) + 
+     " " + Arrays.toString(nums2));
 
-    }
+  }
 
   public static void removeElement()
   {
@@ -552,5 +557,35 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.println("climbStairs(" + n + ") = " +       
                        ClimbingStairs.climbStairs(n));
 
+  }
+
+  public static void removeDuplicateSortedList()
+  {
+    RemoveDuplicateSortedList.readme();
+
+    // list1 = [1, 2, 4], list2 = [1, 3, 4]
+    ListNode node = new ListNode(2);
+    node = new ListNode(1, node);
+    ListNode list1 = new ListNode(1, node);
+
+    System.out.println("List 1: ");
+    list1.show();
+
+    System.out.println("deleteDuplicates(list1): ");
+    ListNode list2 = RemoveDuplicateSortedList.deleteDuplicates(list1);
+    list2.show();
+
+    node = new ListNode(3);
+    node = new ListNode(3, node);
+    node = new ListNode(2, node);
+    node = new ListNode(1, node);
+    ListNode list3 = new ListNode(1, node);
+
+    System.out.println("List 2: ");
+    list3.show();
+
+    System.out.println("deleteDuplicates(list2): ");
+    ListNode list4 = RemoveDuplicateSortedList.deleteDuplicates(list3);
+    list4.show();
   }
 }
