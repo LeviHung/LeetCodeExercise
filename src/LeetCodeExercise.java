@@ -27,6 +27,7 @@ import easy.MergeSortedArray;
 import easy.BinaryTreeInorderTraversal;
 import easy.TreeNode;
 import easy.SameTree;
+import easy.SymmetricTree;
 
 class LeetCodeExercise 
 {
@@ -110,6 +111,9 @@ class LeetCodeExercise
                 break;
               case 100:
                 sameTree();
+                break;
+              case 101:
+                symmetricTree();
                 break;
               default:
                 if (subKey != 0) {
@@ -196,6 +200,7 @@ class LeetCodeExercise
     System.out.println("88. Merge Sorted Array");
     System.out.println("94. Binary Tree Inorder Traversal");
     System.out.println("100. Same Tree");
+    System.out.println("101. Symmetric Tree");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -737,6 +742,39 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
 
     System.out.println("isSameTree(tree3, tree4) = " +  
                      SameTree.isSameTree(tree3, tree4));
+
+  }
+
+  public static void symmetricTree()
+  {
+    SymmetricTree.readme();
+
+    //  root = [1,2,2,3,4,4,3] => true
+    TreeNode node4 = new TreeNode(3);
+    TreeNode node5 = new TreeNode(4);
+    TreeNode node6 = new TreeNode(4);
+    TreeNode node7 = new TreeNode(3);
+    TreeNode node2 = new TreeNode(2, node4, node5);
+    TreeNode node3 = new TreeNode(2, node6, node7);
+    TreeNode tree1 = new TreeNode(1, node2, node3);
+
+    System.out.print("Tree 1: ");
+    tree1.show();
+    System.out.println("");
+
+    System.out.println("isSymmetric(tree1) = " +  
+                       SymmetricTree.isSymmetric(tree1));
+
+    // root = [1,2,2,null,3,null,3] => false
+    node4 = new TreeNode(3);
+    node5 = new TreeNode(3);
+    node2 = new TreeNode(2, null, node4);
+    node3 = new TreeNode(2, null, node5);
+    TreeNode tree2 = new TreeNode(1, node2, node3);
+    tree2.show();
+    System.out.println("");
+    System.out.println("isSymmetric(tree2) = " +  
+                       SymmetricTree.isSymmetric(tree2));
 
   }
 }
