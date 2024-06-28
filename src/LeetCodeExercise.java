@@ -29,6 +29,7 @@ import easy.TreeNode;
 import easy.SameTree;
 import easy.SymmetricTree;
 import easy.MaximumDepthBinaryTree;
+import easy.SortedArrayToBinarySearchTree;
 
 class LeetCodeExercise 
 {
@@ -119,6 +120,9 @@ class LeetCodeExercise
               case 104:
                 maximumDepthBinaryTree();
                 break;
+              case 108:
+                sortedArrayToBST();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -206,6 +210,7 @@ class LeetCodeExercise
     System.out.println("100. Same Tree");
     System.out.println("101. Symmetric Tree");
     System.out.println("104. Maximum Depth Binary Tree");
+    System.out.println("108. Sorted Array To Binary Search Tree");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -618,7 +623,7 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
 
   public static void mergeSortedArray()
   {
-      MergeSortedArray.readme();
+    MergeSortedArray.readme();
 
     //nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
     int [] nums1 = {1, 2, 3, 0, 0, 0};
@@ -784,44 +789,59 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
   }
 
   public static void maximumDepthBinaryTree()
-    {
-      MaximumDepthBinaryTree.readme();
+  {
+    MaximumDepthBinaryTree.readme();
 
-      // root = [3,9,20,null,null,15,7] => 3
-      TreeNode node4 = new TreeNode(15);
-      TreeNode node5 = new TreeNode(7);
-      TreeNode node2 = new TreeNode(9);
-      TreeNode node3 = new TreeNode(20, node4, node5);
-      TreeNode tree1 = new TreeNode(3, node2, node3);
+    // root = [3,9,20,null,null,15,7] => 3
+    TreeNode node4 = new TreeNode(15);
+    TreeNode node5 = new TreeNode(7);
+    TreeNode node2 = new TreeNode(9);
+    TreeNode node3 = new TreeNode(20, node4, node5);
+    TreeNode tree1 = new TreeNode(3, node2, node3);
 
-      System.out.print("Tree 1: ");
-      tree1.show();
-      System.out.println("");
+    System.out.print("Tree 1: ");
+    tree1.show();
+    System.out.println("");
 
-      System.out.println("maxDepth(tree1) = " +  
-                         MaximumDepthBinaryTree.maxDepth(tree1));
+    System.out.println("maxDepth(tree1) = " +  
+                       MaximumDepthBinaryTree.maxDepth(tree1));
 
-      // root = [1,null,2] => 2
-      node2 = new TreeNode(2);
-      TreeNode tree2 = new TreeNode(1, null, node2);
+    // root = [1,null,2] => 2
+    node2 = new TreeNode(2);
+    TreeNode tree2 = new TreeNode(1, null, node2);
 
-      System.out.print("Tree 2: ");
-      tree2.show();
-      System.out.println("");
+    System.out.print("Tree 2: ");
+    tree2.show();
+    System.out.println("");
 
-      System.out.println("maxDepth(tree2) = " +  
-                         MaximumDepthBinaryTree.maxDepth(tree2));
+    System.out.println("maxDepth(tree2) = " +  
+                       MaximumDepthBinaryTree.maxDepth(tree2));
 
-      // root = [1,null,2] => 2
-      node2 = new TreeNode(2);
-      TreeNode tree3 = new TreeNode(1, node2, null);
+    // root = [1,null,2] => 2
+    node2 = new TreeNode(2);
+    TreeNode tree3 = new TreeNode(1, node2, null);
 
-      System.out.print("Tree 3: ");
-      tree3.show();
-      System.out.println("");
+    System.out.print("Tree 3: ");
+    tree3.show();
+    System.out.println("");
 
-      System.out.println("maxDepth(tree3) = " +  
-                         MaximumDepthBinaryTree.maxDepth(tree3));
+    System.out.println("maxDepth(tree3) = " +  
+                       MaximumDepthBinaryTree.maxDepth(tree3));
 
-    }
+  }
+
+  public static void sortedArrayToBST()
+  {
+    SortedArrayToBinarySearchTree.readme();
+
+    //nums1 = [-10,-3,0,5,9], => [0,-3,9,-10,null,5]
+    int [] nums1 = {-10,-3,0,5,9};
+
+    System.out.print("sortedArrayToBST(" + Arrays.toString(nums1) + 
+                     ") = ");
+    TreeNode tree1 = SortedArrayToBinarySearchTree.sortedArrayToBST(nums1);
+
+    tree1.show();
+    System.out.println("");
+  }
 }
