@@ -26,6 +26,7 @@ import easy.RemoveDuplicateSortedList;
 import easy.MergeSortedArray;
 import easy.BinaryTreeInorderTraversal;
 import easy.TreeNode;
+import easy.SameTree;
 
 class LeetCodeExercise 
 {
@@ -106,6 +107,9 @@ class LeetCodeExercise
                 break;
               case 94:
                 binaryTreeInorderTraversal();
+                break;
+              case 100:
+                sameTree();
                 break;
               default:
                 if (subKey != 0) {
@@ -191,6 +195,7 @@ class LeetCodeExercise
     System.out.println("83. Remove Duplicates for Sorted List");
     System.out.println("88. Merge Sorted Array");
     System.out.println("94. Binary Tree Inorder Traversal");
+    System.out.println("100. Same Tree");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -684,6 +689,54 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     tree3.show();
     List <Integer> list3 = BinaryTreeInorderTraversal.inorderTraversal(tree3);
     System.out.println(list3);
+
+  }
+
+  public static void sameTree()
+  {
+    SameTree.readme();
+
+    //  root = [1,null,2,3] => [1,3,2]
+    TreeNode node2 = new TreeNode(2);
+    TreeNode node3 = new TreeNode(3);
+    TreeNode tree1 = new TreeNode(1, node2, node3);
+
+    System.out.print("Tree 1: ");
+    tree1.show();
+    System.out.println("");
+      
+    TreeNode node4 = new TreeNode(2);
+    TreeNode node5 = new TreeNode(3);
+    TreeNode tree2 = new TreeNode(1, node4, node5);
+
+    System.out.print("Tree 2: ");
+    tree2.show();
+    System.out.println("");
+
+    SameTree.isSameTree(tree1, tree2);
+
+    System.out.println("isSameTree(tree1, tree2) = " +  
+                     SameTree.isSameTree(tree1, tree2));
+
+
+    TreeNode node6 = new TreeNode(2);
+    TreeNode tree3 = new TreeNode(1, node6, null);
+
+    System.out.print("Tree 3: ");
+    tree3.show();
+    System.out.println("");
+
+    TreeNode node7 = new TreeNode(2);
+    TreeNode tree4 = new TreeNode(1, null, node7);
+
+    System.out.print("Tree 4: ");
+    tree4.show();
+    System.out.println("");
+
+    SameTree.isSameTree(tree3, tree4);
+
+    System.out.println("isSameTree(tree3, tree4) = " +  
+                     SameTree.isSameTree(tree3, tree4));
 
   }
 }
