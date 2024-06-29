@@ -843,5 +843,11 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
 
     tree1.show();
     System.out.println("");
+
+    tree1 = SortedArrayToBinarySearchTree.sortedArrayToBSTOpt(nums1);
+
+    tree1.show();
+    System.out.println("");
+
   }
 }
