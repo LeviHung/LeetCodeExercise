@@ -9,22 +9,21 @@ public class SortedArrayToBinarySearchTree
     root = null;
     
     convert(nums, 0, nums.length - 1);
-    insert(nums[nums.length-1]);
+
     return root;
   }
 
   public static void convert(int nums[], int i, int k) 
   {
-    int j;
     //System.out.println("i = " + i + ", k = " + k);
-
-    if (i < k) {
-      j = (i + k) / 2; // Find the midpoint in the partition
-      //System.out.println("j = " + j);
-      insert(nums[j]);
-      convert(nums, i, j);
-      convert(nums, j + 1, k);
-    } 
+    if (i > k) {
+      return;
+    }
+    int j = (i + k) / 2; // Find the midpoint in the partition
+    //System.out.println("j = " + j);
+    insert(nums[j]);
+    convert(nums, i, j - 1);
+    convert(nums, j + 1, k);
   }
   
   public static void insert(int value)
