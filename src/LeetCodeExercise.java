@@ -33,6 +33,7 @@ import easy.SortedArrayToBinarySearchTree;
 import easy.BalancedBinaryTree;
 import easy.MinimumDepthBinaryTree;
 import easy.PathSum;
+import easy.PascalsTriangle;
 
 class LeetCodeExercise 
 {
@@ -131,9 +132,13 @@ class LeetCodeExercise
                 break;
               case 111:
                 minimumDepthBinaryTree();
+                break;
               case 112:
-                  pathSum();
-                  break;
+                pathSum();
+                break;
+              case 118:
+                pascalsTriangle();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -225,6 +230,7 @@ class LeetCodeExercise
     System.out.println("110. Balanced Binary Tree");
     System.out.println("111. Minimum Depth Binary Tree");
     System.out.println("112. Path Sum");
+    System.out.println("118. PascalsTriangle");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1049,6 +1055,30 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
 
     System.out.println("minDepth(tree3, " + targetSum + ") = " +  
                        PathSum.hasPathSum(tree3, targetSum));
+
+  }
+
+
+  public static void pascalsTriangle()
+  {
+    PascalsTriangle.readme();
+
+    // numRows = 5 => [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+    int numRows = 5;
+    System.out.println("generate(" + numRows + ") = ");
+    List<List<Integer>> list1 = PascalsTriangle.generate(numRows);
+    System.out.println(Arrays.toString(list1.toArray()));
+    
+    // numRows = 1 => [[1]]
+    numRows = 1;
+    System.out.println("generate(" + numRows + ") = ");
+    List<List<Integer>> list2 = PascalsTriangle.generate(numRows);
+    System.out.println(Arrays.toString(list2.toArray()));
+
+    numRows = 20;
+    System.out.println("generateOpt(" + numRows + ") = ");
+    List<List<Integer>> list3 = PascalsTriangle.generateOpt(numRows);
+    System.out.println(Arrays.toString(list3.toArray()));
 
   }
 }
