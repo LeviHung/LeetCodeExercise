@@ -32,6 +32,7 @@ import easy.MaximumDepthBinaryTree;
 import easy.SortedArrayToBinarySearchTree;
 import easy.BalancedBinaryTree;
 import easy.MinimumDepthBinaryTree;
+import easy.PathSum;
 
 class LeetCodeExercise 
 {
@@ -130,7 +131,9 @@ class LeetCodeExercise
                 break;
               case 111:
                 minimumDepthBinaryTree();
-                break;
+              case 112:
+                  pathSum();
+                  break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -221,6 +224,7 @@ class LeetCodeExercise
     System.out.println("108. Sorted Array To Binary Search Tree");
     System.out.println("110. Balanced Binary Tree");
     System.out.println("111. Minimum Depth Binary Tree");
+    System.out.println("112. Path Sum");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -991,6 +995,60 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
 
     System.out.println("minDepthOpt(tree4) = " +  
                        MinimumDepthBinaryTree.minDepthOpt(tree4));
+
+  }
+
+  public static void pathSum()
+  {
+    PathSum.readme();
+
+    // root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
+    //                  5
+    //            4            8
+    //        11           13      4 
+    //      7    2                    1
+
+    TreeNode node7 = new TreeNode(7);
+    TreeNode node8 = new TreeNode(2);
+    TreeNode node4 = new TreeNode(11, node7, node8);
+    TreeNode node2 = new TreeNode(4, node4, null);
+    TreeNode node9 = new TreeNode(1);
+    TreeNode node6 = new TreeNode(4, null, node9);
+    TreeNode node5 = new TreeNode(13);
+    TreeNode node3 = new TreeNode(8, node5, node6);
+    TreeNode tree1 = new TreeNode(5, node2, node3);
+    int targetSum = 22;
+    
+    System.out.print("Tree 1: ");
+    tree1.show();
+    System.out.println("");
+
+    System.out.println("minDepth(tree1, " + targetSum + ") = " +  
+                       PathSum.hasPathSum(tree1, targetSum));
+
+    // root = [1,2,3], targetSum = 5
+    //    1
+    //  2   3
+    node2 = new TreeNode(2);
+    node3 = new TreeNode(3);
+    TreeNode tree2 = new TreeNode(1, node2, node3);
+    targetSum = 5;
+    System.out.print("Tree 2: ");
+    tree2.show();
+    System.out.println("");
+
+    System.out.println("minDepth(tree2, " + targetSum + ") = " +  
+                       PathSum.hasPathSum(tree2, targetSum));
+
+    // Input: root = [], targetSum = 0
+    TreeNode tree3 = null;
+    targetSum = 0;
+    System.out.print("Tree 3: ");
+    //tree3.show();
+    System.out.println("");
+
+    System.out.println("minDepth(tree3, " + targetSum + ") = " +  
+                       PathSum.hasPathSum(tree3, targetSum));
 
   }
 }
