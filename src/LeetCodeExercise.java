@@ -31,6 +31,7 @@ import easy.SymmetricTree;
 import easy.MaximumDepthBinaryTree;
 import easy.SortedArrayToBinarySearchTree;
 import easy.BalancedBinaryTree;
+import easy.MinimumDepthBinaryTree;
 
 class LeetCodeExercise 
 {
@@ -127,6 +128,9 @@ class LeetCodeExercise
               case 110:
                 balancedBinaryTree();
                 break;
+              case 111:
+                minimumDepthBinaryTree();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -216,6 +220,7 @@ class LeetCodeExercise
     System.out.println("104. Maximum Depth Binary Tree");
     System.out.println("108. Sorted Array To Binary Search Tree");
     System.out.println("110. Balanced Binary Tree");
+    System.out.println("111. Minimum Depth Binary Tree");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -923,5 +928,69 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.println("isBalanced(tree4) = " +  
                        BalancedBinaryTree.isBalanced(tree4));
   
+  }
+
+  public static void minimumDepthBinaryTree()
+  {
+    MinimumDepthBinaryTree.readme();
+
+    // root = [3,9,20,null,null,15,7] => 3
+    TreeNode node4 = new TreeNode(15);
+    TreeNode node5 = new TreeNode(7);
+    TreeNode node2 = new TreeNode(9);
+    TreeNode node3 = new TreeNode(20, node4, node5);
+    TreeNode tree1 = new TreeNode(3, node2, node3);
+
+    System.out.print("Tree 1: ");
+    tree1.show();
+    System.out.println("");
+
+    System.out.println("minDepth(tree1) = " +  
+                       MinimumDepthBinaryTree.minDepth(tree1));
+
+    // root = [1,null,2] => 2
+    node2 = new TreeNode(2);
+    TreeNode tree2 = new TreeNode(1, null, node2);
+
+    System.out.print("Tree 2: ");
+    tree2.show();
+    System.out.println("");
+
+    System.out.println("minDepth(tree2) = " +  
+                       MinimumDepthBinaryTree.minDepth(tree2));
+
+    // root = [1,null,2] => 2
+    node2 = new TreeNode(2);
+    TreeNode tree3 = new TreeNode(1, node2, null);
+
+    System.out.print("Tree 3: ");
+    tree3.show();
+    System.out.println("");
+
+    System.out.println("minDepth(tree3) = " +  
+                       MinimumDepthBinaryTree.minDepth(tree3));
+
+    // root = [2,null,3,null,4,null,5,null,6]
+    // 2
+    //  3
+    //   4
+    //    5
+    //     6
+    TreeNode node6 = new TreeNode(6);
+    node5 = new TreeNode(5, null, node6);
+    node4 = new TreeNode(4, null, node5);
+    node3 = new TreeNode(3, null, node4);
+    TreeNode tree4 = new TreeNode(2, null, node3);
+
+    System.out.print("Tree 4: ");
+    tree4.show();
+    System.out.println("");
+
+    System.out.println("minDepth(tree4) = " +  
+                       MinimumDepthBinaryTree.minDepth(tree4));
+
+    System.out.println("minDepthOpt(tree4) = " +  
+                       MinimumDepthBinaryTree.minDepthOpt(tree4));
+
   }
 }
