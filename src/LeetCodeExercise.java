@@ -34,6 +34,7 @@ import easy.BalancedBinaryTree;
 import easy.MinimumDepthBinaryTree;
 import easy.PathSum;
 import easy.PascalsTriangle;
+import easy.PascalsTriangleII;
 
 class LeetCodeExercise 
 {
@@ -139,6 +140,9 @@ class LeetCodeExercise
               case 118:
                 pascalsTriangle();
                 break;
+              case 119:
+                pascalsTriangleII();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -231,6 +235,7 @@ class LeetCodeExercise
     System.out.println("111. Minimum Depth Binary Tree");
     System.out.println("112. Path Sum");
     System.out.println("118. PascalsTriangle");
+    System.out.println("119. PascalsTriangleII");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1079,6 +1084,34 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.println("generateOpt(" + numRows + ") = ");
     List<List<Integer>> list3 = PascalsTriangle.generateOpt(numRows);
     System.out.println(Arrays.toString(list3.toArray()));
+
+  }
+
+  public static void pascalsTriangleII()
+  {
+    PascalsTriangleII.readme();
+
+    // rowIndex = 3 => [1,3,3,1]
+    int rowIndex = 3;
+    System.out.print("getRow(" + rowIndex + ") = ");
+    List<Integer> list1 = PascalsTriangleII.getRow(rowIndex);
+    System.out.println(Arrays.toString(list1.toArray()));
+
+    // rowIndex = 0 => [[1]]
+    rowIndex = 1;
+    System.out.print("getRow(" + rowIndex + ") = ");
+    List<Integer> list2 = PascalsTriangleII.getRow(rowIndex);
+    System.out.println(Arrays.toString(list2.toArray()));
+
+    rowIndex = 4;
+    System.out.print("getRow(" + rowIndex + ") = ");
+    List<Integer> list3 = PascalsTriangleII.getRow(rowIndex);
+    System.out.println(Arrays.toString(list3.toArray()));
+
+    rowIndex = 30;
+    System.out.print("getRow(" + rowIndex + ") = ");
+    List<Integer> list4 = PascalsTriangleII.getRow(rowIndex);
+    System.out.println(Arrays.toString(list4.toArray()));
 
   }
 }

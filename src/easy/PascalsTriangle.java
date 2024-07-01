@@ -53,7 +53,7 @@ public class PascalsTriangle
   public static List<List<Integer>> generateOpt(int n) 
   {
     List<List<Integer>> list = new ArrayList<>();
-    for(int i = 1; i < = n; i++) {
+    for(int i = 1; i <= n; i++) {
       list.add(gen(i));
     }
 
