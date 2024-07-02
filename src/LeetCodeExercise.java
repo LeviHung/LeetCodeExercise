@@ -35,6 +35,7 @@ import easy.MinimumDepthBinaryTree;
 import easy.PathSum;
 import easy.PascalsTriangle;
 import easy.PascalsTriangleII;
+import easy.BestTimeBuySellStock;
 
 class LeetCodeExercise 
 {
@@ -143,6 +144,9 @@ class LeetCodeExercise
               case 119:
                 pascalsTriangleII();
                 break;
+              case 121:
+                bestTimeBuySellStock();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -236,6 +240,7 @@ class LeetCodeExercise
     System.out.println("112. Path Sum");
     System.out.println("118. PascalsTriangle");
     System.out.println("119. PascalsTriangleII");
+    System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1112,6 +1117,38 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.print("getRow(" + rowIndex + ") = ");
     List<Integer> list4 = PascalsTriangleII.getRow(rowIndex);
     System.out.println(Arrays.toString(list4.toArray()));
+  }
 
+  public static void bestTimeBuySellStock()
+  {
+    BestTimeBuySellStock.readme();
+
+    
+    // prices = [7,1,5,3,6,4] => 5
+    int [] prices1 = {7,1,5,3,6,4};
+
+    System.out.println("maxProfit(" + Arrays.toString(prices1) + 
+                     ") = " + BestTimeBuySellStock.maxProfit(prices1));
+
+    //prices = [7,6,4,3,1] => 0
+    int [] prices2 = {7,6,4,3,1};
+    System.out.println("maxProfit(" + Arrays.toString(prices2) + 
+     ") = " + BestTimeBuySellStock.maxProfit(prices2));
+
+    
+    int [] prices3 = {1,4,1,4,3,1};
+    System.out.println("maxProfit(" + Arrays.toString(prices3) + 
+          ") = " + BestTimeBuySellStock.maxProfit(prices3));
+    
+    
+    int [] prices4 = {2, 4, 1};
+    System.out.println("maxProfit(" + Arrays.toString(prices4) + 
+         ") = " + BestTimeBuySellStock.maxProfit(prices4));
+
+    
+    int [] prices5 = {3,3,5,0,0,3,1,4};
+    System.out.println("maxProfit(" + Arrays.toString(prices5) + 
+         ") = " + BestTimeBuySellStock.maxProfit(prices5));
+    
   }
 }
