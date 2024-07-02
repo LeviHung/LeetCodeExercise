@@ -37,6 +37,7 @@ import easy.PascalsTriangle;
 import easy.PascalsTriangleII;
 import easy.BestTimeBuySellStock;
 import easy.ValidPalindrome;
+import easy.SingleNumber;
 
 class LeetCodeExercise 
 {
@@ -151,6 +152,9 @@ class LeetCodeExercise
               case 125:
                 validPalindrome();
                 break;
+              case 136:
+                singleNumber();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -246,6 +250,7 @@ class LeetCodeExercise
     System.out.println("119. PascalsTriangleII");
     System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("125. Valid Palindrome");
+    System.out.println("136. Single Number");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1174,5 +1179,27 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     s = " ";
     System.out.println("isPalindrome(" + s + ") = " + 
     ValidPalindrome.isPalindrome(s));
+  }
+
+
+  public static void singleNumber()
+  {
+    SingleNumber.readme();
+
+    //nums = [2,2,1] => 1
+    int [] nums = {1, 1, 2};
+    System.out.println("singleNumber(" + Arrays.toString(nums) + 
+     ") = " + SingleNumber.singleNumber(nums));
+
+    //nums = [4,1,2,1,2] => 4
+    int [] nums2 = {4,1,2,1,2};
+    System.out.println("singleNumber(" + Arrays.toString(nums2) + 
+     ") = " + SingleNumber.singleNumber(nums2));
+
+    //nums = [1] => 1
+    int [] nums3 = {1};
+    System.out.println("singleNumber(" + Arrays.toString(nums3) + 
+     ") = " + SingleNumber.singleNumber(nums3));
+
   }
 }
