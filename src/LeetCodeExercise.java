@@ -36,6 +36,7 @@ import easy.PathSum;
 import easy.PascalsTriangle;
 import easy.PascalsTriangleII;
 import easy.BestTimeBuySellStock;
+import easy.ValidPalindrome;
 
 class LeetCodeExercise 
 {
@@ -147,6 +148,9 @@ class LeetCodeExercise
               case 121:
                 bestTimeBuySellStock();
                 break;
+              case 125:
+                validPalindrome();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -241,6 +245,7 @@ class LeetCodeExercise
     System.out.println("118. PascalsTriangle");
     System.out.println("119. PascalsTriangleII");
     System.out.println("121. Best Time to Buy and Sell Stock");
+    System.out.println("125. Valid Palindrome");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1150,5 +1155,24 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     System.out.println("maxProfit(" + Arrays.toString(prices5) + 
          ") = " + BestTimeBuySellStock.maxProfit(prices5));
     
+  }
+
+  public static void validPalindrome()
+  {
+    ValidPalindrome.readme();
+    // s = "A man, a plan, a canal: Panama"
+    String s = "A man, a plan, a canal: Panama"; 
+    System.out.println("isPalindrome(" + s + ") = " + 
+                        ValidPalindrome.isPalindrome(s));
+
+    // s = "race a car"
+    s = "race a car";
+    System.out.println("isPalindrome(" + s + ") = " + 
+    ValidPalindrome.isPalindrome(s));
+
+    // s = " "
+    s = " ";
+    System.out.println("isPalindrome(" + s + ") = " + 
+    ValidPalindrome.isPalindrome(s));
   }
 }
