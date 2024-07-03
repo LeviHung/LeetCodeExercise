@@ -169,7 +169,7 @@ class LeetCodeExercise
                 binaryTreePostorderTraversal();
                 break;
               case 160:
-                intersectionTwoLinkedLists();
+                IntersectionTwoLinkedLists.main();
                 break;
               default:
                 if (subKey != 0) {
