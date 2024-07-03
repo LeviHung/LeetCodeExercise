@@ -39,6 +39,7 @@ import easy.BestTimeBuySellStock;
 import easy.ValidPalindrome;
 import easy.SingleNumber;
 import easy.LinkedListCycle;
+import easy.BinaryTreePreorderTraversal;
 
 class LeetCodeExercise 
 {
@@ -159,6 +160,9 @@ class LeetCodeExercise
               case 141:
                 linkedListCycle();
                 break;
+              case 144:
+                binaryTreePreorderTraversal();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -256,6 +260,7 @@ class LeetCodeExercise
     System.out.println("125. Valid Palindrome");
     System.out.println("136. Single Number");
     System.out.println("141. Linked List Cycle");
+    System.out.println("144. Binary Tree Preorder Traversal");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1248,6 +1253,38 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
 
     System.out.println("hasCycle(list3) = " + 
                        LinkedListCycle.hasCycle(list3));
+
+  }
+
+  public static void binaryTreePreorderTraversal()
+  {
+    BinaryTreePreorderTraversal.readme();
+
+    //  root = [1,null,2,3] => [1,3,2]
+    TreeNode node = new TreeNode(3);
+    node = new TreeNode(2, node, null);
+    TreeNode tree1 = new TreeNode(1, null, node);
+
+    System.out.println("Tree 1: ");
+    tree1.show();
+    List <Integer> list1 = BinaryTreePreorderTraversal.preorderTraversal(tree1);
+    System.out.println(list1);
+
+    //  root = [] => []
+    TreeNode tree2 = new TreeNode();
+
+    System.out.println("Tree 2: ");
+    tree2.show();
+    List <Integer> list2 = BinaryTreePreorderTraversal.preorderTraversal(tree2);
+    System.out.println(list2);
+
+    // root = [1] => [1]
+    TreeNode tree3 = new TreeNode(1);
+
+    System.out.println("Tree 3: ");
+    tree3.show();
+    List <Integer> list3 = BinaryTreePreorderTraversal.preorderTraversal(tree3);
+    System.out.println(list3);
 
   }
 }
