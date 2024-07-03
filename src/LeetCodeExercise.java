@@ -38,6 +38,7 @@ import easy.PascalsTriangleII;
 import easy.BestTimeBuySellStock;
 import easy.ValidPalindrome;
 import easy.SingleNumber;
+import easy.LinkedListCycle;
 
 class LeetCodeExercise 
 {
@@ -155,6 +156,9 @@ class LeetCodeExercise
               case 136:
                 singleNumber();
                 break;
+              case 141:
+                linkedListCycle();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -251,6 +255,7 @@ class LeetCodeExercise
     System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("125. Valid Palindrome");
     System.out.println("136. Single Number");
+    System.out.println("141. Linked List Cycle");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1200,6 +1205,49 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     int [] nums3 = {1};
     System.out.println("singleNumber(" + Arrays.toString(nums3) + 
      ") = " + SingleNumber.singleNumber(nums3));
+
+  }
+
+
+  public static void linkedListCycle()
+  {
+    LinkedListCycle.readme();
+
+    // [3,2,0,-4], pos = 1 => true
+    ListNode node4;
+    ListNode node3;
+    ListNode node2 = null;
+
+    node4 = new ListNode(-4);
+    node3 = new ListNode(0, node4);
+    node2 = new ListNode(2, node3);
+    node4.setNext(node2);
+    ListNode list1 = new ListNode(3, node2);
+
+    System.out.println("List 1: ");
+    list1.show();
+
+    System.out.println("hasCycleOpt(list1) = " + 
+                       LinkedListCycle.hasCycleOpt(list1));
+
+    // [1,2]
+    node2 = new ListNode(2);
+    ListNode list2 = new ListNode(1, node2);
+    node2.setNext(list2);
+
+    System.out.println("List 2: ");
+    list2.show();
+
+    System.out.println("hasCycle(list2) = " + 
+                       LinkedListCycle.hasCycle(list2));
+
+    ListNode list3 = new ListNode(1);
+
+    System.out.println("List 3: ");
+    list3.show();
+
+    System.out.println("hasCycle(list3) = " + 
+                       LinkedListCycle.hasCycle(list3));
 
   }
 }

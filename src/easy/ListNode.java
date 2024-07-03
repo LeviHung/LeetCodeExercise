@@ -12,11 +12,19 @@ public class ListNode {
       System.out.print("This node is null.");
       return;
     }
-
-    while (node.next != null) {
+    int loop = 0;
+    while (node.next != null && loop ++ < 100) {
       System.out.print(node.val + " -> ");
       node = node.next;
     }
-    System.out.print(node.val + " -> null\n");
+    if (loop < 20) {
+      System.out.print(node.val + " -> null\n");
+    } else {
+      System.out.print(node.val + "\n");
+    }
   }
+  public void setNext(ListNode next) {
+    this.next = next;
+  }
+
 }
