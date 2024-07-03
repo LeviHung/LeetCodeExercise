@@ -40,6 +40,7 @@ import easy.ValidPalindrome;
 import easy.SingleNumber;
 import easy.LinkedListCycle;
 import easy.BinaryTreePreorderTraversal;
+import easy.BinaryTreePostorderTraversal;
 
 class LeetCodeExercise 
 {
@@ -163,6 +164,9 @@ class LeetCodeExercise
               case 144:
                 binaryTreePreorderTraversal();
                 break;
+              case 145:
+                binaryTreePostorderTraversal();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -170,8 +174,25 @@ class LeetCodeExercise
                 break;
             }
           } while (subKey != 0);
-          break;         
+          break; 
         case 2:
+          do {
+            displayEasyPremiumMenu();
+            subKey = keyboard.nextInt();
+            keyboard.nextLine();
+            switch (subKey) {
+              case 157:
+                System.out.println("Subscribe to unlock.");
+                break;
+              default:
+                if (subKey != 0) {
+                  System.out.println("Invalid Input!");
+                }
+                break;
+            }
+          } while (subKey != 0);
+          break;           
+        case 3:
           do {
             displayMediumMenu();
             subKey = keyboard.nextInt();
@@ -187,7 +208,7 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break;   
-        case 3:
+        case 4:
           do {
             displayHardMenu();
             subKey = keyboard.nextInt();
@@ -219,8 +240,9 @@ class LeetCodeExercise
   {
     System.out.println("\n============= Main Menu ================");
     System.out.println("1. Easy");
-    System.out.println("2. Medium");
-    System.out.println("3. Hard");
+    System.out.println("2. Easy Premium");
+    System.out.println("3. Medium");
+    System.out.println("4. Hard");
     System.out.println("0. Exit");
     System.out.println("========================================");
     System.out.print("Enter a choice: ");
@@ -261,6 +283,16 @@ class LeetCodeExercise
     System.out.println("136. Single Number");
     System.out.println("141. Linked List Cycle");
     System.out.println("144. Binary Tree Preorder Traversal");
+    System.out.println("145. Binary Tree Postorder Traversal");
+    System.out.println("0. Go Back");
+    System.out.println("----------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+
+  public static void displayEasyPremiumMenu()
+  {
+    System.out.println("\n--------------- Easy Premium -----------");
+    System.out.println("157. Read n Characters Given Read4");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1286,5 +1318,36 @@ ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
     List <Integer> list3 = BinaryTreePreorderTraversal.preorderTraversal(tree3);
     System.out.println(list3);
 
+  }
+
+  public static void binaryTreePostorderTraversal()
+  {
+    BinaryTreePostorderTraversal.readme();
+
+    //  root = [1,null,2,3] => [1,3,2]
+    TreeNode node = new TreeNode(3);
+    node = new TreeNode(2, node, null);
+    TreeNode tree1 = new TreeNode(1, null, node);
+
+    System.out.println("Tree 1: ");
+    tree1.show();
+    List <Integer> list1 = BinaryTreePostorderTraversal.postorderTraversal(tree1);
+    System.out.println(list1);
+
+    //  root = [] => []
+    TreeNode tree2 = new TreeNode();
+
+    System.out.println("Tree 2: ");
+    tree2.show();
+    List <Integer> list2 = BinaryTreePostorderTraversal.postorderTraversal(tree2);
+    System.out.println(list2);
+
+    // root = [1] => [1]
+    TreeNode tree3 = new TreeNode(1);
+
+    System.out.println("Tree 3: ");
+    tree3.show();
+    List <Integer> list3 = BinaryTreePostorderTraversal.postorderTraversal(tree3);
+    System.out.println(list3);
   }
 }
