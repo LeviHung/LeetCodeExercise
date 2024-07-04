@@ -5,25 +5,21 @@ public class ExcelSheetColumnNumber
   public static int titleToNumber(String columnTitle)
   {
     int pos = columnTitle.length() - 1;
-    char c = '\0';
     int number = 0;
-    int digit = 0;
     int pow = 1;
     while (pos >= 0) {
-      c = columnTitle.charAt(pos);
       // Use pow variable instead of Math.pow() to get better for the run time.
       // number += (c - '@') * Math.pow(26,digit);
-      number += (c - '@') * pow;
+      number += (columnTitle.charAt(pos) - '@') * pow;
       pow = pow * 26;
       //System.out.println("number = " + number);
-      digit++;
       pos--;
     }
     
     return number;
   }
 
-  public static int titleToNumberEx(String columnTitle) 
+  public static int titleToNumberOpt(String columnTitle) 
   {
     int res = 0;
     for(int i = 0; i < columnTitle.length(); i++) {
@@ -63,8 +59,8 @@ public class ExcelSheetColumnNumber
                       ExcelSheetColumnNumber.titleToNumber(columnTitle));
 
     columnTitle = "ABC";
-    System.out.println("titleToNumberEx(" + columnTitle + ") = " + 
-                      ExcelSheetColumnNumber.titleToNumberEx(columnTitle));
+    System.out.println("titleToNumberOpt(" + columnTitle + ") = " + 
+                      ExcelSheetColumnNumber.titleToNumberOpt(columnTitle));
 
   }
 }
