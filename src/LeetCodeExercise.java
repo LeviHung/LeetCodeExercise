@@ -44,6 +44,7 @@ import easy.BinaryTreePostorderTraversal;
 import easy.IntersectionTwoLinkedLists;
 import easy.ExcelSheetColumnTitle;
 import easy.MajorityElement;
+import easy.ExcelSheetColumnNumber;
 
 class LeetCodeExercise 
 {
@@ -179,6 +180,9 @@ class LeetCodeExercise
               case 169:
                 MajorityElement.main();
                 break;
+              case 171:
+                ExcelSheetColumnNumber.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -305,6 +309,7 @@ class LeetCodeExercise
     System.out.println("160. Intersection of Two Linked Lists");
     System.out.println("168. Excel Sheet Column Title");
     System.out.println("169. Majority Element");
+    System.out.println("171. Excel Sheet Column Number");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
