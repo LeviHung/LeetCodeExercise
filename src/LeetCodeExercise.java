@@ -42,6 +42,7 @@ import easy.LinkedListCycle;
 import easy.BinaryTreePreorderTraversal;
 import easy.BinaryTreePostorderTraversal;
 import easy.IntersectionTwoLinkedLists;
+import easy.ExcelSheetColumnTitle;
 
 class LeetCodeExercise 
 {
@@ -171,6 +172,9 @@ class LeetCodeExercise
               case 160:
                 IntersectionTwoLinkedLists.main();
                 break;
+              case 168:
+                ExcelSheetColumnTitle.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -292,7 +296,7 @@ class LeetCodeExercise
     System.out.println("144. Binary Tree Preorder Traversal");
     System.out.println("145. Binary Tree Postorder Traversal");
     System.out.println("160. Intersection of Two Linked Lists");
-
+    System.out.println("168. Excel Sheet Column Title");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
