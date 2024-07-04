@@ -199,6 +199,9 @@ class LeetCodeExercise
               case 163:
                 System.out.println("Subscribe to unlock.");
                 break;
+              case 170:
+                System.out.println("Subscribe to unlock.");
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -312,6 +315,7 @@ class LeetCodeExercise
     System.out.println("\n--------------- Easy Premium -----------");
     System.out.println("157. Read n Characters Given Read4");
     System.out.println("163. Missing Ranges");
+    System.out.println("170. Two Sum III Date Structure");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
