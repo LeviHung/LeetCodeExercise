@@ -47,6 +47,7 @@ import easy.MajorityElement;
 import easy.ExcelSheetColumnNumber;
 import easy.CombineTwoTables;
 import easy.EmployeesEarnMoreThanManagers;
+import easy.DuplicateEmails;
 
 class LeetCodeExercise 
 {
@@ -191,6 +192,9 @@ class LeetCodeExercise
               case 181:
                 EmployeesEarnMoreThanManagers.main();
                 break;
+              case 182:
+                DuplicateEmails.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -320,6 +324,7 @@ class LeetCodeExercise
     System.out.println("171. Excel Sheet Column Number");
     System.out.println("175. Combine Two Tables");
     System.out.println("181. Employees Earn More Than Managers");
+    System.out.println("182. Duplicate Emails");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
