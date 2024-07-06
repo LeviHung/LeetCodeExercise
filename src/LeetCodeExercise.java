@@ -49,6 +49,7 @@ import easy.CombineTwoTables;
 import easy.EmployeesEarnMoreThanManagers;
 import easy.DuplicateEmails;
 import easy.CustomersWhoNeverOrder;
+import easy.ReverseBits;
 
 class LeetCodeExercise 
 {
@@ -199,6 +200,9 @@ class LeetCodeExercise
               case 183:
                 CustomersWhoNeverOrder.main();
                 break;
+              case 190:
+                ReverseBits.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -330,6 +334,7 @@ class LeetCodeExercise
     System.out.println("181. Employees Earn More Than Managers");
     System.out.println("182. Duplicate Emails");
     System.out.println("183. Customers Who Never Order");
+    System.out.println("190. Reverse Bits");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
