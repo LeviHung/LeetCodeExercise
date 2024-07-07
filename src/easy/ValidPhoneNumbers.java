@@ -119,6 +119,14 @@ public class ValidPhoneNumbers
 
     System.out.println(script);
   }
+
+  public static void bashScriptEx()
+  {
+    String script = "grep -E \'^(\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4})$\' file.txt\n";      
+
+    System.out.println(script);
+  }
+  
   public static void readme()
   {
     String str = "Given a text file file.txt that contains a list of phone numbers (one per line), write a one-liner bash script to print all valid phone numbers.\n\n";
@@ -138,5 +146,9 @@ public class ValidPhoneNumbers
     
     System.out.println("The optimized bash script:\n");
     ValidPhoneNumbers.bashScriptOpt();
+
+    System.out.println("The extra bash script:\n");
+    ValidPhoneNumbers.bashScriptEx();
+
   }
 }
