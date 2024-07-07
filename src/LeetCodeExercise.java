@@ -51,6 +51,7 @@ import easy.DuplicateEmails;
 import easy.CustomersWhoNeverOrder;
 import easy.ReverseBits;
 import easy.NumberOfOneBits;
+import easy.ValidPhoneNumbers;
 
 class LeetCodeExercise 
 {
@@ -207,6 +208,9 @@ class LeetCodeExercise
               case 191:
                 NumberOfOneBits.main();
                 break;
+              case 193:
+                ValidPhoneNumbers.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -340,6 +344,7 @@ class LeetCodeExercise
     System.out.println("183. Customers Who Never Order");
     System.out.println("190. Reverse Bits");
     System.out.println("191. Number Of One Bits");
+    System.out.println("193. Valid Phone Numbers");      
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
