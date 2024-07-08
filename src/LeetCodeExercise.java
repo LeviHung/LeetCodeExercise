@@ -56,6 +56,7 @@ import easy.TenthLine;
 import easy.DeleteDuplicateEmails;
 import easy.RisingTemperature;
 import easy.HappyNumber;
+import easy.RemoveLinkedListElements;
 
 class LeetCodeExercise 
 {
@@ -227,6 +228,9 @@ class LeetCodeExercise
               case 202:
                 HappyNumber.main();
                 break;
+              case 203:
+                RemoveLinkedListElements.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -318,7 +322,8 @@ class LeetCodeExercise
   {
     System.out.println("\n--------------- Easy -------------------");
     System.out.println("1. Two Sum");
-    //System.out.println("...");
+    System.out.println("...");
+/*
     System.out.println("9. Palindrome Number");
     System.out.println("13. Roman to Integer");
     System.out.println("14. Longes Common Prefix");
@@ -365,7 +370,9 @@ class LeetCodeExercise
     System.out.println("195. Tenth Line");    
     System.out.println("196. Delete Duplicate Emails");    
     System.out.println("197. Rising Temperature");  
+  */
     System.out.println("202. Happy Number");
+    System.out.println("203. Remove Linked List Elements");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
