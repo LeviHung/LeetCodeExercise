@@ -220,7 +220,7 @@ class LeetCodeExercise
               case 196:
                 DeleteDuplicateEmails.main();
                 break;
-              case 198:
+              case 197:
                 RisingTemperature.main();
                 break; 
               default:
@@ -359,7 +359,7 @@ class LeetCodeExercise
     System.out.println("193. Valid Phone Numbers");    
     System.out.println("195. Tenth Line");    
     System.out.println("196. Delete Duplicate Emails");    
-    System.out.println("198. Rising Temperature");    
+    System.out.println("197. Rising Temperature");    
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
