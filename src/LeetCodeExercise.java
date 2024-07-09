@@ -58,6 +58,7 @@ import easy.RisingTemperature;
 import easy.HappyNumber;
 import easy.RemoveLinkedListElements;
 import easy.IsomorphicStrings;
+import easy.ReverseLinkedList;
 
 class LeetCodeExercise 
 {
@@ -235,6 +236,9 @@ class LeetCodeExercise
               case 205:
                 IsomorphicStrings.main();
                 break;
+              case 206:
+                ReverseLinkedList.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -378,6 +382,7 @@ class LeetCodeExercise
     System.out.println("202. Happy Number");
     System.out.println("203. Remove Linked List Elements");
     System.out.println("205. IsomorphicStrings");
+    System.out.println("206. Reverse Linked List");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
