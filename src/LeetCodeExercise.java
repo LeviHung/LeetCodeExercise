@@ -57,6 +57,7 @@ import easy.DeleteDuplicateEmails;
 import easy.RisingTemperature;
 import easy.HappyNumber;
 import easy.RemoveLinkedListElements;
+import easy.IsomorphicStrings;
 
 class LeetCodeExercise 
 {
@@ -231,6 +232,9 @@ class LeetCodeExercise
               case 203:
                 RemoveLinkedListElements.main();
                 break;
+              case 205:
+                IsomorphicStrings.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -373,6 +377,7 @@ class LeetCodeExercise
   */
     System.out.println("202. Happy Number");
     System.out.println("203. Remove Linked List Elements");
+    System.out.println("205. IsomorphicStrings");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
