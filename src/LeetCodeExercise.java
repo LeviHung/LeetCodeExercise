@@ -60,6 +60,7 @@ import easy.RemoveLinkedListElements;
 import easy.IsomorphicStrings;
 import easy.ReverseLinkedList;
 import easy.ContainsDuplicate;
+import easy.ContainsDuplicateII;
 
 class LeetCodeExercise 
 {
@@ -243,6 +244,9 @@ class LeetCodeExercise
               case 217:
                 ContainsDuplicate.main();
                 break;
+              case 219:
+                ContainsDuplicateII.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -388,6 +392,7 @@ class LeetCodeExercise
     System.out.println("205. IsomorphicStrings");
     System.out.println("206. Reverse Linked List");
     System.out.println("217. Contains Duplicate");
+    System.out.println("219. Contains Duplicate II");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
