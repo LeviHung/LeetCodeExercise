@@ -305,6 +305,9 @@ class LeetCodeExercise
               case 243:
                 System.out.println("Subscribe to unlock.");
                 break;
+              case 246:
+                System.out.println("Subscribe to unlock.");
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -448,6 +451,7 @@ class LeetCodeExercise
     System.out.println("163. Missing Ranges");
     System.out.println("170. Two Sum III Date Structure");
     System.out.println("243. Shortest Word Distance");
+    System.out.println("246. Strobogrammatic Number");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
