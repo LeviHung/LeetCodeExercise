@@ -62,6 +62,7 @@ import easy.ReverseLinkedList;
 import easy.ContainsDuplicate;
 import easy.ContainsDuplicateII;
 import easy.CountCompleteTreeNodes;
+import easy.StackUsingQueues;
 
 class LeetCodeExercise 
 {
@@ -251,6 +252,9 @@ class LeetCodeExercise
               case 222:
                 CountCompleteTreeNodes.main();
                 break;
+              case 225:
+                StackUsingQueues.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -398,6 +402,7 @@ class LeetCodeExercise
     System.out.println("217. Contains Duplicate");
     System.out.println("219. Contains Duplicate II");
     System.out.println("222. Count Complete Tree Nodes");
+    System.out.println("225. Implement Stack Using Queues");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
