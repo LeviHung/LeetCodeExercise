@@ -63,6 +63,7 @@ import easy.ContainsDuplicate;
 import easy.ContainsDuplicateII;
 import easy.CountCompleteTreeNodes;
 import easy.StackUsingQueues;
+import easy.InvertBinaryTree;
 import easy.QueueUsingStacks;
 
 class LeetCodeExercise 
@@ -256,6 +257,9 @@ class LeetCodeExercise
               case 225:
                 StackUsingQueues.main();
                 break;
+              case 226:
+                InvertBinaryTree.main();
+                  break;
               case 232:
                 QueueUsingStacks.main();
                 break;
@@ -401,12 +405,13 @@ class LeetCodeExercise
   */
     System.out.println("202. Happy Number");
     System.out.println("203. Remove Linked List Elements");
-    System.out.println("205. IsomorphicStrings");
+    System.out.println("205. Isomorphic Strings");
     System.out.println("206. Reverse Linked List");
     System.out.println("217. Contains Duplicate");
     System.out.println("219. Contains Duplicate II");
     System.out.println("222. Count Complete Tree Nodes");
     System.out.println("225. Implement Stack Using Queues");
+    System.out.println("226. Invert Binary Tree");
     System.out.println("232. Implelemt Queue Using Stacks");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
