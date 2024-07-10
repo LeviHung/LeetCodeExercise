@@ -67,6 +67,7 @@ import easy.InvertBinaryTree;
 import easy.SummaryRanges;
 import easy.PowerOfTwo;
 import easy.QueueUsingStacks;
+import easy.PalindromeLinkedList;
 
 class LeetCodeExercise 
 {
@@ -271,6 +272,9 @@ class LeetCodeExercise
               case 232:
                 QueueUsingStacks.main();
                 break;
+              case 233:
+                PalindromeLinkedList.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -423,6 +427,7 @@ class LeetCodeExercise
     System.out.println("228. Summary Ranges");
     System.out.println("231. Power Of Two");
     System.out.println("232. Implelemt Queue Using Stacks");
+    System.out.println("233. Palindrome Linked List");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
