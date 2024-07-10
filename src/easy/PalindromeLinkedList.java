@@ -4,12 +4,33 @@ import java.util.ArrayList;
 
 public class PalindromeLinkedList
 {  
-  static final int [] array1 = new int [100000];
   public static boolean isPalindrome(ListNode head)
+  {
+    List <Integer> list = new ArrayList<>();
+
+    ListNode tmp = head;
+    while (tmp != null) {
+      list.add(tmp.val);
+      tmp = tmp.next;
+    }
+    int check = list.size() / 2 ;
+    int index = list.size() - 1;
+    tmp = head;
+    while (tmp != null && index >= check ) {
+      if (tmp.val != list.get(index--)) {
+        return false;
+      }
+      tmp = tmp.next;
+    }
+    return true;
+  }
+
+  static final int [] array1 = new int [100000];
+  public static boolean isPalindromeEx(ListNode head)
   {
     // Use array to get better for the runtime.
     //List <Integer> list = new ArrayList<>();
-    
+
     final int [] array = array1;
     ListNode tmp = head;
     int size = 0;
