@@ -65,6 +65,7 @@ import easy.CountCompleteTreeNodes;
 import easy.StackUsingQueues;
 import easy.InvertBinaryTree;
 import easy.QueueUsingStacks;
+import easy.SummaryRanges;
 
 class LeetCodeExercise 
 {
@@ -260,6 +261,9 @@ class LeetCodeExercise
               case 226:
                 InvertBinaryTree.main();
                   break;
+              case 228:
+                SummaryRanges.main();
+                  break;  
               case 232:
                 QueueUsingStacks.main();
                 break;
@@ -412,6 +416,7 @@ class LeetCodeExercise
     System.out.println("222. Count Complete Tree Nodes");
     System.out.println("225. Implement Stack Using Queues");
     System.out.println("226. Invert Binary Tree");
+    System.out.println("228. Summary Ranges");
     System.out.println("232. Implelemt Queue Using Stacks");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
