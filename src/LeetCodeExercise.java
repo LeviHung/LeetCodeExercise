@@ -69,6 +69,7 @@ import easy.PowerOfTwo;
 import easy.QueueUsingStacks;
 import easy.PalindromeLinkedList;
 import easy.ValidAnagram;
+import easy.BinaryTreePaths;
 
 class LeetCodeExercise 
 {
@@ -279,6 +280,9 @@ class LeetCodeExercise
               case 242:
                 ValidAnagram.main();
                 break;
+              case 257:
+                BinaryTreePaths.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -442,6 +446,7 @@ class LeetCodeExercise
     System.out.println("232. Implelemt Queue Using Stacks");
     System.out.println("233. Palindrome Linked List");
     System.out.println("242. Valid Anagram");
+    System.out.println("257. Binary Tree Paths");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
