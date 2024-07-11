@@ -323,6 +323,9 @@ class LeetCodeExercise
               case 252:
                 System.out.println("Subscribe to unlock.");
                 break;
+              case 266:
+                System.out.println("Subscribe to unlock.");
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -471,6 +474,7 @@ class LeetCodeExercise
     System.out.println("243. Shortest Word Distance");
     System.out.println("246. Strobogrammatic Number");
     System.out.println("252. Meeting Rooms");
+    System.out.println("266. Palindrome Permutation");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
