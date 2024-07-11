@@ -72,6 +72,7 @@ import easy.ValidAnagram;
 import easy.BinaryTreePaths;
 import easy.AddDigits;
 import easy.UglyNumber;
+import easy.MissingNumber;
 
 class LeetCodeExercise 
 {
@@ -291,6 +292,9 @@ class LeetCodeExercise
               case 263:
                 UglyNumber.main();
                 break;
+              case 268:
+                MissingNumber.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -460,6 +464,7 @@ class LeetCodeExercise
     System.out.println("257. Binary Tree Paths");
     System.out.println("258. Add Digits");
     System.out.println("263. Ugly Number");
+    System.out.println("268. Missing Number");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
