@@ -78,6 +78,7 @@ import easy.MoveZeroes;
 import easy.WordPattern;
 import easy.NimGame;
 import easy.RangeSumQuery;
+import math.PowerOfThree;
 
 class LeetCodeExercise 
 {
@@ -315,6 +316,9 @@ class LeetCodeExercise
               case 303:
                 RangeSumQuery.main();
                 break;
+              case 326:
+                PowerOfThree.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -496,6 +500,7 @@ class LeetCodeExercise
     System.out.println("292. Nim Game");
     */
     System.out.println("303. Range Sum Query");
+    System.out.println("326. Power Of Three");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
