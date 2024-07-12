@@ -76,6 +76,7 @@ import easy.MissingNumber;
 import easy.FirstBadVersion;
 import easy.MoveZeroes;
 import easy.WordPattern;
+import easy.NimGame;
 
 class LeetCodeExercise 
 {
@@ -307,6 +308,9 @@ class LeetCodeExercise
               case 290:
                 WordPattern.main();
                 break;
+              case 292:
+                NimGame.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -483,6 +487,7 @@ class LeetCodeExercise
     System.out.println("278. First Bad Version");
     System.out.println("283. Move Zeroes");
     System.out.println("290. Word Pattern");
+    System.out.println("292. Nim Game");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
