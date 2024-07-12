@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Arrays;
+
 public class RemoveDuplicateSortedArray
 {
   public static int removeDuplicates(int[] nums)
@@ -52,5 +54,22 @@ public class RemoveDuplicateSortedArray
     str += "Return k.";
 
     System.out.println(str);
+  }
+
+  public static void main()
+  {
+    RemoveDuplicateSortedArray.readme();
+
+    //nums = [1,1,2]
+    int [] nums = {1, 1, 2};
+    System.out.println("removeDuplicates(" + Arrays.toString(nums) + 
+     ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums) + 
+     " " + Arrays.toString(nums));
+
+    //[0,0,1,1,1,2,2,3,3,4]
+    int [] nums2 = {0,0,1,1,1,2,2,3,3,4};
+    System.out.println("removeDuplicates(" + Arrays.toString(nums2) + 
+     ") = " + RemoveDuplicateSortedArray.removeDuplicates(nums2) + 
+     " " + Arrays.toString(nums2));
   }
 }

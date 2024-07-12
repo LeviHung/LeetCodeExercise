@@ -140,4 +140,39 @@ public class AddBinary
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    AddBinary.readme();
+
+    String a = "11";
+    String b = "1";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    a = "0";
+    b = "0";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    a = "0";
+    b = "1";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    a = "1010";
+    b = "1011";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+
+    a =     "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101";
+    b = "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011";
+    System.out.println("addBinaryEx(" + a + ", " + b + ") = " + 
+                       AddBinary.addBinaryEx(a, b));
+
+    System.out.println("addBinaryOpt(" + a + ", " + b + ") = " + 
+     AddBinary.addBinaryOpt(a, b));
+
+    }
 }

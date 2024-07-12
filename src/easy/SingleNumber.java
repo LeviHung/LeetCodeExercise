@@ -63,4 +63,24 @@ public class SingleNumber
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    SingleNumber.readme();
+
+    //nums = [2,2,1] => 1
+    int [] nums = {1, 1, 2};
+    System.out.println("singleNumber(" + Arrays.toString(nums) + 
+     ") = " + SingleNumber.singleNumber(nums));
+
+    //nums = [4,1,2,1,2] => 4
+    int [] nums2 = {4,1,2,1,2};
+    System.out.println("singleNumber(" + Arrays.toString(nums2) + 
+     ") = " + SingleNumber.singleNumber(nums2));
+
+    //nums = [1] => 1
+    int [] nums3 = {1};
+    System.out.println("singleNumber(" + Arrays.toString(nums3) + 
+     ") = " + SingleNumber.singleNumber(nums3));
+  }
 }

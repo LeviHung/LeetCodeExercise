@@ -43,4 +43,46 @@ public class LinkedListCycle
     str += "Return true if there is a cycle in the linked list. Otherwise, return false.";
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    LinkedListCycle.readme();
+
+    // [3,2,0,-4], pos = 1 => true
+    ListNode node4;
+    ListNode node3;
+    ListNode node2 = null;
+
+    node4 = new ListNode(-4);
+    node3 = new ListNode(0, node4);
+    node2 = new ListNode(2, node3);
+    node4.setNext(node2);
+    ListNode list1 = new ListNode(3, node2);
+
+    System.out.println("List 1: ");
+    list1.show();
+
+    System.out.println("hasCycleOpt(list1) = " + 
+                       LinkedListCycle.hasCycleOpt(list1));
+
+    // [1,2]
+    node2 = new ListNode(2);
+    ListNode list2 = new ListNode(1, node2);
+    node2.setNext(list2);
+
+    System.out.println("List 2: ");
+    list2.show();
+
+    System.out.println("hasCycle(list2) = " + 
+                       LinkedListCycle.hasCycle(list2));
+
+    ListNode list3 = new ListNode(1);
+
+    System.out.println("List 3: ");
+    list3.show();
+
+    System.out.println("hasCycle(list3) = " + 
+                       LinkedListCycle.hasCycle(list3));
+
+  }
 }

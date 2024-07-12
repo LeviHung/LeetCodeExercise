@@ -31,4 +31,23 @@ public class ClimbingStairs
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    ClimbingStairs.readme();
+    int n = 2;
+    // n = 2 => 2
+    System.out.println("climbStairs(" + n + ") = " + 
+                       ClimbingStairs.climbStairs(n));
+
+    n = 3;
+    // n = 3 => 3
+    System.out.println("climbStairs(" + n + ") = " +       
+                       ClimbingStairs.climbStairs(n));
+
+    n = 45;
+    // n = 3 => 3
+    System.out.println("climbStairs(" + n + ") = " +       
+                       ClimbingStairs.climbStairs(n));
+  }
 }

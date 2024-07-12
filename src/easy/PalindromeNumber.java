@@ -58,4 +58,23 @@ public class PalindromeNumber
 
         System.out.println(str);
     }
+    
+    public static void main()
+    {
+        int num  = 121;
+    
+        PalindromeNumber.readme();
+        System.out.println("isPalindrome((121)) = " + 
+                           PalindromeNumber.isPalindrome(121));
+    
+        System.out.println("isPalindrome((123)) = " + 
+                           PalindromeNumber.isPalindrome(123));
+    
+        System.out.println("isPalindromeOpt((121)) = " + 
+                           PalindromeNumber.isPalindromeOpt(121));
+    
+        System.out.println("isPalindromeOpt((123)) = " + 
+                           PalindromeNumber.isPalindromeOpt(123));
+    
+      }
 }

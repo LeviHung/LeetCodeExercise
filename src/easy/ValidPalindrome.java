@@ -89,4 +89,23 @@ public class ValidPalindrome
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    ValidPalindrome.readme();
+    // s = "A man, a plan, a canal: Panama"
+    String s = "A man, a plan, a canal: Panama"; 
+    System.out.println("isPalindrome(" + s + ") = " + 
+                        ValidPalindrome.isPalindrome(s));
+
+    // s = "race a car"
+    s = "race a car";
+    System.out.println("isPalindrome(" + s + ") = " + 
+    ValidPalindrome.isPalindrome(s));
+
+    // s = " "
+    s = " ";
+    System.out.println("isPalindrome(" + s + ") = " + 
+    ValidPalindrome.isPalindrome(s));
+  }
 }

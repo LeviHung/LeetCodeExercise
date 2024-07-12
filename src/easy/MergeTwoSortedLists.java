@@ -105,4 +105,32 @@ public class MergeTwoSortedLists
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    MergeTwoSortedLists.readme();
+
+    // list1 = [1, 2, 4], list2 = [1, 3, 4]
+    ListNode node = new ListNode(4);
+    node = new ListNode(2, node);
+    ListNode list1 = new ListNode(1, node);
+
+    System.out.println("List 1: ");
+    list1.show();
+
+    node = new ListNode(4);
+    node = new ListNode(3, node);
+    ListNode list2 = new ListNode(1, node);
+
+    System.out.println("List 2: ");
+    list2.show();
+
+    System.out.println("mergeTwoLists(list1, list2): ");
+    ListNode list3 = MergeTwoSortedLists.mergeTwoLists(list1, list2);
+    list3.show();
+
+    System.out.println("mergeTwoListsOpt(list1, list2): ");
+    ListNode list4 = MergeTwoSortedLists.mergeTwoListsOpt(list1, list2);
+    list4.show();
+  }
 }

@@ -32,4 +32,28 @@ public class LengthOfLastWord
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    LengthOfLastWord.readme();
+
+    // s = "Hello World" => 5
+    String s = "Hello World";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+                       LengthOfLastWord.lengthOfLastWord(s));
+
+    // s = "   fly me   to   the moon  " => 4
+    s = "   fly me   to   the moon  ";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+     LengthOfLastWord.lengthOfLastWord(s));
+
+    // s = "luffy is still joyboy" => 6
+    s = "luffy is still joyboy";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+     LengthOfLastWord.lengthOfLastWord(s));
+
+    s = "a";
+    System.out.println("lengthOfLastWord(" + s + ") = " + 
+     LengthOfLastWord.lengthOfLastWord(s));
+  }
 }

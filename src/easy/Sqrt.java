@@ -68,4 +68,15 @@ public class Sqrt
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    Sqrt.readme();
+    int a = 2147483647;
+         // 2147483647
+    // x = 4 => 2
+    System.out.println("Sqrt(" + a + ") = " + Sqrt.mySqrt(a));
+
+    // x = 8 => 2 (2.8)
+  }
 }

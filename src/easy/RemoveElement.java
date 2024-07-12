@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Arrays;
+
 public class RemoveElement
 {
   public static int removeElement(int[] nums, int val) 
@@ -30,5 +32,24 @@ public class RemoveElement
     str += "Return k.\n";
 
     System.out.println(str);
+  }
+
+  public static void main()
+  {
+    RemoveElement.readme();
+
+    //nums = [1,1,2]
+    int [] nums = {3,2,2,3};
+    int val = 3;
+    System.out.println("removeElement(" + Arrays.toString(nums) + 
+     ", " + val + ") = " + RemoveElement.removeElement(nums, val) + 
+     " " + Arrays.toString(nums));
+
+    //[0,0,1,1,1,2,2,3,3,4]
+    int [] nums2 = {0,1,2,2,3,0,4,2};
+    int val2 = 2;
+    System.out.println("removeDuplicates(" + Arrays.toString(nums2) + 
+    ", " + val2 + ") = " + RemoveElement.removeElement(nums2, val2) + 
+     " " + Arrays.toString(nums2));
   }
 }

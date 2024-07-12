@@ -67,4 +67,41 @@ public class ValidParentheses
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    ValidParentheses.readme();
+
+    String str = "()";
+
+    System.out.println("isValid(" + str + ") = " + 
+                       ValidParentheses.isValid(str));
+
+    String str2 = "()[]{}";
+
+    System.out.println("isValid(" + str2 + ") = " + 
+                       ValidParentheses.isValid(str2));
+
+    String str3 = "(]";
+
+    System.out.println("isValid(" + str3 + ") = " + 
+                       ValidParentheses.isValid(str3));
+
+
+    String str4 = "{[]}";
+
+    System.out.println("isValid(" + str4 + ") = " + 
+                       ValidParentheses.isValid(str4));
+
+    String str5 = "]";
+
+    System.out.println("isValid(" + str5 + ") = " + 
+                       ValidParentheses.isValid(str5));
+
+    String str6 = "{[Str]}";
+
+    System.out.println("isValid(" + str6 + ") = " + 
+                       ValidParentheses.isValidOpt(str6));
+
+  }
 }

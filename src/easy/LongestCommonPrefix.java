@@ -1,6 +1,7 @@
 package easy;
 
 import java.util.HashSet;
+import java.util.Arrays;
 
 public class LongestCommonPrefix
 {
@@ -104,5 +105,28 @@ public class LongestCommonPrefix
     str += "If there is no common prefix, return an empty string \"\"\n";
 
     System.out.println(str);
+  }
+
+  public static void main()
+  {
+    LongestCommonPrefix.readme();
+
+    String [] strs = {"flower", "flow", "flight"};
+
+    System.out.println("longestCommonPrefix(" + Arrays.toString(strs) + 
+                       ") = " +     
+                       LongestCommonPrefix.longestCommonPrefix(strs));
+
+    String [] strs2 = {"dog","racecar","car"};
+
+    System.out.println("longestCommonPrefix(" + Arrays.toString(strs2) + 
+                      ") = " + 
+                       LongestCommonPrefix.longestCommonPrefix(strs2));
+
+    String [] strs3 = {"ab","a"};
+
+    System.out.println("longestCommonPrefix(" + Arrays.toString(strs3) + 
+                   ") = " + 
+                       LongestCommonPrefix.longestCommonPrefixOpt(strs3));
   }
 }

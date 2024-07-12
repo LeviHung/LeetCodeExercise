@@ -39,4 +39,17 @@ public class TwoSum
 
         System.out.println(str);
     }
+    
+    public static void main()
+    {
+        int [] nums = {2, 3, 4};
+        int target = 6;
+
+        TwoSum.readme();
+        System.out.println("twoSum([2, 3, 4], 6) = " + 
+                           TwoSum.twoSum(nums, target)[0] +
+                           ", " +
+                           TwoSum.twoSum(nums, target)[1]);
+
+    }
 }

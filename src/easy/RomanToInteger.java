@@ -76,4 +76,15 @@ public class RomanToInteger
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    RomanToInteger.readme();
+
+    System.out.println("romanToInt(\"XXVII\") = " + 
+                       RomanToInteger.romanToInt("XXVII"));
+    System.out.println("romanToInt(\"MCMXCIV\") = " + 
+                       RomanToInteger.romanToInt("MCMXCIV"));
+  }
+
 }

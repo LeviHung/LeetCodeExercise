@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Arrays;
+
 public class SearchInsertPosition
 {
   public static int searchInsert(int[] nums, int target) 
@@ -54,5 +56,43 @@ public class SearchInsertPosition
     str += "You must write an algorithm with O(log n) runtime complexity.\n";
 
     System.out.println(str);
+  }
+
+  public static void main()
+  {
+    SearchInsertPosition.readme();
+
+    // nums = [1,3,5,6], target = 5 => 2
+    int [] nums = {2,3,5,6};
+    int target = 5;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums) + 
+                ", " + target + ") = " + 
+                SearchInsertPosition.searchInsert(nums, target));
+
+    // nums = [1,3,5,6], target = 2 => 1
+    int [] nums2 = {1,3,5,6};
+    int target2 = 2;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums2) + 
+                ", " + target2 + ") = " + 
+                SearchInsertPosition.searchInsert(nums2, target2));
+
+    // nums = [1,3,5,6], target = 7 => 4
+    int [] nums3 = {1,3,5,6};
+    int target3 = 7;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums3) + 
+                ", " + target3 + ") = " + 
+                SearchInsertPosition.searchInsert(nums3, target3));
+
+    // nums = [1], target = 0 => 0
+    int [] nums4 = {1};
+    int target4 = 2;
+
+    System.out.println("searchInsert(" + Arrays.toString(nums4) + 
+                ", " + target4 + ") = " + 
+                SearchInsertPosition.searchInsert(nums4, target4));
+
   }
 }

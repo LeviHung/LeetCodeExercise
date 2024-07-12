@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Arrays;
+
 public class BestTimeBuySellStock
 {
   public static int maxProfit(int[] prices)   
@@ -46,5 +48,38 @@ public class BestTimeBuySellStock
     str += "Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.\n";
 
     System.out.println(str);
+  }
+
+  public static void main()
+  {
+    BestTimeBuySellStock.readme();
+
+
+    // prices = [7,1,5,3,6,4] => 5
+    int [] prices1 = {7,1,5,3,6,4};
+
+    System.out.println("maxProfit(" + Arrays.toString(prices1) + 
+                     ") = " + BestTimeBuySellStock.maxProfit(prices1));
+
+    //prices = [7,6,4,3,1] => 0
+    int [] prices2 = {7,6,4,3,1};
+    System.out.println("maxProfit(" + Arrays.toString(prices2) + 
+     ") = " + BestTimeBuySellStock.maxProfit(prices2));
+
+
+    int [] prices3 = {1,4,1,4,3,1};
+    System.out.println("maxProfit(" + Arrays.toString(prices3) + 
+          ") = " + BestTimeBuySellStock.maxProfit(prices3));
+
+
+    int [] prices4 = {2, 4, 1};
+    System.out.println("maxProfit(" + Arrays.toString(prices4) + 
+         ") = " + BestTimeBuySellStock.maxProfit(prices4));
+
+
+    int [] prices5 = {3,3,5,0,0,3,1,4};
+    System.out.println("maxProfit(" + Arrays.toString(prices5) + 
+         ") = " + BestTimeBuySellStock.maxProfit(prices5));
+
   }
 }

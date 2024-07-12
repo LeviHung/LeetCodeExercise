@@ -55,4 +55,23 @@ public class PlusOne
 
     System.out.println(str);
   }
+
+  public static void main()
+  {
+    PlusOne.readme();
+    // digits = [1,2,3] => [1,2,4]
+    int[] digits = {1, 2, 3};
+    System.out.println("plusOne(" + Arrays.toString(digits) + ") = " + 
+                       Arrays.toString(PlusOne.plusOne(digits)));
+
+    // digits = [4,3,2,1] => [4,3,2,2]
+    int[] digits2 = {4,3,2,1};
+    System.out.println("plusOne(" + Arrays.toString(digits2) + ") = " + 
+                       Arrays.toString(PlusOne.plusOne(digits2)));
+
+    // digits = [9] => [1,0]
+    int[] digits3 = {9};
+    System.out.println("plusOne(" + Arrays.toString(digits3) + ") = " + 
+                       Arrays.toString(PlusOne.plusOne(digits3)));
+  }
 }

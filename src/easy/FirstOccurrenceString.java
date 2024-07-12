@@ -59,4 +59,52 @@ public class FirstOccurrenceString
 
     System.out.println(str);
   }
+
+
+
+  public static void main()
+  {
+    FirstOccurrenceString.readme();
+    String haystack = "sadbutsad"; 
+    String needle = "sad";
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "leetcode";
+    needle = "leeto";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "mississippi";
+    needle = "issip";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "a";
+    needle = "a";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "aaa";
+    needle = "aaaa";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "mississippi";
+    needle = "sipp";
+
+    System.out.println("strStr(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStr(haystack, needle));
+
+    haystack = "mississippi";
+    needle = "sipp";
+
+    System.out.println("strStrOpt(" + haystack + ", " + needle + 
+      ") = " + FirstOccurrenceString.strStrOpt(haystack, needle));
+
+  }
 }

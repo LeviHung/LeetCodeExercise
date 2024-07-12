@@ -1,6 +1,7 @@
 package easy;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class PascalsTriangle
 {
@@ -67,5 +68,27 @@ public class PascalsTriangle
     str += "In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:\n";
 
     System.out.println(str);
+  }
+
+  public static void main()
+  {
+    PascalsTriangle.readme();
+
+    // numRows = 5 => [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+    int numRows = 5;
+    System.out.println("generate(" + numRows + ") = ");
+    List<List<Integer>> list1 = PascalsTriangle.generate(numRows);
+    System.out.println(Arrays.toString(list1.toArray()));
+
+    // numRows = 1 => [[1]]
+    numRows = 1;
+    System.out.println("generate(" + numRows + ") = ");
+    List<List<Integer>> list2 = PascalsTriangle.generate(numRows);
+    System.out.println(Arrays.toString(list2.toArray()));
+
+    numRows = 20;
+    System.out.println("generateOpt(" + numRows + ") = ");
+    List<List<Integer>> list3 = PascalsTriangle.generateOpt(numRows);
+    System.out.println(Arrays.toString(list3.toArray()));
   }
 }

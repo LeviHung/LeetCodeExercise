@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Arrays;
+
 public class SortedArrayToBinarySearchTree
 {
   private static TreeNode root;
@@ -75,5 +77,25 @@ public class SortedArrayToBinarySearchTree
     String str = "Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.\n";
 
     System.out.println(str);
+  }
+
+  public static void main()
+  {
+    SortedArrayToBinarySearchTree.readme();
+
+    //nums1 = [-10,-3,0,5,9], => [0,-3,9,-10,null,5]
+    int [] nums1 = {-10,-3,0,5,9};
+
+    System.out.print("sortedArrayToBST(" + Arrays.toString(nums1) + 
+                     ") = ");
+    TreeNode tree1 = SortedArrayToBinarySearchTree.sortedArrayToBST(nums1);
+
+    tree1.show();
+    System.out.println("");
+
+    tree1 = SortedArrayToBinarySearchTree.sortedArrayToBSTOpt(nums1);
+
+    tree1.show();
+    System.out.println("");
   }
 }
