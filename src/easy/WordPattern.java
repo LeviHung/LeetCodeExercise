@@ -63,7 +63,7 @@ public class WordPattern
 
     // pattern = "abba", s = "dog dog dog dog" => true;
     pattern = "abba";
-    s = "dog dog dog dog"";
+    s = "dog dog dog dog";
     System.out.println("wordPattern(" + pattern + ", " + s + ") = " + 
                         wordPattern(pattern, s));
 
