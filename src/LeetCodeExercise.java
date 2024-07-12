@@ -74,6 +74,7 @@ import easy.AddDigits;
 import easy.UglyNumber;
 import easy.MissingNumber;
 import easy.FirstBadVersion;
+import easy.MoveZeroes;
 
 class LeetCodeExercise 
 {
@@ -299,6 +300,9 @@ class LeetCodeExercise
               case 278:
                 FirstBadVersion.main();
                 break;
+              case 283:
+                MoveZeroes.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -473,6 +477,7 @@ class LeetCodeExercise
     System.out.println("263. Ugly Number");
     System.out.println("268. Missing Number");
     System.out.println("278. First Bad Version");
+    System.out.println("283. Move Zeroes");
     System.out.println("0. Go Back");
     System.out.println("----------------------------------------");
     System.out.print("Enter a choice: ");
