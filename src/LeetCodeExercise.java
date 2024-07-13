@@ -47,6 +47,7 @@ import math.AddDigits;
 import math.UglyNumber;
 import math.NimGame;
 import math.PowerOfThree;
+import math.CountingBits;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -256,6 +257,9 @@ class LeetCodeExercise
                 break;
               case 326:
                 PowerOfThree.main();
+                break;
+              case 338:
+                CountingBits.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -503,7 +507,7 @@ class LeetCodeExercise
     */
   public static void displayMenu()
   {
-    System.out.println("\n============= Main Menu ================");
+    System.out.println("\n============= Main Menu ==============");
     System.out.println("1. Array");
     System.out.println("2. String");
     System.out.println("3. Math");
@@ -515,13 +519,13 @@ class LeetCodeExercise
     System.out.println("9. Shell");
     System.out.println("10. Premium");
     System.out.println("0. Exit");
-    System.out.println("========================================");
+    System.out.println("======================================");
     System.out.print("Enter a choice: ");
   }
 
   public static void displayArrayMenu()
   {
-    System.out.println("\n--------------- Array ------------------");
+    System.out.println("\n--------------- Array ----------------");
     System.out.println("1. Two Sum");
     System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("27. Remove Element");
@@ -538,13 +542,13 @@ class LeetCodeExercise
     System.out.println("283. Move Zeroes");
     System.out.println("303. Range Sum Query");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
   
   public static void displayStringMenu()
   {
-    System.out.println("\n--------------- String -----------------");
+    System.out.println("\n--------------- String ---------------");
     System.out.println("13. Roman to Integer");
     System.out.println("14. Longes Common Prefix");
     System.out.println("20. Valid Parentheses");
@@ -557,13 +561,13 @@ class LeetCodeExercise
     System.out.println("242. Valid Anagram");
     System.out.println("290. Word Pattern");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 
   public static void displayMathMenu()
   {
-    System.out.println("\n--------------- Math -------------------");
+    System.out.println("\n--------------- Math -----------------");
     System.out.println("9. Palindrome Number");
     System.out.println("66. Plus One");
     System.out.println("69. Sqrt");
@@ -577,14 +581,15 @@ class LeetCodeExercise
     System.out.println("263. Ugly Number");
     System.out.println("292. Nim Game");
     System.out.println("326. Power Of Three");
+    System.out.println("338. Counting Bits");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 
   public static void displayLinkedListMenu()
   {
-    System.out.println("\n--------------- Linked List ------------");
+    System.out.println("\n--------------- Linked List ----------");
     System.out.println("21. Merge Two Sorted Lists");
     System.out.println("83. Remove Duplicates for Sorted List");
     System.out.println("141. Linked List Cycle");
@@ -593,13 +598,13 @@ class LeetCodeExercise
     System.out.println("206. Reverse Linked List");
     System.out.println("233. Palindrome Linked List");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 
   public static void displayTreeMenu()
   {
-    System.out.println("\n--------------- Tree -------------------");
+    System.out.println("\n--------------- Tree -----------------");
     System.out.println("94. Binary Tree Inorder Traversal");
     System.out.println("100. Same Tree");
     System.out.println("101. Symmetric Tree");
@@ -614,33 +619,33 @@ class LeetCodeExercise
     System.out.println("226. Invert Binary Tree");
     System.out.println("257. Binary Tree Paths");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 
   public static void displayStackQueueMenu()
   {
-    System.out.println("\n--------------- Stack Queue ------------");
+    System.out.println("\n--------------- Stack Queue ----------");
     System.out.println("225. Implement Stack Using Queues");
     System.out.println("232. Implelemt Queue Using Stacks");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 
   public static void displaySearchMenu()
   {
-    System.out.println("\n--------------- Search -----------------");
+    System.out.println("\n--------------- Search ---------------");
     System.out.println("35. Search Insert Position");
     System.out.println("278. First Bad Version");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 
   public static void displayDatabaseMenu()
   {
-    System.out.println("\n--------------- Database ---------------");
+    System.out.println("\n--------------- Database -------------");
     System.out.println("175. Combine Two Tables");
     System.out.println("181. Employees Earn More Than Managers");
     System.out.println("182. Duplicate Emails");
@@ -648,22 +653,22 @@ class LeetCodeExercise
     System.out.println("196. Delete Duplicate Emails");    
     System.out.println("197. Rising Temperature");  
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 
   public static void displayShellMenu()
   {
-    System.out.println("\n--------------- Shell ------------------");
+    System.out.println("\n--------------- Shell ----------------");
     System.out.println("193. Valid Phone Numbers");    
     System.out.println("195. Tenth Line");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
   public static void displayPremiumMenu()
   {
-    System.out.println("\n--------------- Premium ----------------");
+    System.out.println("\n--------------- Premium --------------");
     System.out.println("157. Read n Characters Given Read4");
     System.out.println("163. Missing Ranges");
     System.out.println("170. Two Sum III Date Structure");
@@ -674,7 +679,7 @@ class LeetCodeExercise
     System.out.println("270. Closest Binary Search Tree Value");
     System.out.println("293. Flip Game");
     System.out.println("0. Go Back");
-    System.out.println("----------------------------------------");
+    System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
 }
