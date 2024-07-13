@@ -48,6 +48,7 @@ import math.UglyNumber;
 import math.NimGame;
 import math.PowerOfThree;
 import math.CountingBits;
+import math.PowerOfFour;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -260,6 +261,9 @@ class LeetCodeExercise
                 break;
               case 338:
                 CountingBits.main();
+                break;
+              case 342:
+                PowerOfFour.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -582,6 +586,7 @@ class LeetCodeExercise
     System.out.println("292. Nim Game");
     System.out.println("326. Power Of Three");
     System.out.println("338. Counting Bits");
+    System.out.println("342. Power Of Four");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
