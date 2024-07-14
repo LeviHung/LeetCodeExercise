@@ -21,6 +21,7 @@ import array.SummaryRanges;
 import array.MissingNumber;
 import array.MoveZeroes;
 import array.RangeSumQuery;
+import array.IntersectionTwoArrays;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -160,6 +161,9 @@ class LeetCodeExercise
                 break;
               case 303:
                 RangeSumQuery.main();
+                break;
+              case 349:
+                IntersectionTwoArrays.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -556,6 +560,7 @@ class LeetCodeExercise
     System.out.println("268. Missing Number");
     System.out.println("283. Move Zeroes");
     System.out.println("303. Range Sum Query");
+    System.out.println("349. Intersection Two Arrays");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
