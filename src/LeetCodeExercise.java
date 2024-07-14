@@ -34,6 +34,7 @@ import string.IsomorphicStrings;
 import string.ValidAnagram;
 import string.WordPattern;
 import string.ReverseString;
+import string.ReverseVowelsString;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -209,6 +210,9 @@ class LeetCodeExercise
                 break;
               case 344:
                 ReverseString.main();
+                break;
+              case 345:
+                ReverseVowelsString.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -569,6 +573,7 @@ class LeetCodeExercise
     System.out.println("242. Valid Anagram");
     System.out.println("290. Word Pattern");
     System.out.println("344. Reverse String");
+    System.out.println("345. Reverse Vowels String");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
