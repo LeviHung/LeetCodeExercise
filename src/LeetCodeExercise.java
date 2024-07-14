@@ -497,6 +497,9 @@ class LeetCodeExercise
               case 293:
                 System.out.println("Subscribe to unlock.");
                 break;
+              case 346:
+                System.out.println("Subscribe to unlock.");
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -693,6 +696,7 @@ class LeetCodeExercise
     System.out.println("266. Palindrome Permutation");
     System.out.println("270. Closest Binary Search Tree Value");
     System.out.println("293. Flip Game");
+    System.out.println("346. Moving Average From Data Stream");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
