@@ -39,6 +39,7 @@ import string.ReverseString;
 import string.ReverseVowelsString;
 import string.RansomNote;
 import string.FirstUniqueCharacterString;
+import string.FindTheDifference;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -231,6 +232,9 @@ class LeetCodeExercise
                 break;
               case 387:
                 FirstUniqueCharacterString.main();
+                break;
+              case 389:
+                FindTheDifference.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -608,6 +612,7 @@ class LeetCodeExercise
     System.out.println("345. Reverse Vowels String");
     System.out.println("383. Ransom Note");
     System.out.println("387. First Unique Character in a String");
+    System.out.println("389. Find The Difference");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
