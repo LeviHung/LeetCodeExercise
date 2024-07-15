@@ -38,6 +38,7 @@ import string.WordPattern;
 import string.ReverseString;
 import string.ReverseVowelsString;
 import string.RansomNote;
+import string.FirstUniqueCharacterString;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -227,6 +228,9 @@ class LeetCodeExercise
                 break;
               case 383:
                 RansomNote.main();
+                break;
+              case 387:
+                FirstUniqueCharacterString.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -603,6 +607,7 @@ class LeetCodeExercise
     System.out.println("344. Reverse String");
     System.out.println("345. Reverse Vowels String");
     System.out.println("383. Ransom Note");
+    System.out.println("387. First Unique Character in a String");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
