@@ -37,6 +37,7 @@ import string.ValidAnagram;
 import string.WordPattern;
 import string.ReverseString;
 import string.ReverseVowelsString;
+import string.RansomNote;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -223,6 +224,9 @@ class LeetCodeExercise
                 break;
               case 345:
                 ReverseVowelsString.main();
+                break;
+              case 383:
+                RansomNote.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -598,6 +602,7 @@ class LeetCodeExercise
     System.out.println("290. Word Pattern");
     System.out.println("344. Reverse String");
     System.out.println("345. Reverse Vowels String");
+    System.out.println("383. Ransom Note");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
