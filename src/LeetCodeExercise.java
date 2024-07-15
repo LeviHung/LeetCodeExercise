@@ -40,6 +40,7 @@ import string.ReverseVowelsString;
 import string.RansomNote;
 import string.FirstUniqueCharacterString;
 import string.FindTheDifference;
+import string.IsSubsequence;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -235,6 +236,9 @@ class LeetCodeExercise
                 break;
               case 389:
                 FindTheDifference.main();
+                break;
+              case 392:
+                IsSubsequence.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -613,6 +617,7 @@ class LeetCodeExercise
     System.out.println("383. Ransom Note");
     System.out.println("387. First Unique Character in a String");
     System.out.println("389. Find The Difference");
+    System.out.println("392. Is Subsequence");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
