@@ -547,6 +547,9 @@ class LeetCodeExercise
               case 359:
                 System.out.println("Subscribe to unlock.");
                 break;
+              case 408:
+                System.out.println("Subscribe to unlock.");
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -756,6 +759,7 @@ class LeetCodeExercise
     System.out.println("293. Flip Game");
     System.out.println("346. Moving Average From Data Stream");
     System.out.println("359. Logger Rate Limiter");
+    System.out.println("408. Valid Word Abbreviation");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
