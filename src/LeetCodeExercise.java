@@ -59,6 +59,7 @@ import math.CountingBits;
 import math.PowerOfFour;
 import math.ValidPerfectSquare;
 import math.GuessNumberHigherLower;
+import math.BinaryWatch;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -304,6 +305,9 @@ class LeetCodeExercise
                 break;
               case 374:
                 GuessNumberHigherLower.main();
+                break;
+              case 401:
+                BinaryWatch.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -643,6 +647,7 @@ class LeetCodeExercise
     System.out.println("342. Power Of Four");
     System.out.println("367. Valid Perfect Square");
     System.out.println("374. Guess Number Higher or Lower");
+    System.out.println("401. Binary Watch");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
