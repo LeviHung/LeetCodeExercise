@@ -41,6 +41,7 @@ import string.RansomNote;
 import string.FirstUniqueCharacterString;
 import string.FindTheDifference;
 import string.IsSubsequence;
+import string.LongestPalindrome;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -242,6 +243,9 @@ class LeetCodeExercise
                 break;
               case 392:
                 IsSubsequence.main();
+                break;
+              case 409:
+                LongestPalindrome.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -633,6 +637,7 @@ class LeetCodeExercise
     System.out.println("387. First Unique Character in a String");
     System.out.println("389. Find The Difference");
     System.out.println("392. Is Subsequence");
+    System.out.println("409. LongestPalindrome");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
