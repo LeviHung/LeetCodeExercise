@@ -23,6 +23,7 @@ import array.MoveZeroes;
 import array.RangeSumQuery;
 import array.IntersectionTwoArrays;
 import array.IntersectionTwoArraysII;
+import array.ThirdMaximumNumber;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -179,6 +180,9 @@ class LeetCodeExercise
                 break;
               case 350:
                 IntersectionTwoArraysII.main();
+                break;
+              case 414:
+                ThirdMaximumNumber.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -616,6 +620,7 @@ class LeetCodeExercise
     System.out.println("303. Range Sum Query");
     System.out.println("349. Intersection Two Arrays");
     System.out.println("350. Intersection Two ArraysII");
+    System.out.println("414. Third Maximum Number");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
