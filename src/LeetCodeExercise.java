@@ -42,6 +42,7 @@ import string.FirstUniqueCharacterString;
 import string.FindTheDifference;
 import string.IsSubsequence;
 import string.LongestPalindrome;
+import string.FizzBuzz;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -246,6 +247,9 @@ class LeetCodeExercise
                 break;
               case 409:
                 LongestPalindrome.main();
+                break;
+              case 412:
+                FizzBuzz.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -638,6 +642,7 @@ class LeetCodeExercise
     System.out.println("389. Find The Difference");
     System.out.println("392. Is Subsequence");
     System.out.println("409. LongestPalindrome");
+    System.out.println("412. Fizz Buzz");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
