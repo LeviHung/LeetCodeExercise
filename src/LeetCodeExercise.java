@@ -66,6 +66,7 @@ import math.ValidPerfectSquare;
 import math.GuessNumberHigherLower;
 import math.BinaryWatch;
 import math.ConvertNumberToHexadecimal;
+import math.ArrangingCoins;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -333,6 +334,9 @@ class LeetCodeExercise
                 break;
               case 405:
                 ConvertNumberToHexadecimal.main();
+                break;
+              case 441:
+                ArrangingCoins.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -688,6 +692,7 @@ class LeetCodeExercise
     System.out.println("374. Guess Number Higher or Lower");
     System.out.println("401. Binary Watch");
     System.out.println("405. Convert Number To Hexadecimal");
+    System.out.println("441. Arranging Coins");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
