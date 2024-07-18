@@ -50,6 +50,7 @@ import string.FizzBuzz;
 import string.AddStrings;
 import string.NumberOfSegmentsString;
 import string.RepeatedSubstringPattern;
+import string.LicenseKeyFormatting;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -281,6 +282,9 @@ class LeetCodeExercise
                 break;
               case 459:
                 RepeatedSubstringPattern.main();
+                break;
+              case 485:
+                LicenseKeyFormatting.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -693,6 +697,7 @@ class LeetCodeExercise
     System.out.println("415. Add Strings");
     System.out.println("434. Number Of Segments in a String");
     System.out.println("459. Repeated Substring Pattern");
+    System.out.println("485. License Key Formatting");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
