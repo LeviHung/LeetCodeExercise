@@ -26,7 +26,7 @@ public class IslandPerimeter
           
           if (y > 0) {
             if (grid[y-1][x] == 1) {
-              cross + 2;
+              cross += 2;
             }
           } 
         }
