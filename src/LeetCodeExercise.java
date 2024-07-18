@@ -25,6 +25,7 @@ import array.IntersectionTwoArrays;
 import array.IntersectionTwoArraysII;
 import array.ThirdMaximumNumber;
 import array.FindAllNumbersDisappear;
+import array.AssignCookies;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -190,6 +191,9 @@ class LeetCodeExercise
                 break;
               case 448:
                 FindAllNumbersDisappear.main();
+                break;
+              case 455:
+                AssignCookies.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -641,6 +645,7 @@ class LeetCodeExercise
     System.out.println("350. Intersection Two ArraysII");
     System.out.println("414. Third Maximum Number");
     System.out.println("448. Find All Numbers Disappear in an Array");
+    System.out.println("455. Assign Cookies");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
