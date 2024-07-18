@@ -72,6 +72,7 @@ import math.BinaryWatch;
 import math.ConvertNumberToHexadecimal;
 import math.ArrangingCoins;
 import math.HammingDistance;
+import math.NumberComplement;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -357,6 +358,9 @@ class LeetCodeExercise
                 break;
               case 461:
                 HammingDistance.main();
+                break;
+              case 476:
+                NumberComplement.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -718,6 +722,7 @@ class LeetCodeExercise
     System.out.println("405. Convert Number To Hexadecimal");
     System.out.println("441. Arranging Coins");
     System.out.println("461. Hamming Distance");
+    System.out.println("476. Number Complement");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
