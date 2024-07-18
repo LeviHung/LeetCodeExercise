@@ -27,6 +27,7 @@ import array.ThirdMaximumNumber;
 import array.FindAllNumbersDisappear;
 import array.AssignCookies;
 import array.IslandPerimeter;
+import array.MaxConsecutiveOnes;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -203,6 +204,9 @@ class LeetCodeExercise
               case 463:
                 IslandPerimeter.main();
                 break;
+              case 485:
+                MaxConsecutiveOnes.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -283,7 +287,7 @@ class LeetCodeExercise
               case 459:
                 RepeatedSubstringPattern.main();
                 break;
-              case 485:
+              case 482:
                 LicenseKeyFormatting.main();
                 break;
               default:
@@ -667,6 +671,7 @@ class LeetCodeExercise
     System.out.println("448. Find All Numbers Disappear in an Array");
     System.out.println("455. Assign Cookies");
     System.out.println("463. Island Perimeter");
+    System.out.println("485. MaxConsecutiveOnes");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -697,7 +702,7 @@ class LeetCodeExercise
     System.out.println("415. Add Strings");
     System.out.println("434. Number Of Segments in a String");
     System.out.println("459. Repeated Substring Pattern");
-    System.out.println("485. License Key Formatting");
+    System.out.println("482. License Key Formatting");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
