@@ -48,6 +48,7 @@ import string.LongestPalindrome;
 import string.FizzBuzz;
 import string.AddStrings;
 import string.NumberOfSegmentsString;
+import string.RepeatedSubstringPattern;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -271,6 +272,9 @@ class LeetCodeExercise
                 break;
               case 434:
                 NumberOfSegmentsString.main();
+                break;
+              case 459:
+                RepeatedSubstringPattern.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -675,6 +679,7 @@ class LeetCodeExercise
     System.out.println("412. Fizz Buzz");
     System.out.println("415. Add Strings");
     System.out.println("434. Number Of Segments in a String");
+    System.out.println("459. Repeated Substring Pattern");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
