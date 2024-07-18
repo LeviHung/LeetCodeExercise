@@ -70,6 +70,7 @@ import math.GuessNumberHigherLower;
 import math.BinaryWatch;
 import math.ConvertNumberToHexadecimal;
 import math.ArrangingCoins;
+import math.HammingDistance;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -349,6 +350,9 @@ class LeetCodeExercise
                 break;
               case 441:
                 ArrangingCoins.main();
+                break;
+              case 461:
+                HammingDistance.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -708,6 +712,7 @@ class LeetCodeExercise
     System.out.println("401. Binary Watch");
     System.out.println("405. Convert Number To Hexadecimal");
     System.out.println("441. Arranging Coins");
+    System.out.println("461. Hamming Distance");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
