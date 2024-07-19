@@ -79,6 +79,7 @@ import math.ArrangingCoins;
 import math.HammingDistance;
 import math.NumberComplement;
 import math.ConstructRectangle;
+import math.BaseSeven;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -386,6 +387,9 @@ class LeetCodeExercise
                 break;
               case 492:
                 ConstructRectangle.main();
+                break;
+              case 504:
+                BaseSeven.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -757,6 +761,7 @@ class LeetCodeExercise
     System.out.println("461. Hamming Distance");
     System.out.println("476. Number Complement");
     System.out.println("492. ConstructRectangle");
+    System.out.println("504. Base Seven");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
