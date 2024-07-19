@@ -102,6 +102,7 @@ import tree.CountCompleteTreeNodes;
 import tree.InvertBinaryTree;
 import tree.BinaryTreePaths;
 import tree.SumOfLeftLeaves;
+import tree.FindModeBinarySearchTree;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -478,6 +479,9 @@ class LeetCodeExercise
               case 404:
                 SumOfLeftLeaves.main();
                 break;
+              case 501:
+                FindModeBinarySearchTree.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -790,6 +794,7 @@ class LeetCodeExercise
     System.out.println("226. Invert Binary Tree");
     System.out.println("257. Binary Tree Paths");
     System.out.println("404. Sum of Left Leaves");
+    System.out.println("501. Find Mode Binary Search Tree");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
