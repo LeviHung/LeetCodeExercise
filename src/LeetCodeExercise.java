@@ -30,6 +30,7 @@ import array.IslandPerimeter;
 import array.MaxConsecutiveOnes;
 import array.TeemoAttacking;
 import array.NextGreaterElementI;
+import array.RelativeRanks;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -218,6 +219,9 @@ class LeetCodeExercise
                 break;
               case 496:
                 NextGreaterElementI.main();
+                break;
+              case 506:
+                RelativeRanks.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -698,6 +702,7 @@ class LeetCodeExercise
     System.out.println("485. MaxConsecutiveOnes");
     System.out.println("495. TeemoAttacking");
     System.out.println("496. Next Greater ElementI");
+    System.out.println("506. Relative Ranks");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
