@@ -28,6 +28,7 @@ import array.FindAllNumbersDisappear;
 import array.AssignCookies;
 import array.IslandPerimeter;
 import array.MaxConsecutiveOnes;
+import array.TeemoAttacking;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -207,6 +208,9 @@ class LeetCodeExercise
                 break;
               case 485:
                 MaxConsecutiveOnes.main();
+                break;
+              case 495:
+                TeemoAttacking.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -672,10 +676,11 @@ class LeetCodeExercise
     System.out.println("349. Intersection Two Arrays");
     System.out.println("350. Intersection Two ArraysII");
     System.out.println("414. Third Maximum Number");
-    System.out.println("448. Find All Numbers Disappear in an Array");
+    System.out.println("448. Find All Numbers Disappear");
     System.out.println("455. Assign Cookies");
     System.out.println("463. Island Perimeter");
     System.out.println("485. MaxConsecutiveOnes");
+    System.out.println("495. TeemoAttacking");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
