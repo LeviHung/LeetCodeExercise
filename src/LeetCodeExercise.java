@@ -81,6 +81,7 @@ import math.HammingDistance;
 import math.NumberComplement;
 import math.ConstructRectangle;
 import math.BaseSeven;
+import math.PerfectNumber;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -394,6 +395,9 @@ class LeetCodeExercise
                 break;
               case 504:
                 BaseSeven.main();
+                break;
+              case 507:
+                PerfectNumber.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -765,8 +769,9 @@ class LeetCodeExercise
     System.out.println("441. Arranging Coins");
     System.out.println("461. Hamming Distance");
     System.out.println("476. Number Complement");
-    System.out.println("492. ConstructRectangle");
+    System.out.println("492. Construct Rectangle");
     System.out.println("504. Base Seven");
+    System.out.println("507. Perfect Number");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
