@@ -56,6 +56,7 @@ import string.NumberOfSegmentsString;
 import string.RepeatedSubstringPattern;
 import string.LicenseKeyFormatting;
 import string.KeyboardRow;
+import string.DetectCapital;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -311,6 +312,9 @@ class LeetCodeExercise
                 break;
               case 500:
                 KeyboardRow.main();
+                break;
+              case 520:
+                DetectCapital.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -749,6 +753,7 @@ class LeetCodeExercise
     System.out.println("459. Repeated Substring Pattern");
     System.out.println("482. License Key Formatting");
     System.out.println("500. Keyboard Row");
+    System.out.println("520. Detect Capital");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
