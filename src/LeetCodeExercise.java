@@ -57,6 +57,7 @@ import string.RepeatedSubstringPattern;
 import string.LicenseKeyFormatting;
 import string.KeyboardRow;
 import string.DetectCapital;
+import string.LongestUncommonSubsequenceI;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -315,6 +316,9 @@ class LeetCodeExercise
                 break;
               case 520:
                 DetectCapital.main();
+                break;
+              case 521:
+                LongestUncommonSubsequenceI.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -754,6 +758,7 @@ class LeetCodeExercise
     System.out.println("482. License Key Formatting");
     System.out.println("500. Keyboard Row");
     System.out.println("520. Detect Capital");
+    System.out.println("521. LongestUncommonSubsequenceI");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
