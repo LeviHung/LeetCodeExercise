@@ -114,6 +114,7 @@ import tree.SumOfLeftLeaves;
 import tree.FindModeBinarySearchTree;
 import tree.MinimumAbsoluteDifferenceBST;
 import tree.DiameterOfBinaryTree;
+import tree.MaximumDepthNaryTree;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -527,6 +528,9 @@ class LeetCodeExercise
               case 543:
                 DiameterOfBinaryTree.main();
                 break;
+              case 559:
+                MaximumDepthNaryTree.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -856,6 +860,7 @@ class LeetCodeExercise
     System.out.println("501. Find Mode Binary Search Tree");
     System.out.println("530. Minimum Absolute Difference in BST");
     System.out.println("543. Diameter of Binary Tree");
+    System.out.println("559. Maximum Depth N-ary Tree");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
