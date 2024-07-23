@@ -32,6 +32,7 @@ import array.TeemoAttacking;
 import array.NextGreaterElementI;
 import array.RelativeRanks;
 import array.ArrayPartition;
+import array.ReshapeMatrix;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -238,6 +239,9 @@ class LeetCodeExercise
                 break;
               case 561:
                 ArrayPartition.main();
+                break;
+              case 566:
+                ReshapeMatrix.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -758,6 +762,7 @@ class LeetCodeExercise
     System.out.println("496. Next Greater ElementI");
     System.out.println("506. Relative Ranks");
     System.out.println("561. Array Partition");
+    System.out.println("566. Reshape the Matrix");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
