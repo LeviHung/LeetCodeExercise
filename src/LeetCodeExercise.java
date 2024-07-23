@@ -118,6 +118,7 @@ import tree.MinimumAbsoluteDifferenceBST;
 import tree.DiameterOfBinaryTree;
 import tree.MaximumDepthNaryTree;
 import tree.BinaryTreeTilt;
+import tree.SubtreeOfAnotherTree;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -543,6 +544,9 @@ class LeetCodeExercise
               case 563:
                 BinaryTreeTilt.main();
                 break;
+              case 572:
+                SubtreeOfAnotherTree.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -876,6 +880,7 @@ class LeetCodeExercise
     System.out.println("543. Diameter of Binary Tree");
     System.out.println("559. Maximum Depth N-ary Tree");
     System.out.println("563. Binary Tree Tilt");
+    System.out.println("572. Subtree of Another Tree");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
