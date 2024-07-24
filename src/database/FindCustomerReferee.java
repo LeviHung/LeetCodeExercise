@@ -23,6 +23,6 @@ public class FindCustomerReferee
     FindCustomerReferee.readme();
 
     System.out.println("The query statement: ");
-    EmployeeBonus.sqlQuery();
+    FindCustomerReferee.sqlQuery();
   }
 }

@@ -136,6 +136,7 @@ import database.RisingTemperature;
 import database.GamePlayAnalysisI;
 import database.EmployeeBonus;
 import database.FindCustomerReferee;
+import database.CustomerPlacingLargestNumberOrders;
 
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
@@ -635,6 +636,9 @@ class LeetCodeExercise
               case 584:
                 FindCustomerReferee.main();
                 break;
+              case 586:
+                CustomerPlacingLargestNumberOrders.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -931,6 +935,7 @@ class LeetCodeExercise
     System.out.println("511. Game Play Analysis I");
     System.out.println("577. Employee Bonus");
     System.out.println("584. Find Customer Referee");
+    System.out.println("586. Customer Placing Largest Number Orders");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
