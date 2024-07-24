@@ -134,6 +134,7 @@ import database.CustomersWhoNeverOrder;
 import database.DeleteDuplicateEmails;
 import database.RisingTemperature;
 import database.GamePlayAnalysisI;
+import database.EmployeeBonus;
 
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
@@ -627,6 +628,9 @@ class LeetCodeExercise
               case 511:
                 GamePlayAnalysisI.main();
                 break;
+              case 577:
+                EmployeeBonus.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -921,6 +925,7 @@ class LeetCodeExercise
     System.out.println("196. Delete Duplicate Emails");    
     System.out.println("197. Rising Temperature");  
     System.out.println("511. Game Play Analysis I");
+    System.out.println("577. Employee Bonus");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
