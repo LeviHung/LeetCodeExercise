@@ -128,6 +128,7 @@ import stackqueue.QueueUsingStacks;
 
 import search.SearchInsertPosition;
 import search.FirstBadVersion;
+import search.LongestHarmoniousSubsequence;
 
 import database.CombineTwoTables;
 import database.EmployeesEarnMoreThanManagers;
@@ -602,6 +603,9 @@ class LeetCodeExercise
               case 278:
                 FirstBadVersion.main();
                 break;
+              case 594:
+                LongestHarmoniousSubsequence.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -928,6 +932,7 @@ class LeetCodeExercise
     System.out.println("\n--------------- Search ---------------");
     System.out.println("35. Search Insert Position");
     System.out.println("278. First Bad Version");
+    System.out.println("594. Longest Harmonious Subsequence");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
