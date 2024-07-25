@@ -121,6 +121,7 @@ import tree.MaximumDepthNaryTree;
 import tree.BinaryTreeTilt;
 import tree.SubtreeOfAnotherTree;
 import tree.NaryTreePreorderTraversal;
+import tree.NaryTreePostorderTraversal;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -558,6 +559,9 @@ class LeetCodeExercise
               case 589:
                 NaryTreePreorderTraversal.main();
                 break;
+              case 590:
+                NaryTreePostorderTraversal.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -903,6 +907,7 @@ class LeetCodeExercise
     System.out.println("563. Binary Tree Tilt");
     System.out.println("572. Subtree of Another Tree");
     System.out.println("589. Nary Tree Preorder Traversal");
+    System.out.println("590. Nary Tree Postorder Traversal");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");

@@ -4,34 +4,34 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class NaryTreePreorderTraversal
+public class NaryTreePostorderTraversal
 {
-  public static List<Integer> preorder(Node root)
+  public static List<Integer> postorder(Node root)
   {
     List <Integer> list = new ArrayList<>();
-    
-    naryTreePreorder(root, list);
+
+    naryTreePostorder(root, list);
 
     return list;
   }
 
-  public static void naryTreePreorder(Node ntree, List<Integer> list) 
+  public static void naryTreePostorder(Node ntree, List<Integer> list) 
   {
     if (ntree == null) {
       return;
     }
 
-    list.add(ntree.val);
     if (ntree.children != null) {
       for (int i = 0; i < ntree.children.size(); i++) {
-        naryTreePreorder(ntree.children.get(i), list);
+        naryTreePostorder(ntree.children.get(i), list);
       }
     }
+    list.add(ntree.val);
   }
 
   public static void readme()
   {
-    String str = "Given the root of an n-ary tree, return the preorder traversal of its nodes' values.\n\n";
+    String str = "Given the root of an n-ary tree, return the postorder traversal of its nodes' values.\n\n";
 
     str += "Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples).\n";
 
@@ -65,7 +65,7 @@ public class NaryTreePreorderTraversal
     List <Node> list8;
     List <Node> list9;
     List <Node> list11;
-    // root = [1,null,3,2,4,null,5,6] => [1,3,5,6,2,4]
+    // root = [1,null,3,2,4,null,5,6] => [5,6,3,2,4,1]
     //          1
     //    3     2     4
     //  5  6
@@ -90,12 +90,12 @@ public class NaryTreePreorderTraversal
     tree1.show();
     System.out.println("");
 
-    System.out.println("preorder(tree1) = ");  
-    List<Integer> res1 = preorder(tree1);
+    System.out.println("postorder(tree1) = ");  
+    List<Integer> res1 = postorder(tree1);
     System.out.println(Arrays.toString(res1.toArray()));
 
 
-    // root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14] => [1,2,3,6,7,11,14,4,8,12,5,9,13,10]
+    // root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14] => [2,6,14,11,7,3,12,8,4,13,9,10,5,1]
     //             1
     //   2      3         4        5
     //         6  7       8     9    10
@@ -152,8 +152,8 @@ public class NaryTreePreorderTraversal
     tree2.show();
     System.out.println("");
 
-    System.out.println("preorder(tree2 = ");  
-    List<Integer> res2 = preorder(tree2);
+    System.out.println("postorder(tree2 = ");  
+    List<Integer> res2 = postorder(tree2);
     System.out.println(Arrays.toString(res2.toArray()));
   }
 }
