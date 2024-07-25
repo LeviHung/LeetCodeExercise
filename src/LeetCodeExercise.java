@@ -141,6 +141,7 @@ import database.EmployeeBonus;
 import database.FindCustomerReferee;
 import database.CustomerPlacingLargestNumberOrders;
 import database.BigCountries;
+import database.ClassesMoreThanFiveStudents;
 
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
@@ -655,6 +656,9 @@ class LeetCodeExercise
               case 595:
                 BigCountries.main();
                 break;
+              case 596:
+                ClassesMoreThanFiveStudents.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -956,6 +960,7 @@ class LeetCodeExercise
     System.out.println("584. Find Customer Referee");
     System.out.println("586. Customer Placing Largest Number Orders");
     System.out.println("595. Big Countries");
+    System.out.println("596. Classes More Than Five Students");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
