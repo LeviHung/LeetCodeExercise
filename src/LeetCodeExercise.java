@@ -34,6 +34,7 @@ import array.RelativeRanks;
 import array.ArrayPartition;
 import array.ReshapeMatrix;
 import array.DistributeCandies;
+import array.RangeAdditionII;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -255,6 +256,9 @@ class LeetCodeExercise
                 break;
               case 575:
                 DistributeCandies.main();
+                break;
+              case 598:
+                RangeAdditionII.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -808,6 +812,7 @@ class LeetCodeExercise
     System.out.println("561. Array Partition");
     System.out.println("566. Reshape the Matrix");
     System.out.println("575. Distribute Candies");
+    System.out.println("598. RangeAdditionII");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
