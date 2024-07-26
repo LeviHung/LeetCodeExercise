@@ -747,6 +747,9 @@ class LeetCodeExercise
               case 597:
                 System.out.println("Subscribe to unlock.");
                 break;
+              case 603:
+                System.out.println("Subscribe to unlock.");
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1007,6 +1010,7 @@ class LeetCodeExercise
     System.out.println("422. Valid Word Square");
     System.out.println("512. Game Play Analysis II");
     System.out.println("597. Friend Requests I Overall Acceptance Rate");
+    System.out.println("603. Consecutive Available Seats");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
