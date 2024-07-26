@@ -35,6 +35,7 @@ import array.ArrayPartition;
 import array.ReshapeMatrix;
 import array.DistributeCandies;
 import array.RangeAdditionII;
+import array.MinimumIndexSumOfTwoArrays;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -259,6 +260,9 @@ class LeetCodeExercise
                 break;
               case 598:
                 RangeAdditionII.main();
+                break;
+              case 599:
+                MinimumIndexSumOfTwoArrays.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -813,6 +817,7 @@ class LeetCodeExercise
     System.out.println("566. Reshape the Matrix");
     System.out.println("575. Distribute Candies");
     System.out.println("598. RangeAdditionII");
+    System.out.println("599. Minimum Index Sum of Two Arrays");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
