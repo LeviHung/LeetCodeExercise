@@ -148,6 +148,7 @@ import database.BigCountries;
 import database.ClassesMoreThanFiveStudents;
 import database.SalesPerson;
 import database.TriangleJudgement;
+import database.BiggestSingleNumber;
 
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
@@ -683,6 +684,9 @@ class LeetCodeExercise
               case 610:
                 TriangleJudgement.main();
                 break;
+              case 619:
+                BiggestSingleNumber.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1003,6 +1007,7 @@ class LeetCodeExercise
     System.out.println("596. Classes More Than Five Students");
     System.out.println("607. Sales Person");
     System.out.println("610. Triangle Judgement");
+    System.out.println("619. Biggest Single Number");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
