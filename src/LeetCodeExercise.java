@@ -146,6 +146,7 @@ import database.CustomerPlacingLargestNumberOrders;
 import database.BigCountries;
 import database.ClassesMoreThanFiveStudents;
 import database.SalesPerson;
+import database.TriangleJudgement;
 
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
@@ -675,6 +676,9 @@ class LeetCodeExercise
               case 607:
                 SalesPerson.main();
                 break;
+              case 610:
+                TriangleJudgement.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -991,6 +995,7 @@ class LeetCodeExercise
     System.out.println("595. Big Countries");
     System.out.println("596. Classes More Than Five Students");
     System.out.println("607. Sales Person");
+    System.out.println("610. Triangle Judgement");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
