@@ -150,6 +150,7 @@ import database.SalesPerson;
 import database.TriangleJudgement;
 import database.BiggestSingleNumber;
 import database.NotBoringMovies;
+import database.SwapSalary;
 
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
@@ -691,6 +692,9 @@ class LeetCodeExercise
               case 620:
                 NotBoringMovies.main();
                 break;
+              case 627:
+                SwapSalary.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1013,6 +1017,7 @@ class LeetCodeExercise
     System.out.println("610. Triangle Judgement");
     System.out.println("619. Biggest Single Number");
     System.out.println("620. Not Boring Movies");
+    System.out.println("627. Swap Salary");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
