@@ -94,6 +94,7 @@ import math.ConstructRectangle;
 import math.BaseSeven;
 import math.PerfectNumber;
 import math.FibonacciNumber;
+import math.MaximumProductOfThreeNumbers;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -466,6 +467,9 @@ class LeetCodeExercise
                 break;
               case 509:
                 FibonacciNumber.main();
+                break;
+              case 628:
+                MaximumProductOfThreeNumbers.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -926,6 +930,7 @@ class LeetCodeExercise
     System.out.println("504. Base Seven");
     System.out.println("507. Perfect Number");
     System.out.println("509. Fibonacci Number");
+    System.out.println("628. Maximum Product of Three Numbers");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
