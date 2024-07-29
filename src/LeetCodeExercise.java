@@ -68,6 +68,7 @@ import string.LongestUncommonSubsequenceI;
 import string.ReverseStringII;
 import string.StudentAttendanceRecordI;
 import string.ReverseStringIII;
+import string.RobotReturnToOrigin;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -382,6 +383,9 @@ class LeetCodeExercise
                 break;
               case 557:
                 ReverseStringIII.main();
+                break;
+              case 657:
+                RobotReturnToOrigin.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -913,6 +917,7 @@ class LeetCodeExercise
     System.out.println("541. ReverseStringII");
     System.out.println("551. Student Attendance Record I");
     System.out.println("557. Reverse String III");
+    System.out.println("657. Robot Return To Origin");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
