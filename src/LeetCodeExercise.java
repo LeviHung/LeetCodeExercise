@@ -132,6 +132,7 @@ import tree.NaryTreePostorderTraversal;
 import tree.MergeTwoBinaryTrees;
 import tree.AverageOfLevelsBinaryTree;
 import tree.TwoSumIV;
+import tree.SecondMinimumNodeBinaryTree;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -611,6 +612,9 @@ class LeetCodeExercise
               case 653:
                 TwoSumIV.main();
                 break;
+              case 671:
+                SecondMinimumNodeBinaryTree.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1006,6 +1010,7 @@ class LeetCodeExercise
     System.out.println("617. Merge Two Binary Trees");
     System.out.println("637. Average Of Levels in Binary Tree");
     System.out.println("653. Two Sum IV");
+    System.out.println("671. Second Minimum Node Binary Tree");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
