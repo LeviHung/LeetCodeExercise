@@ -38,6 +38,7 @@ import array.RangeAdditionII;
 import array.MinimumIndexSumOfTwoArrays;
 import array.CanPlaceFlowers;
 import array.MaximumAverageSubarrayI;
+import array.ImageSmoother;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -282,6 +283,9 @@ class LeetCodeExercise
                 break;
               case 643:
                 MaximumAverageSubarrayI.main();
+                break;
+              case 661:
+                ImageSmoother.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -880,6 +884,7 @@ class LeetCodeExercise
     System.out.println("599. Minimum Index Sum of Two Arrays");
     System.out.println("605. Can Place Flowers");
     System.out.println("643. Maximum Average Subarray I");
+    System.out.println("661. Image Smoother");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
