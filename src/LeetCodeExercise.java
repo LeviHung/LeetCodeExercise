@@ -39,6 +39,7 @@ import array.MinimumIndexSumOfTwoArrays;
 import array.CanPlaceFlowers;
 import array.MaximumAverageSubarrayI;
 import array.ImageSmoother;
+import array.LongestContinuousIncreasingSubsequence;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -287,6 +288,9 @@ class LeetCodeExercise
                 break;
               case 661:
                 ImageSmoother.main();
+                break;
+              case 674:
+                LongestContinuousIncreasingSubsequence.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -889,6 +893,7 @@ class LeetCodeExercise
     System.out.println("605. Can Place Flowers");
     System.out.println("643. Maximum Average Subarray I");
     System.out.println("661. Image Smoother");
+    System.out.println("674. Longest Continuous Increasing Subsequence");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
