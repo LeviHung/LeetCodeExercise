@@ -148,6 +148,7 @@ import search.SearchInsertPosition;
 import search.FirstBadVersion;
 import search.LongestHarmoniousSubsequence;
 import search.SetMismatch;
+import search.KthLargestElement;
 
 import database.CombineTwoTables;
 import database.EmployeesEarnMoreThanManagers;
@@ -689,6 +690,9 @@ class LeetCodeExercise
               case 645:
                 SetMismatch.main();
                 break;
+              case 703:
+                KthLargestElement.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1068,6 +1072,7 @@ class LeetCodeExercise
     System.out.println("278. First Bad Version");
     System.out.println("594. Longest Harmonious Subsequence");
     System.out.println("645. Set Mismatch");
+    System.out.println("703. Kth Largest Element in a Stream");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
