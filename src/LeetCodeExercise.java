@@ -73,7 +73,8 @@ import string.StudentAttendanceRecordI;
 import string.ReverseStringIII;
 import string.RobotReturnToOrigin;
 import string.ValidPalindromeII;
-  
+import string.CountBinarySubstrings;
+
 import math.PalindromeNumber;
 import math.PlusOne;
 import math.Sqrt;
@@ -404,6 +405,9 @@ class LeetCodeExercise
                 break;
               case 680:
                 ValidPalindromeII.main();
+                break;
+              case 696:
+                CountBinarySubstrings.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -946,6 +950,7 @@ class LeetCodeExercise
     System.out.println("557. Reverse String III");
     System.out.println("657. Robot Return To Origin");
     System.out.println("680. Valid Palindrome II");
+    System.out.println("696. Count Binary Substrings");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
