@@ -71,7 +71,8 @@ import string.ReverseStringII;
 import string.StudentAttendanceRecordI;
 import string.ReverseStringIII;
 import string.RobotReturnToOrigin;
-
+import string.ValidPalindromeII;
+  
 import math.PalindromeNumber;
 import math.PlusOne;
 import math.Sqrt;
@@ -395,6 +396,9 @@ class LeetCodeExercise
                 break;
               case 657:
                 RobotReturnToOrigin.main();
+                break;
+              case 680:
+                ValidPalindromeII.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -932,6 +936,7 @@ class LeetCodeExercise
     System.out.println("551. Student Attendance Record I");
     System.out.println("557. Reverse String III");
     System.out.println("657. Robot Return To Origin");
+    System.out.println("680. Valid Palindrome II");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
