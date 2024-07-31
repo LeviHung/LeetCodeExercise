@@ -1,7 +1,7 @@
 package array;
 import java.util.Arrays;
 
-public class AssignCookies
+public class ArrayPartition
 {
   public static int arrayPairSum(int[] nums)
   {
