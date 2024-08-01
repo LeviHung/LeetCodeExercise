@@ -21,11 +21,11 @@ public class KthLargestElement
 
   public int add(int val)
   {
-    if (pq.size() < k) {
-      pq.add(val);
-    } else if (val > pq.peek()) {
-      pq.poll();
-      pq.add(val);
+    if (pQueue.size() < k) {
+      pQueue.add(val);
+    } else if (val > pQueue.peek()) {
+      pQueue.poll();
+      pQueue.add(val);
     }
     return pQueue.peek();  
     /*
