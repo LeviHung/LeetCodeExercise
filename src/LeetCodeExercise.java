@@ -150,6 +150,7 @@ import search.LongestHarmoniousSubsequence;
 import search.SetMismatch;
 import search.KthLargestElement;
 import search.BinarySearch;
+import search.DesignHashSet;
 
 import database.CombineTwoTables;
 import database.EmployeesEarnMoreThanManagers;
@@ -697,6 +698,9 @@ class LeetCodeExercise
               case 704:
                 BinarySearch.main();
                 break;
+              case 705:
+                DesignHashSet.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1078,6 +1082,7 @@ class LeetCodeExercise
     System.out.println("645. Set Mismatch");
     System.out.println("703. Kth Largest Element in a Stream");
     System.out.println("704. Binary Search");
+    System.out.println("705. Design HashSet");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
