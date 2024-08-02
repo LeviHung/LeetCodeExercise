@@ -42,6 +42,7 @@ import array.ImageSmoother;
 import array.LongestContinuousIncreasingSubsequence;
 import array.BaseballGame;
 import array.DegreeOfArray;
+import array.OneBitTwoBitCharacters;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -308,6 +309,9 @@ class LeetCodeExercise
                 break;
               case 697:
                 DegreeOfArray.main();
+                break;
+              case 717:
+                OneBitTwoBitCharacters.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -940,6 +944,7 @@ class LeetCodeExercise
     System.out.println("674. Longest Continuous Increasing Subsequence");
     System.out.println("682. Baseball Game");
     System.out.println("697. Degree Of an Array");
+    System.out.println("717. One Bit and Two Bit Characters");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
