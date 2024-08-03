@@ -10,8 +10,6 @@ import array.TwoSum;
 import array.RemoveDuplicateSortedArray;
 import array.RemoveElement;
 import array.MergeSortedArray;
-import array.PascalsTriangle;
-import array.PascalsTriangleII;
 import array.BestTimeBuySellStock;
 import array.SingleNumber;
 import array.MajorityElement;
@@ -177,6 +175,8 @@ import database.NotBoringMovies;
 import database.SwapSalary;
 
 import dynamic.ClimbingStairs;
+import dynamic.PascalsTriangle;
+import dynamic.PascalsTriangleII;
 import dynamic.MinCostClimbingStairs;
 
 import shell.ValidPhoneNumbers;
@@ -219,12 +219,6 @@ class LeetCodeExercise
                 break;
               case 88:
                 MergeSortedArray.main();
-                break;
-              case 118:
-                PascalsTriangle.main();
-                break;
-              case 119:
-                PascalsTriangleII.main();
                 break;
               case 121:
                 BestTimeBuySellStock.main();
@@ -814,6 +808,12 @@ class LeetCodeExercise
               case 70:
                 ClimbingStairs.main();
                 break;
+              case 118:
+                PascalsTriangle.main();
+                break;
+              case 119:
+                PascalsTriangleII.main();
+                break;
               case 746:
                 MinCostClimbingStairs.main();
                 break;
@@ -953,8 +953,6 @@ class LeetCodeExercise
     System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("27. Remove Element");
     System.out.println("88. Merge Sorted Array");
-    System.out.println("118. PascalsTriangle");
-    System.out.println("119. PascalsTriangleII");
     System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("136. Single Number");
     System.out.println("169. Majority Element");
@@ -1177,6 +1175,8 @@ class LeetCodeExercise
   {
     System.out.println("\n---------- Dynamic Programming -------");
     System.out.println("70. Climbing Stairs");
+    System.out.println("118. PascalsTriangle");
+    System.out.println("119. PascalsTriangleII");
     System.out.println("746. Min Cost Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
