@@ -1,4 +1,4 @@
-package string;
+package dynamic;
 
 public class IsSubsequence
 {

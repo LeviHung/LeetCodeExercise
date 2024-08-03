@@ -59,7 +59,6 @@ import string.ReverseVowelsString;
 import string.RansomNote;
 import string.FirstUniqueCharacterString;
 import string.FindTheDifference;
-import string.IsSubsequence;
 import string.LongestPalindrome;
 import string.FizzBuzz;
 import string.AddStrings;
@@ -177,6 +176,7 @@ import dynamic.PascalsTriangle;
 import dynamic.PascalsTriangleII;
 import dynamic.BestTimeBuySellStock;
 import dynamic.CountingBits;
+import dynamic.IsSubsequence;
 import dynamic.MinCostClimbingStairs;
 
 import shell.ValidPhoneNumbers;
@@ -380,9 +380,6 @@ class LeetCodeExercise
                 break;
               case 389:
                 FindTheDifference.main();
-                break;
-              case 392:
-                IsSubsequence.main();
                 break;
               case 409:
                 LongestPalindrome.main();
@@ -814,6 +811,9 @@ class LeetCodeExercise
               case 338:
                 CountingBits.main();
                 break;
+              case 392:
+                IsSubsequence.main();
+                break;
               case 746:
                 MinCostClimbingStairs.main();
                 break;
@@ -1010,7 +1010,6 @@ class LeetCodeExercise
     System.out.println("383. Ransom Note");
     System.out.println("387. First Unique Character in a String");
     System.out.println("389. Find The Difference");
-    System.out.println("392. Is Subsequence");
     System.out.println("409. LongestPalindrome");
     System.out.println("412. Fizz Buzz");
     System.out.println("415. Add Strings");
@@ -1177,6 +1176,7 @@ class LeetCodeExercise
     System.out.println("119. PascalsTriangleII");
     System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("338. Counting Bits");
+    System.out.println("392. Is Subsequence");
     System.out.println("746. Min Cost Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
