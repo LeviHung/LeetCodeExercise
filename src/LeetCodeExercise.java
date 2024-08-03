@@ -89,7 +89,6 @@ import math.AddDigits;
 import math.UglyNumber;
 import math.NimGame;
 import math.PowerOfThree;
-import math.CountingBits;
 import math.PowerOfFour;
 import math.ValidPerfectSquare;
 import math.GuessNumberHigherLower;
@@ -177,6 +176,7 @@ import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
 import dynamic.PascalsTriangleII;
 import dynamic.BestTimeBuySellStock;
+import dynamic.CountingBits;
 import dynamic.MinCostClimbingStairs;
 
 import shell.ValidPhoneNumbers;
@@ -481,9 +481,6 @@ class LeetCodeExercise
                 break;
               case 326:
                 PowerOfThree.main();
-                break;
-              case 338:
-                CountingBits.main();
                 break;
               case 342:
                 PowerOfFour.main();
@@ -814,6 +811,9 @@ class LeetCodeExercise
               case 121:
                 BestTimeBuySellStock.main();
                 break;
+              case 338:
+                CountingBits.main();
+                break;
               case 746:
                 MinCostClimbingStairs.main();
                 break;
@@ -1047,7 +1047,6 @@ class LeetCodeExercise
     System.out.println("263. Ugly Number");
     System.out.println("292. Nim Game");
     System.out.println("326. Power Of Three");
-    System.out.println("338. Counting Bits");
     System.out.println("342. Power Of Four");
     System.out.println("367. Valid Perfect Square");
     System.out.println("374. Guess Number Higher or Lower");
@@ -1177,6 +1176,7 @@ class LeetCodeExercise
     System.out.println("118. PascalsTriangle");
     System.out.println("119. PascalsTriangleII");
     System.out.println("121. Best Time to Buy and Sell Stock");
+    System.out.println("338. Counting Bits");
     System.out.println("746. Min Cost Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
