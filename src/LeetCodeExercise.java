@@ -10,7 +10,6 @@ import array.TwoSum;
 import array.RemoveDuplicateSortedArray;
 import array.RemoveElement;
 import array.MergeSortedArray;
-import array.BestTimeBuySellStock;
 import array.SingleNumber;
 import array.MajorityElement;
 import array.ContainsDuplicate;
@@ -177,6 +176,7 @@ import database.SwapSalary;
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
 import dynamic.PascalsTriangleII;
+import dynamic.BestTimeBuySellStock;
 import dynamic.MinCostClimbingStairs;
 
 import shell.ValidPhoneNumbers;
@@ -219,9 +219,6 @@ class LeetCodeExercise
                 break;
               case 88:
                 MergeSortedArray.main();
-                break;
-              case 121:
-                BestTimeBuySellStock.main();
                 break;
               case 136:
                 SingleNumber.main();
@@ -814,6 +811,9 @@ class LeetCodeExercise
               case 119:
                 PascalsTriangleII.main();
                 break;
+              case 121:
+                BestTimeBuySellStock.main();
+                break;
               case 746:
                 MinCostClimbingStairs.main();
                 break;
@@ -953,7 +953,6 @@ class LeetCodeExercise
     System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("27. Remove Element");
     System.out.println("88. Merge Sorted Array");
-    System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("136. Single Number");
     System.out.println("169. Majority Element");
     System.out.println("217. Contains Duplicate");
@@ -1177,6 +1176,7 @@ class LeetCodeExercise
     System.out.println("70. Climbing Stairs");
     System.out.println("118. PascalsTriangle");
     System.out.println("119. PascalsTriangleII");
+    System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("746. Min Cost Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
