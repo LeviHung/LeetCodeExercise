@@ -157,6 +157,7 @@ import search.KthLargestElement;
 import search.BinarySearch;
 import search.DesignHashSet;
 import search.DesignHashMap;
+import search.FindSmallestGreaterThanTarget;
 
 import database.CombineTwoTables;
 import database.EmployeesEarnMoreThanManagers;
@@ -725,6 +726,9 @@ class LeetCodeExercise
               case 706:
                 DesignHashMap.main();
                 break;
+              case 744:
+                FindSmallestGreaterThanTarget.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -880,7 +884,7 @@ class LeetCodeExercise
               case 613:
                 System.out.println("Subscribe to unlock.");
               case 734:
-                System.out.println("Subscribe to unlock.")
+                System.out.println("Subscribe to unlock.");
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1115,6 +1119,7 @@ class LeetCodeExercise
     System.out.println("704. Binary Search");
     System.out.println("705. Design HashSet");
     System.out.println("706. Design HashMap");
+    System.out.println("744. Find Smallest Greater Than Target");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
