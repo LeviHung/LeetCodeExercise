@@ -1,4 +1,4 @@
-package math;
+package dynamic;
 import java.util.HashMap;
 
 public class ClimbingStairs

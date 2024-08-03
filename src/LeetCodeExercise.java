@@ -83,7 +83,6 @@ import string.ToLowerCase;
 import math.PalindromeNumber;
 import math.PlusOne;
 import math.Sqrt;
-import math.ClimbingStairs;
 import math.ExcelSheetColumnTitle;
 import math.ExcelSheetColumnNumber;
 import math.NumberOfOneBits;
@@ -177,6 +176,7 @@ import database.BiggestSingleNumber;
 import database.NotBoringMovies;
 import database.SwapSalary;
 
+import dynamic.ClimbingStairs;
 import dynamic.MinCostClimbingStairs;
 
 import shell.ValidPhoneNumbers;
@@ -463,9 +463,6 @@ class LeetCodeExercise
                 break;
               case 69:
                 Sqrt.main();
-                break;
-              case 70:
-                ClimbingStairs.main();
                 break;
               case 168:
                 ExcelSheetColumnTitle.main();
@@ -814,6 +811,9 @@ class LeetCodeExercise
             subKey = keyboard.nextInt();
             keyboard.nextLine();
             switch (subKey) {
+              case 70:
+                ClimbingStairs.main();
+                break;
               case 746:
                 MinCostClimbingStairs.main();
                 break;
@@ -1041,7 +1041,6 @@ class LeetCodeExercise
     System.out.println("9. Palindrome Number");
     System.out.println("66. Plus One");
     System.out.println("69. Sqrt");
-    System.out.println("70. Climbing Stairs");
     System.out.println("168. Excel Sheet Column Title");
     System.out.println("171. Excel Sheet Column Number");
     System.out.println("191. Number Of One Bits");
@@ -1177,6 +1176,7 @@ class LeetCodeExercise
   public static void displayDynamicMenu()
   {
     System.out.println("\n---------- Dynamic Programming -------");
+    System.out.println("70. Climbing Stairs");
     System.out.println("746. Min Cost Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
