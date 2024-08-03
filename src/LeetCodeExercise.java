@@ -99,7 +99,6 @@ import math.NumberComplement;
 import math.ConstructRectangle;
 import math.BaseSeven;
 import math.PerfectNumber;
-import math.FibonacciNumber;
 import math.MaximumProductOfThreeNumbers;
 import math.BinaryNumberAlternatingBits;
 import math.SelfDividingNumbers;
@@ -177,6 +176,7 @@ import dynamic.PascalsTriangleII;
 import dynamic.BestTimeBuySellStock;
 import dynamic.CountingBits;
 import dynamic.IsSubsequence;
+import dynamic.FibonacciNumber;
 import dynamic.MinCostClimbingStairs;
 
 import shell.ValidPhoneNumbers;
@@ -512,9 +512,6 @@ class LeetCodeExercise
               case 507:
                 PerfectNumber.main();
                 break;
-              case 509:
-                FibonacciNumber.main();
-                break;
               case 628:
                 MaximumProductOfThreeNumbers.main();
                 break;
@@ -814,6 +811,9 @@ class LeetCodeExercise
               case 392:
                 IsSubsequence.main();
                 break;
+              case 509:
+                FibonacciNumber.main();
+                break;
               case 746:
                 MinCostClimbingStairs.main();
                 break;
@@ -1057,7 +1057,6 @@ class LeetCodeExercise
     System.out.println("492. Construct Rectangle");
     System.out.println("504. Base Seven");
     System.out.println("507. Perfect Number");
-    System.out.println("509. Fibonacci Number");
     System.out.println("628. Maximum Product of Three Numbers");
     System.out.println("693. Binary Number Alternating Bits");
     System.out.println("728. Self Dividing Numbers");
@@ -1177,6 +1176,7 @@ class LeetCodeExercise
     System.out.println("121. Best Time to Buy and Sell Stock");
     System.out.println("338. Counting Bits");
     System.out.println("392. Is Subsequence");
+    System.out.println("509. Fibonacci Number");
     System.out.println("746. Min Cost Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
