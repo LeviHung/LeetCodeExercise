@@ -177,6 +177,8 @@ import database.BiggestSingleNumber;
 import database.NotBoringMovies;
 import database.SwapSalary;
 
+import dynamic.MinCostClimbingStairs;
+
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
 
@@ -322,6 +324,9 @@ class LeetCodeExercise
                 break;
               case 733:
                 FloodFill.main();
+                break;
+              case 746:
+                MinCostClimbingStairs.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -805,6 +810,23 @@ class LeetCodeExercise
           break; 
         case 9:
           do {
+            displayDynamicMenu();
+            subKey = keyboard.nextInt();
+            keyboard.nextLine();
+            switch (subKey) {
+              case 746:
+                MinCostClimbingStairs.main();
+                break;
+              default:
+                if (subKey != 0) {
+                  System.out.println("Invalid Input!");
+                }
+                break;
+            }
+          } while (subKey != 0);
+          break; 
+        case 10:
+          do {
             displayShellMenu();
             subKey = keyboard.nextInt();
             keyboard.nextLine();
@@ -824,7 +846,7 @@ class LeetCodeExercise
           } while (subKey != 0);
           break; 
 
-        case 10:
+        case 11:
           do {
             displayPremiumMenu();
             subKey = keyboard.nextInt();
@@ -916,8 +938,9 @@ class LeetCodeExercise
     System.out.println("6. Stack Queue");
     System.out.println("7. Search");
     System.out.println("8. Database");
-    System.out.println("9. Shell");
-    System.out.println("10. Premium");
+    System.out.println("9. Dynamic Programming");
+    System.out.println("10. Shell");
+    System.out.println("11. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -965,6 +988,7 @@ class LeetCodeExercise
     System.out.println("717. One Bit and Two Bit Characters");
     System.out.println("724. Find Pivot Index");
     System.out.println("733. Flood Fill");
+    System.out.println("746. Min Cost Climbing Stairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1150,6 +1174,14 @@ class LeetCodeExercise
     System.out.print("Enter a choice: ");
   }
 
+  public static void displayDynamicMenu()
+  {
+    System.out.println("\n---------- Dynamic Programming -------");
+    System.out.println("746. Min Cost Climbing Stairs");
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
   public static void displayShellMenu()
   {
     System.out.println("\n--------------- Shell ----------------");
