@@ -42,6 +42,7 @@ import array.DegreeOfArray;
 import array.OneBitTwoBitCharacters;
 import array.FindPivotIndex;
 import array.FloodFill;
+import array.LargestNumberAtLeastTwice;
 
 import string.RomanToInteger;
 import string.LongestCommonPrefix;
@@ -316,8 +317,8 @@ class LeetCodeExercise
               case 733:
                 FloodFill.main();
                 break;
-              case 746:
-                MinCostClimbingStairs.main();
+              case 747:
+                LargestNumberAtLeastTwice.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -985,7 +986,7 @@ class LeetCodeExercise
     System.out.println("717. One Bit and Two Bit Characters");
     System.out.println("724. Find Pivot Index");
     System.out.println("733. Flood Fill");
-    System.out.println("746. Min Cost Climbing Stairs");
+    System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
