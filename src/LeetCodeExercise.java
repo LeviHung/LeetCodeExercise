@@ -81,6 +81,7 @@ import math.PerfectNumber;
 import math.MaximumProductOfThreeNumbers;
 import math.BinaryNumberAlternatingBits;
 import math.SelfDividingNumbers;
+import math.PrimeNumberOfSetBits;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -457,6 +458,9 @@ class LeetCodeExercise
                 break;
               case 728:
                 SelfDividingNumbers.main();
+                break;
+              case 762:
+                PrimeNumberOfSetBits.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -1062,6 +1066,7 @@ class LeetCodeExercise
     System.out.println("628. Maximum Product of Three Numbers");
     System.out.println("693. Binary Number Alternating Bits");
     System.out.println("728. Self Dividing Numbers");
+    System.out.println("762. Prime Number Of Set Bits");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
