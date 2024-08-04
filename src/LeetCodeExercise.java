@@ -144,6 +144,7 @@ import hashtable.SetMismatch;
 import hashtable.DegreeOfArray;
 import hashtable.DesignHashSet;
 import hashtable.DesignHashMap;
+import hashtable.ShortestCompletingWord;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -681,7 +682,9 @@ class LeetCodeExercise
               case 706:
                 DesignHashMap.main();
                 break;
-
+              case 748:
+                ShortestCompletingWord.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1141,7 +1144,7 @@ class LeetCodeExercise
     System.out.println("697. Degree Of an Array");
     System.out.println("705. Design HashSet");
     System.out.println("706. Design HashMap");
-
+    System.out.println("748. Shortest Completing Word");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
