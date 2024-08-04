@@ -6,45 +6,32 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.List;
 
-import array.TwoSum;
 import array.RemoveDuplicateSortedArray;
 import array.RemoveElement;
 import array.MergeSortedArray;
 import array.SingleNumber;
-import array.MajorityElement;
-import array.ContainsDuplicate;
-import array.ContainsDuplicateII;
 import array.SummaryRanges;
-import array.MissingNumber;
 import array.MoveZeroes;
 import array.RangeSumQuery;
-import array.IntersectionTwoArrays;
-import array.IntersectionTwoArraysII;
 import array.ThirdMaximumNumber;
-import array.FindAllNumbersDisappear;
 import array.AssignCookies;
 import array.IslandPerimeter;
 import array.MaxConsecutiveOnes;
 import array.TeemoAttacking;
-import array.NextGreaterElementI;
 import array.RelativeRanks;
 import array.ArrayPartition;
 import array.ReshapeMatrix;
-import array.DistributeCandies;
 import array.RangeAdditionII;
-import array.MinimumIndexSumOfTwoArrays;
 import array.CanPlaceFlowers;
 import array.MaximumAverageSubarrayI;
 import array.ImageSmoother;
 import array.LongestContinuousIncreasingSubsequence;
 import array.BaseballGame;
-import array.DegreeOfArray;
 import array.OneBitTwoBitCharacters;
 import array.FindPivotIndex;
 import array.FloodFill;
 import array.LargestNumberAtLeastTwice;
 
-import string.RomanToInteger;
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
 import string.FirstOccurrenceString;
@@ -52,21 +39,13 @@ import string.LengthOfLastWord;
 import string.AddBinary;
 import string.ValidPalindrome;
 import string.ReverseBits;
-import string.IsomorphicStrings;
-import string.ValidAnagram;
-import string.WordPattern;
 import string.ReverseString;
 import string.ReverseVowelsString;
-import string.RansomNote;
-import string.FirstUniqueCharacterString;
-import string.FindTheDifference;
-import string.LongestPalindrome;
 import string.FizzBuzz;
 import string.AddStrings;
 import string.NumberOfSegmentsString;
 import string.RepeatedSubstringPattern;
 import string.LicenseKeyFormatting;
-import string.KeyboardRow;
 import string.DetectCapital;
 import string.LongestUncommonSubsequenceI;
 import string.ReverseStringII;
@@ -83,7 +62,6 @@ import math.Sqrt;
 import math.ExcelSheetColumnTitle;
 import math.ExcelSheetColumnNumber;
 import math.NumberOfOneBits;
-import math.HappyNumber;
 import math.PowerOfTwo;
 import math.AddDigits;
 import math.UglyNumber;
@@ -140,17 +118,40 @@ import tree.TwoSumIV;
 import tree.SecondMinimumNodeBinaryTree;
 import tree.SearchInBinarySearchTree;
 
+import hashtable.TwoSum;
+import hashtable.RomanToInteger;
+import hashtable.MajorityElement;
+import hashtable.HappyNumber;
+import hashtable.IsomorphicStrings;
+import hashtable.ContainsDuplicate;
+import hashtable.ContainsDuplicateII;
+import hashtable.ValidAnagram;
+import hashtable.MissingNumber;
+import hashtable.WordPattern;
+import hashtable.IntersectionTwoArrays;
+import hashtable.IntersectionTwoArraysII;
+import hashtable.RansomNote;
+import hashtable.FirstUniqueCharacterString;
+import hashtable.FindTheDifference;
+import hashtable.LongestPalindrome;
+import hashtable.FindAllNumbersDisappear;
+import hashtable.NextGreaterElementI;
+import hashtable.KeyboardRow;
+import hashtable.DistributeCandies;
+import hashtable.LongestHarmoniousSubsequence;
+import hashtable.MinimumIndexSumOfTwoArrays;
+import hashtable.SetMismatch;
+import hashtable.DegreeOfArray;
+import hashtable.DesignHashSet;
+import hashtable.DesignHashMap;
+
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
 
 import search.SearchInsertPosition;
 import search.FirstBadVersion;
-import search.LongestHarmoniousSubsequence;
-import search.SetMismatch;
 import search.KthLargestElement;
 import search.BinarySearch;
-import search.DesignHashSet;
-import search.DesignHashMap;
 import search.FindSmallestGreaterThanTarget;
 
 import database.CombineTwoTables;
@@ -209,9 +210,6 @@ class LeetCodeExercise
             subKey = keyboard.nextInt();
             keyboard.nextLine();
             switch (subKey) {
-              case 1:
-                TwoSum.main();
-                break;
               case 26:
                 RemoveDuplicateSortedArray.main();
                 break;
@@ -224,38 +222,17 @@ class LeetCodeExercise
               case 136:
                 SingleNumber.main();
                 break;
-              case 169:
-                MajorityElement.main();
-                break;
-              case 217:
-                ContainsDuplicate.main();
-                break;
-              case 219:
-                ContainsDuplicateII.main();
-                break;
               case 228:
                 SummaryRanges.main();
                 break;  
-              case 268:
-                MissingNumber.main();
-                break;
               case 283:
                 MoveZeroes.main();
                 break;
               case 303:
                 RangeSumQuery.main();
                 break;
-              case 349:
-                IntersectionTwoArrays.main();
-                break;
-              case 350:
-                IntersectionTwoArraysII.main();
-                break;
               case 414:
                 ThirdMaximumNumber.main();
-                break;
-              case 448:
-                FindAllNumbersDisappear.main();
                 break;
               case 455:
                 AssignCookies.main();
@@ -269,9 +246,6 @@ class LeetCodeExercise
               case 495:
                 TeemoAttacking.main();
                 break;
-              case 496:
-                NextGreaterElementI.main();
-                break;
               case 506:
                 RelativeRanks.main();
                 break;
@@ -281,14 +255,8 @@ class LeetCodeExercise
               case 566:
                 ReshapeMatrix.main();
                 break;
-              case 575:
-                DistributeCandies.main();
-                break;
               case 598:
                 RangeAdditionII.main();
-                break;
-              case 599:
-                MinimumIndexSumOfTwoArrays.main();
                 break;
               case 605:
                 CanPlaceFlowers.main();
@@ -304,9 +272,6 @@ class LeetCodeExercise
                 break;
               case 682:
                 BaseballGame.main();
-                break;
-              case 697:
-                DegreeOfArray.main();
                 break;
               case 717:
                 OneBitTwoBitCharacters.main();
@@ -334,9 +299,6 @@ class LeetCodeExercise
             subKey = keyboard.nextInt();
             keyboard.nextLine();
             switch (subKey) {
-              case 13:
-                RomanToInteger.main();
-                break;
               case 14:
                 LongestCommonPrefix.main();
                 break;
@@ -358,32 +320,11 @@ class LeetCodeExercise
               case 190:
                 ReverseBits.main();
                 break;
-              case 205:
-                IsomorphicStrings.main();
-                break;
-              case 242:
-                ValidAnagram.main();
-                break;
-              case 290:
-                WordPattern.main();
-                break;
               case 344:
                 ReverseString.main();
                 break;
               case 345:
                 ReverseVowelsString.main();
-                break;
-              case 383:
-                RansomNote.main();
-                break;
-              case 387:
-                FirstUniqueCharacterString.main();
-                break;
-              case 389:
-                FindTheDifference.main();
-                break;
-              case 409:
-                LongestPalindrome.main();
                 break;
               case 412:
                 FizzBuzz.main();
@@ -399,9 +340,6 @@ class LeetCodeExercise
                 break;
               case 482:
                 LicenseKeyFormatting.main();
-                break;
-              case 500:
-                KeyboardRow.main();
                 break;
               case 520:
                 DetectCapital.main();
@@ -461,9 +399,6 @@ class LeetCodeExercise
                 break;
               case 191:
                 NumberOfOneBits.main();
-                break;
-              case 202:
-                HappyNumber.main();
                 break;
               case 231:
                 PowerOfTwo.main();
@@ -661,7 +596,101 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break; 
+
         case 6:
+          do {
+            displayHashTableMenu();
+            subKey = keyboard.nextInt();
+            keyboard.nextLine();
+            switch (subKey) {
+              case 1:
+                TwoSum.main();
+                break;
+              case 13:
+                RomanToInteger.main();
+                break;
+              case 169:
+                MajorityElement.main();
+                break;
+              case 202:
+                HappyNumber.main();
+                break;
+              case 205:
+                IsomorphicStrings.main();
+                break;
+              case 217:
+                ContainsDuplicate.main();
+                break;
+              case 219:
+                ContainsDuplicateII.main();
+                break;
+              case 242:
+                ValidAnagram.main();
+                break;
+              case 268:
+                MissingNumber.main();
+                break;
+              case 290:
+                WordPattern.main();
+                break;
+              case 349:
+                IntersectionTwoArrays.main();
+                break;
+              case 350:
+                IntersectionTwoArraysII.main();
+                break;
+              case 383:
+                RansomNote.main();
+                break;
+              case 387:
+                FirstUniqueCharacterString.main();
+                break;
+              case 389:
+                FindTheDifference.main();
+                break;
+              case 409:
+                LongestPalindrome.main();
+                break;
+              case 448:
+                FindAllNumbersDisappear.main();
+                break;
+              case 496:
+                NextGreaterElementI.main();
+                break;
+              case 500:
+                KeyboardRow.main();
+                break;
+              case 575:
+                DistributeCandies.main();
+                break;
+              case 594:
+                LongestHarmoniousSubsequence.main();
+                break;
+              case 599:
+                MinimumIndexSumOfTwoArrays.main();
+                break;
+              case 645:
+                SetMismatch.main();
+                break;
+              case 697:
+                DegreeOfArray.main();
+                break;
+              case 705:
+                DesignHashSet.main();
+                break;
+              case 706:
+                DesignHashMap.main();
+                break;
+
+              default:
+                if (subKey != 0) {
+                  System.out.println("Invalid Input!");
+                }
+                break;
+            }
+          } while (subKey != 0);
+          break; 
+        case 7:
           do {
             displayStackQueueMenu();
             subKey = keyboard.nextInt();
@@ -681,7 +710,7 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break; 
-        case 7:
+        case 8:
           do {
             displaySearchMenu();
             subKey = keyboard.nextInt();
@@ -693,23 +722,11 @@ class LeetCodeExercise
               case 278:
                 FirstBadVersion.main();
                 break;
-              case 594:
-                LongestHarmoniousSubsequence.main();
-                break;
-              case 645:
-                SetMismatch.main();
-                break;
               case 703:
                 KthLargestElement.main();
                 break;
               case 704:
                 BinarySearch.main();
-                break;
-              case 705:
-                DesignHashSet.main();
-                break;
-              case 706:
-                DesignHashMap.main();
                 break;
               case 744:
                 FindSmallestGreaterThanTarget.main();
@@ -722,7 +739,7 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break; 
-        case 8:
+        case 9:
           do {
             displayDatabaseMenu();
             subKey = keyboard.nextInt();
@@ -788,7 +805,7 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break; 
-        case 9:
+        case 10:
           do {
             displayDynamicMenu();
             subKey = keyboard.nextInt();
@@ -826,7 +843,7 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break; 
-        case 10:
+        case 11:
           do {
             displayShellMenu();
             subKey = keyboard.nextInt();
@@ -847,7 +864,7 @@ class LeetCodeExercise
           } while (subKey != 0);
           break; 
 
-        case 11:
+        case 12:
           do {
             displayPremiumMenu();
             subKey = keyboard.nextInt();
@@ -936,12 +953,13 @@ class LeetCodeExercise
     System.out.println("3. Math");
     System.out.println("4. Linked List");
     System.out.println("5. Tree");
-    System.out.println("6. Stack Queue");
-    System.out.println("7. Search");
-    System.out.println("8. Database");
-    System.out.println("9. Dynamic Programming");
-    System.out.println("10. Shell");
-    System.out.println("11. Premium");
+    System.out.println("6. Hash Table");
+    System.out.println("7. Stack Queue");
+    System.out.println("8. Search");
+    System.out.println("9. Database");
+    System.out.println("10. Dynamic Programming");
+    System.out.println("11. Shell");
+    System.out.println("12. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -950,39 +968,27 @@ class LeetCodeExercise
   public static void displayArrayMenu()
   {
     System.out.println("\n--------------- Array ----------------");
-    System.out.println("1. Two Sum");
     System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("27. Remove Element");
     System.out.println("88. Merge Sorted Array");
     System.out.println("136. Single Number");
-    System.out.println("169. Majority Element");
-    System.out.println("217. Contains Duplicate");
-    System.out.println("219. Contains Duplicate II");
     System.out.println("228. Summary Ranges");
-    System.out.println("268. Missing Number");
     System.out.println("283. Move Zeroes");
     System.out.println("303. Range Sum Query");
-    System.out.println("349. Intersection Two Arrays");
-    System.out.println("350. Intersection Two ArraysII");
     System.out.println("414. Third Maximum Number");
-    System.out.println("448. Find All Numbers Disappear");
     System.out.println("455. Assign Cookies");
     System.out.println("463. Island Perimeter");
     System.out.println("485. MaxConsecutiveOnes");
     System.out.println("495. TeemoAttacking");
-    System.out.println("496. Next Greater ElementI");
     System.out.println("506. Relative Ranks");
     System.out.println("561. Array Partition");
     System.out.println("566. Reshape the Matrix");
-    System.out.println("575. Distribute Candies");
     System.out.println("598. RangeAdditionII");
-    System.out.println("599. Minimum Index Sum of Two Arrays");
     System.out.println("605. Can Place Flowers");
     System.out.println("643. Maximum Average Subarray I");
     System.out.println("661. Image Smoother");
     System.out.println("674. Longest Continuous Increasing Subsequence");
     System.out.println("682. Baseball Game");
-    System.out.println("697. Degree Of an Array");
     System.out.println("717. One Bit and Two Bit Characters");
     System.out.println("724. Find Pivot Index");
     System.out.println("733. Flood Fill");
@@ -995,7 +1001,6 @@ class LeetCodeExercise
   public static void displayStringMenu()
   {
     System.out.println("\n--------------- String ---------------");
-    System.out.println("13. Roman to Integer");
     System.out.println("14. Longes Common Prefix");
     System.out.println("20. Valid Parentheses");
     System.out.println("28. Find the First Occurrence String");
@@ -1003,21 +1008,13 @@ class LeetCodeExercise
     System.out.println("67. Add Binary");
     System.out.println("125. Valid Palindrome");
     System.out.println("190. Reverse Bits");
-    System.out.println("205. Isomorphic Strings");
-    System.out.println("242. Valid Anagram");
-    System.out.println("290. Word Pattern");
     System.out.println("344. Reverse String");
     System.out.println("345. Reverse Vowels String");
-    System.out.println("383. Ransom Note");
-    System.out.println("387. First Unique Character in a String");
-    System.out.println("389. Find The Difference");
-    System.out.println("409. LongestPalindrome");
     System.out.println("412. Fizz Buzz");
     System.out.println("415. Add Strings");
     System.out.println("434. Number Of Segments in a String");
     System.out.println("459. Repeated Substring Pattern");
     System.out.println("482. License Key Formatting");
-    System.out.println("500. Keyboard Row");
     System.out.println("520. Detect Capital");
     System.out.println("521. Longest Uncommon Subsequence I");
     System.out.println("541. ReverseStringII");
@@ -1041,7 +1038,6 @@ class LeetCodeExercise
     System.out.println("168. Excel Sheet Column Title");
     System.out.println("171. Excel Sheet Column Number");
     System.out.println("191. Number Of One Bits");
-    System.out.println("202. Happy Number");
     System.out.println("231. Power Of Two");
     System.out.println("258. Add Digits");
     System.out.println("263. Ugly Number");
@@ -1116,6 +1112,40 @@ class LeetCodeExercise
     System.out.print("Enter a choice: ");
   }
 
+  public static void displayHashTableMenu()
+  {
+    System.out.println("\n--------------- Hash Table -----------");
+    System.out.println("1. Two Sum");
+    System.out.println("13. Roman to Integer");
+    System.out.println("169. Majority Element");
+    System.out.println("202. Happy Number");
+    System.out.println("205. Isomorphic Strings");
+    System.out.println("217. Contains Duplicate");
+    System.out.println("219. Contains Duplicate II");
+    System.out.println("242. Valid Anagram");
+    System.out.println("268. Missing Number");
+    System.out.println("290. Word Pattern");
+    System.out.println("349. Intersection Two Arrays");
+    System.out.println("350. Intersection Two ArraysII");
+    System.out.println("383. Ransom Note");
+    System.out.println("387. First Unique Character in a String");
+    System.out.println("389. Find The Difference");
+    System.out.println("409. LongestPalindrome");
+    System.out.println("448. Find All Numbers Disappear");
+    System.out.println("496. Next Greater ElementI");
+    System.out.println("500. Keyboard Row");
+    System.out.println("575. Distribute Candies");
+    System.out.println("594. Longest Harmonious Subsequence");
+    System.out.println("599. Minimum Index Sum of Two Arrays");
+    System.out.println("645. Set Mismatch");
+    System.out.println("697. Degree Of an Array");
+    System.out.println("705. Design HashSet");
+    System.out.println("706. Design HashMap");
+
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
   public static void displayStackQueueMenu()
   {
     System.out.println("\n--------------- Stack Queue ----------");
@@ -1131,12 +1161,8 @@ class LeetCodeExercise
     System.out.println("\n--------------- Search ---------------");
     System.out.println("35. Search Insert Position");
     System.out.println("278. First Bad Version");
-    System.out.println("594. Longest Harmonious Subsequence");
-    System.out.println("645. Set Mismatch");
     System.out.println("703. Kth Largest Element in a Stream");
     System.out.println("704. Binary Search");
-    System.out.println("705. Design HashSet");
-    System.out.println("706. Design HashMap");
     System.out.println("744. Find Smallest Greater Than Target");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");

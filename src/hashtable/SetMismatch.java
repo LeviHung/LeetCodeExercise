@@ -1,4 +1,4 @@
-package search;
+package hashtable;
 
 import java.util.Arrays;
 

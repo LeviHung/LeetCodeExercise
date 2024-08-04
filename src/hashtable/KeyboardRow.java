@@ -1,4 +1,4 @@
-package string;
+package hashtable;
 
 import java.util.Arrays;
 import java.util.Set;

@@ -2,7 +2,7 @@
 // 06/24/2024
 // LeetCode Exercise
 
-package array;
+package hashtable;
 
 import java.util.HashMap;
 import java.util.Map;

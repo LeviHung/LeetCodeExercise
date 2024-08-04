@@ -1,4 +1,4 @@
-package string;
+package hashtable;
 
 public class RomanToInteger
 {

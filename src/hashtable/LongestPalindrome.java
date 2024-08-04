@@ -1,4 +1,4 @@
-package string;
+package hashtable;
 
 public class LongestPalindrome
 {
@@ -38,7 +38,7 @@ public class LongestPalindrome
 
   public static void main()
   {
-    ValidPalindrome.readme();
+    LongestPalindrome.readme();
     // s = "abccccdd" => 7
     String s = "abccccdd"; 
     System.out.println("longestPalindrome(" + s + ") = " + 
