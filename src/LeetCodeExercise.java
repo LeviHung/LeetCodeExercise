@@ -15,21 +15,17 @@ import array.MoveZeroes;
 import array.RangeSumQuery;
 import array.ThirdMaximumNumber;
 import array.AssignCookies;
-import array.IslandPerimeter;
 import array.MaxConsecutiveOnes;
 import array.TeemoAttacking;
 import array.RelativeRanks;
 import array.ArrayPartition;
-import array.ReshapeMatrix;
 import array.RangeAdditionII;
 import array.CanPlaceFlowers;
 import array.MaximumAverageSubarrayI;
-import array.ImageSmoother;
 import array.LongestContinuousIncreasingSubsequence;
 import array.BaseballGame;
 import array.OneBitTwoBitCharacters;
 import array.FindPivotIndex;
-import array.FloodFill;
 import array.LargestNumberAtLeastTwice;
 
 import string.LongestCommonPrefix;
@@ -186,6 +182,11 @@ import dynamic.MinCostClimbingStairs;
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
 
+import matrix.IslandPerimeter;
+import matrix.ReshapeMatrix;
+import matrix.ImageSmoother;
+import matrix.FloodFill;
+
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -239,9 +240,6 @@ class LeetCodeExercise
               case 455:
                 AssignCookies.main();
                 break;
-              case 463:
-                IslandPerimeter.main();
-                break;
               case 485:
                 MaxConsecutiveOnes.main();
                 break;
@@ -254,9 +252,6 @@ class LeetCodeExercise
               case 561:
                 ArrayPartition.main();
                 break;
-              case 566:
-                ReshapeMatrix.main();
-                break;
               case 598:
                 RangeAdditionII.main();
                 break;
@@ -265,9 +260,6 @@ class LeetCodeExercise
                 break;
               case 643:
                 MaximumAverageSubarrayI.main();
-                break;
-              case 661:
-                ImageSmoother.main();
                 break;
               case 674:
                 LongestContinuousIncreasingSubsequence.main();
@@ -280,9 +272,6 @@ class LeetCodeExercise
                 break;
               case 724:
                 FindPivotIndex.main();
-                break;
-              case 733:
-                FloodFill.main();
                 break;
               case 747:
                 LargestNumberAtLeastTwice.main();
@@ -870,8 +859,34 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break; 
-
         case 12:
+          do {
+            displayMatrixMenu();
+            subKey = keyboard.nextInt();
+            keyboard.nextLine();
+            switch (subKey) {
+              case 463:
+                IslandPerimeter.main();
+                break;
+              case 566:
+                ReshapeMatrix.main();
+                break;
+              case 661:
+                ImageSmoother.main();
+                break;
+              case 733:
+                FloodFill.main();
+                break;
+
+              default:
+                if (subKey != 0) {
+                  System.out.println("Invalid Input!");
+                }
+                break;
+            }
+          } while (subKey != 0);
+          break; 
+        case 13:
           do {
             displayPremiumMenu();
             subKey = keyboard.nextInt();
@@ -968,7 +983,8 @@ class LeetCodeExercise
     System.out.println("9. Database");
     System.out.println("10. Dynamic Programming");
     System.out.println("11. Shell");
-    System.out.println("12. Premium");
+    System.out.println("12. Matrix");
+    System.out.println("13. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -986,21 +1002,17 @@ class LeetCodeExercise
     System.out.println("303. Range Sum Query");
     System.out.println("414. Third Maximum Number");
     System.out.println("455. Assign Cookies");
-    System.out.println("463. Island Perimeter");
     System.out.println("485. MaxConsecutiveOnes");
     System.out.println("495. TeemoAttacking");
     System.out.println("506. Relative Ranks");
     System.out.println("561. Array Partition");
-    System.out.println("566. Reshape the Matrix");
     System.out.println("598. RangeAdditionII");
     System.out.println("605. Can Place Flowers");
     System.out.println("643. Maximum Average Subarray I");
-    System.out.println("661. Image Smoother");
     System.out.println("674. Longest Continuous Increasing Subsequence");
     System.out.println("682. Baseball Game");
     System.out.println("717. One Bit and Two Bit Characters");
     System.out.println("724. Find Pivot Index");
-    System.out.println("733. Flood Fill");
     System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
@@ -1228,6 +1240,20 @@ class LeetCodeExercise
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
+
+  public static void displayMatrixMenu()
+  {
+    System.out.println("\n--------------- Matrix ---------------");
+    System.out.println("463. Island Perimeter");
+    System.out.println("566. Reshape the Matrix");
+    System.out.println("661. Image Smoother");
+    System.out.println("733. Flood Fill");
+
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+  
   public static void displayPremiumMenu()
   {
     System.out.println("\n--------------- Premium --------------");
