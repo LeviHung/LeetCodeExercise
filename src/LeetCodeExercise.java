@@ -145,6 +145,7 @@ import hashtable.DesignHashSet;
 import hashtable.DesignHashMap;
 import hashtable.ShortestCompletingWord;
 import hashtable.JewelsAndStones;
+import hashtable.UniqueMorseCodeWords;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -691,6 +692,9 @@ class LeetCodeExercise
               case 771:
                 JewelsAndStones.main();
                 break;
+              case 804:
+                UniqueMorseCodeWords.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1184,6 +1188,7 @@ class LeetCodeExercise
     System.out.println("706. Design HashMap");
     System.out.println("748. Shortest Completing Word");
     System.out.println("771. Jewels and Stones");
+    System.out.println("804. Unique Morse Code Words");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
