@@ -51,6 +51,7 @@ import string.RobotReturnToOrigin;
 import string.ValidPalindromeII;
 import string.CountBinarySubstrings;
 import string.ToLowerCase;
+import string.RotateString;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -361,6 +362,9 @@ class LeetCodeExercise
                 break;
               case 709:
                 ToLowerCase.main();
+                break;
+              case 796:
+                RotateString.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -1056,6 +1060,7 @@ class LeetCodeExercise
     System.out.println("680. Valid Palindrome II");
     System.out.println("696. Count Binary Substrings");
     System.out.println("709. To Lower Case");
+    System.out.println("796. Rotate String");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
