@@ -964,6 +964,8 @@ class LeetCodeExercise
                 System.out.println("Subscribe to unlock.");
               case 760:
                 System.out.println("Subscribe to unlock.");
+              case 800:
+                System.out.println("Subscribe to unlock.");
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1295,6 +1297,7 @@ class LeetCodeExercise
     System.out.println("613. Shortest Distance in a Line");
     System.out.println("734. Sentence Similarity");
     System.out.println("760. Find Anagram Mappings");
+    System.out.println("800. Similar Rgb Color");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
