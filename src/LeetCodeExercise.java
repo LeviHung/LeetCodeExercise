@@ -114,6 +114,7 @@ import tree.AverageOfLevelsBinaryTree;
 import tree.TwoSumIV;
 import tree.SecondMinimumNodeBinaryTree;
 import tree.SearchInBinarySearchTree;
+import tree.MinimumDistanceBSTNodes;
 
 import hashtable.TwoSum;
 import hashtable.RomanToInteger;
@@ -583,6 +584,9 @@ class LeetCodeExercise
                 break;
               case 700:
                 SearchInBinarySearchTree.main();
+                break;
+              case 783:
+                MinimumDistanceBSTNodes.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -1136,6 +1140,7 @@ class LeetCodeExercise
     System.out.println("653. Two Sum IV");
     System.out.println("671. Second Minimum Node Binary Tree");
     System.out.println("700. Search In Binary Search Tree");
+    System.out.println("783. Minimum Distance between BST Nodes");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
