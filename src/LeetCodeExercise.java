@@ -193,6 +193,8 @@ import matrix.ImageSmoother;
 import matrix.FloodFill;
 import matrix.ToeplitzMatrix;
 
+import geometry.LargestTriangleArea;
+
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -909,7 +911,24 @@ class LeetCodeExercise
             }
           } while (subKey != 0);
           break; 
-        case 13:
+          case 13:
+            do {
+              displayGeometryMenu();
+              subKey = keyboard.nextInt();
+              keyboard.nextLine();
+              switch (subKey) {
+                case 812:
+                  LargestTriangleArea.main();
+                  break;
+                default:
+                  if (subKey != 0) {
+                    System.out.println("Invalid Input!");
+                  }
+                  break;
+              }
+            } while (subKey != 0);
+            break; 
+        case 14:
           do {
             displayPremiumMenu();
             subKey = keyboard.nextInt();
@@ -968,12 +987,16 @@ class LeetCodeExercise
                 break;
               case 613:
                 System.out.println("Subscribe to unlock.");
+                break;
               case 734:
                 System.out.println("Subscribe to unlock.");
+                break;
               case 760:
                 System.out.println("Subscribe to unlock.");
+                break;
               case 800:
                 System.out.println("Subscribe to unlock.");
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1009,7 +1032,8 @@ class LeetCodeExercise
     System.out.println("10. Dynamic Programming");
     System.out.println("11. Shell");
     System.out.println("12. Matrix");
-    System.out.println("13. Premium");
+    System.out.println("13. Geometry");
+    System.out.println("14. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -1283,7 +1307,16 @@ class LeetCodeExercise
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
   }
-  
+
+  public static void displayGeometryMenu()
+  {
+    System.out.println("\n--------------- Geometry -------------");
+    System.out.println("812. Largest Triangle Area");
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+
   public static void displayPremiumMenu()
   {
     System.out.println("\n--------------- Premium --------------");
