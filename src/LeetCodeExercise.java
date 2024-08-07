@@ -199,6 +199,7 @@ import matrix.ToeplitzMatrix;
 import matrix.FlippingImage;
 
 import geometry.LargestTriangleArea;
+import geometry.RectangleOverlap;
 
 class LeetCodeExercise 
 {
@@ -940,6 +941,9 @@ class LeetCodeExercise
                 case 812:
                   LargestTriangleArea.main();
                   break;
+                case 836:
+                  RectangleOverlap.main();
+                  break;
                 default:
                   if (subKey != 0) {
                     System.out.println("Invalid Input!");
@@ -1337,6 +1341,7 @@ class LeetCodeExercise
   {
     System.out.println("\n--------------- Geometry -------------");
     System.out.println("812. Largest Triangle Area");
+    System.out.println("836. Rectangle Overlap");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
