@@ -53,6 +53,7 @@ import string.ValidPalindromeII;
 import string.CountBinarySubstrings;
 import string.ToLowerCase;
 import string.RotateString;
+import string.MostCommonWord;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -372,6 +373,9 @@ class LeetCodeExercise
                 break;
               case 796:
                 RotateString.main();
+                break;
+              case 819:
+                MostCommonWord.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -1096,6 +1100,7 @@ class LeetCodeExercise
     System.out.println("696. Count Binary Substrings");
     System.out.println("709. To Lower Case");
     System.out.println("796. Rotate String");
+    System.out.println("819. Most Common Word");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
