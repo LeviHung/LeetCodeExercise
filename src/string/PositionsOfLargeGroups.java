@@ -91,8 +91,16 @@ public class PositionsOfLargeGroups
     List<List<Integer>> list2 = largeGroupPositions(s);
     System.out.println(Arrays.toString(list2.toArray()));
 
-    System.out.println("largeGroupPositionsOpt(" + s + ") = ");
-    List<List<Integer>> list3 = largeGroupPositionsOpt(s);
+
+    // s = "abcdddeeeeaabbbcd" => [[3,5],[6,9],[12,14]]
+    s = "abcdddeeeeaabbbcd";
+    System.out.println("largeGroupPositions(" + s + ") = ");
+    List<List<Integer>> list3 = largeGroupPositions(s);
     System.out.println(Arrays.toString(list3.toArray()));
+
+    System.out.println("largeGroupPositionsOpt(" + s + ") = ");
+    List<List<Integer>> list4 = largeGroupPositionsOpt(s);
+    System.out.println(Arrays.toString(list4.toArray()));
+
   }
 }
