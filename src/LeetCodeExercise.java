@@ -54,6 +54,7 @@ import string.CountBinarySubstrings;
 import string.ToLowerCase;
 import string.RotateString;
 import string.MostCommonWord;
+import string.ShortestDistanceToCharacter;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -376,6 +377,9 @@ class LeetCodeExercise
                 break;
               case 819:
                 MostCommonWord.main();
+                break;
+              case 821:
+                ShortestDistanceToCharacter.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -1101,6 +1105,7 @@ class LeetCodeExercise
     System.out.println("709. To Lower Case");
     System.out.println("796. Rotate String");
     System.out.println("819. Most Common Word");
+    System.out.println("821. Shortest Distance To a Character");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
