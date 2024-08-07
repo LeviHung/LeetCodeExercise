@@ -56,6 +56,7 @@ import string.RotateString;
 import string.MostCommonWord;
 import string.ShortestDistanceToCharacter;
 import string.GoatLatin;
+import string.PositionsOfLargeGroups;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -384,6 +385,9 @@ class LeetCodeExercise
                 break;
               case 824:
                 GoatLatin.main();
+                break;
+              case 830:
+                PositionsOfLargeGroups.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -1111,6 +1115,7 @@ class LeetCodeExercise
     System.out.println("819. Most Common Word");
     System.out.println("821. Shortest Distance To a Character");
     System.out.println("824. Goat Latin");
+    System.out.println("830. Positions Of Large Groups");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
