@@ -196,6 +196,7 @@ import matrix.ReshapeMatrix;
 import matrix.ImageSmoother;
 import matrix.FloodFill;
 import matrix.ToeplitzMatrix;
+import matrix.FlippingImage;
 
 import geometry.LargestTriangleArea;
 
@@ -919,6 +920,9 @@ class LeetCodeExercise
               case 766:
                 ToeplitzMatrix.main();
                 break;
+              case 832:
+                FlippingImage.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1323,6 +1327,7 @@ class LeetCodeExercise
     System.out.println("661. Image Smoother");
     System.out.println("733. Flood Fill");
     System.out.println("766. Toeplitz Matrix");
+    System.out.println("832. Flipping Image");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
