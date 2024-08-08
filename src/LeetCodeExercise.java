@@ -205,6 +205,8 @@ import matrix.TransposeMatrix;
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
 
+import bit.BinaryGap;
+
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -970,6 +972,23 @@ class LeetCodeExercise
             break; 
         case 14:
           do {
+            displayBitMenu();
+            subKey = keyboard.nextInt();
+            keyboard.nextLine();
+            switch (subKey) {
+              case 868:
+                BinaryGap.main();
+                break;
+              default:
+                if (subKey != 0) {
+                  System.out.println("Invalid Input!");
+                }
+                break;
+            }
+          } while (subKey != 0);
+          break; 
+        case 15:
+          do {
             displayPremiumMenu();
             subKey = keyboard.nextInt();
             keyboard.nextLine();
@@ -1073,7 +1092,8 @@ class LeetCodeExercise
     System.out.println("11. Shell");
     System.out.println("12. Matrix");
     System.out.println("13. Geometry");
-    System.out.println("14. Premium");
+    System.out.println("14. Bit Manipulation");
+    System.out.println("15. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -1362,6 +1382,15 @@ class LeetCodeExercise
     System.out.println("\n--------------- Geometry -------------");
     System.out.println("812. Largest Triangle Area");
     System.out.println("836. Rectangle Overlap");
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+
+  public static void displayBitMenu()
+  {
+    System.out.println("\n--------------- Bit Manipulation -----");
+    System.out.println("868. Binary Gap");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
