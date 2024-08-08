@@ -28,6 +28,7 @@ import array.OneBitTwoBitCharacters;
 import array.FindPivotIndex;
 import array.LargestNumberAtLeastTwice;
 import array.NumberOfLinesWriteString;
+import array.LemonadeChange;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -199,6 +200,7 @@ import matrix.ImageSmoother;
 import matrix.FloodFill;
 import matrix.ToeplitzMatrix;
 import matrix.FlippingImage;
+import matrix.TransposeMatrix;
 
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
@@ -294,6 +296,9 @@ class LeetCodeExercise
                 break;
               case 806:
                 NumberOfLinesWriteString.main();
+                break;
+              case 860:
+                LemonadeChange.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -932,6 +937,9 @@ class LeetCodeExercise
               case 832:
                 FlippingImage.main();
                 break;
+              case 867:
+                TransposeMatrix.main();
+                break;
               default:
                 if (subKey != 0) {
                   System.out.println("Invalid Input!");
@@ -1096,6 +1104,7 @@ class LeetCodeExercise
     System.out.println("724. Find Pivot Index");
     System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("806. Number Of Lines to Write String");
+    System.out.println("860. Lemonade Change");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1342,6 +1351,7 @@ class LeetCodeExercise
     System.out.println("733. Flood Fill");
     System.out.println("766. Toeplitz Matrix");
     System.out.println("832. Flipping Image");
+    System.out.println("867. Transpose Matrix");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
