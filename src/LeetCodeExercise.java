@@ -227,848 +227,847 @@ class LeetCodeExercise
       keyboard.nextLine();
 
       switch (inputKey) {
-        case 1:
-          do {
-            displayArrayMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 26:
-                RemoveDuplicateSortedArray.main();
-                break;
-              case 27:
-                RemoveElement.main();
-                break;
-              case 88:
-                MergeSortedArray.main();
-                break;
-              case 136:
-                SingleNumber.main();
-                break;
-              case 228:
-                SummaryRanges.main();
-                break;  
-              case 283:
-                MoveZeroes.main();
-                break;
-              case 303:
-                RangeSumQuery.main();
-                break;
-              case 414:
-                ThirdMaximumNumber.main();
-                break;
-              case 455:
-                AssignCookies.main();
-                break;
-              case 485:
-                MaxConsecutiveOnes.main();
-                break;
-              case 495:
-                TeemoAttacking.main();
-                break;
-              case 506:
-                RelativeRanks.main();
-                break;
-              case 561:
-                ArrayPartition.main();
-                break;
-              case 598:
-                RangeAdditionII.main();
-                break;
-              case 605:
-                CanPlaceFlowers.main();
-                break;
-              case 643:
-                MaximumAverageSubarrayI.main();
-                break;
-              case 674:
-                LongestContinuousIncreasingSubsequence.main();
-                break;
-              case 682:
-                BaseballGame.main();
-                break;
-              case 717:
-                OneBitTwoBitCharacters.main();
-                break;
-              case 724:
-                FindPivotIndex.main();
-                break;
-              case 747:
-                LargestNumberAtLeastTwice.main();
-                break;
-              case 806:
-                NumberOfLinesWriteString.main();
-                break;
-              case 860:
-                LemonadeChange.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
+      case 1:
+        do {
+          displayArrayMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 26:
+            RemoveDuplicateSortedArray.main();
+            break;
+          case 27:
+            RemoveElement.main();
+            break;
+          case 88:
+            MergeSortedArray.main();
+            break;
+          case 136:
+            SingleNumber.main();
+            break;
+          case 228:
+            SummaryRanges.main();
+            break;  
+          case 283:
+            MoveZeroes.main();
+            break;
+          case 303:
+            RangeSumQuery.main();
+            break;
+          case 414:
+            ThirdMaximumNumber.main();
+            break;
+          case 455:
+            AssignCookies.main();
+            break;
+          case 485:
+            MaxConsecutiveOnes.main();
+            break;
+          case 495:
+            TeemoAttacking.main();
+            break;
+          case 506:
+            RelativeRanks.main();
+            break;
+          case 561:
+            ArrayPartition.main();
+            break;
+          case 598:
+            RangeAdditionII.main();
+            break;
+          case 605:
+            CanPlaceFlowers.main();
+            break;
+          case 643:
+            MaximumAverageSubarrayI.main();
+            break;
+          case 674:
+            LongestContinuousIncreasingSubsequence.main();
+            break;
+          case 682:
+            BaseballGame.main();
+            break;
+          case 717:
+            OneBitTwoBitCharacters.main();
+            break;
+          case 724:
+            FindPivotIndex.main();
+            break;
+          case 747:
+            LargestNumberAtLeastTwice.main();
+            break;
+          case 806:
+            NumberOfLinesWriteString.main();
+            break;
+          case 860:
+            LemonadeChange.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
             }
-          } while (subKey != 0);
-          break; 
-        case 2:
-          do {
-            displayStringMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 14:
-                LongestCommonPrefix.main();
-                break;
-              case 20:
-                ValidParentheses.main();
-                break;
-              case 28:
-                FirstOccurrenceString.main();
-                break;
-              case 58:
-                LengthOfLastWord.main();
-                break;
-              case 125:
-                ValidPalindrome.main();
-                break;
-              case 344:
-                ReverseString.main();
-                break;
-              case 345:
-                ReverseVowelsString.main();
-                break;
-              case 412:
-                FizzBuzz.main();
-                break;
-              case 415:
-                AddStrings.main();
-                break;
-              case 434:
-                NumberOfSegmentsString.main();
-                break;
-              case 459:
-                RepeatedSubstringPattern.main();
-                break;
-              case 482:
-                LicenseKeyFormatting.main();
-                break;
-              case 520:
-                DetectCapital.main();
-                break;
-              case 521:
-                LongestUncommonSubsequenceI.main();
-                break;
-              case 541:
-                ReverseStringII.main();
-                break;
-              case 551:
-                StudentAttendanceRecordI.main();
-                break;
-              case 557:
-                ReverseStringIII.main();
-                break;
-              case 657:
-                RobotReturnToOrigin.main();
-                break;
-              case 680:
-                ValidPalindromeII.main();
-                break;
-              case 696:
-                CountBinarySubstrings.main();
-                break;
-              case 709:
-                ToLowerCase.main();
-                break;
-              case 796:
-                RotateString.main();
-                break;
-              case 819:
-                MostCommonWord.main();
-                break;
-              case 821:
-                ShortestDistanceToCharacter.main();
-                break;
-              case 824:
-                GoatLatin.main();
-                break;
-              case 830:
-                PositionsOfLargeGroups.main();
-                break;
-              case 844:
-                BackspaceStringCompare.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
+            break;
             }
-          } while (subKey != 0);
-          break; 
-        case 3:
-          do {
-            displayMathMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 9:
-                PalindromeNumber.main();
-                break;
-              case 66:
-                PlusOne.main();
-                break;
-              case 69:
-                Sqrt.main();
-                break;
-              case 168:
-                ExcelSheetColumnTitle.main();
-                break;
-              case 171:
-                ExcelSheetColumnNumber.main();
-                break;
-              case 231:
-                PowerOfTwo.main();
-                break;
-              case 258:
-                AddDigits.main();
-                break;
-              case 263:
-                UglyNumber.main();
-                break;
-              case 292:
-                NimGame.main();
-                break;
-              case 326:
-                PowerOfThree.main();
-                break;
-              case 342:
-                PowerOfFour.main();
-                break;
-              case 367:
-                ValidPerfectSquare.main();
-                break;
-              case 374:
-                GuessNumberHigherLower.main();
-                break;
-              case 441:
-                ArrangingCoins.main();
-                break;
-              case 492:
-                ConstructRectangle.main();
-                break;
-              case 504:
-                BaseSeven.main();
-                break;
-              case 507:
-                PerfectNumber.main();
-                break;
-              case 628:
-                MaximumProductOfThreeNumbers.main();
-                break;
-              case 728:
-                SelfDividingNumbers.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
+        } while (subKey != 0);
+        break; 
+      case 2:
+        do {
+          displayStringMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 14:
+            LongestCommonPrefix.main();
+            break;
+          case 20:
+            ValidParentheses.main();
+            break;
+          case 28:
+            FirstOccurrenceString.main();
+            break;
+          case 58:
+            LengthOfLastWord.main();
+            break;
+          case 125:
+            ValidPalindrome.main();
+            break;
+          case 344:
+            ReverseString.main();
+            break;
+          case 345:
+            ReverseVowelsString.main();
+            break;
+          case 412:
+            FizzBuzz.main();
+            break;
+          case 415:
+            AddStrings.main();
+            break;
+          case 434:
+            NumberOfSegmentsString.main();
+            break;
+          case 459:
+            RepeatedSubstringPattern.main();
+            break;
+          case 482:
+            LicenseKeyFormatting.main();
+            break;
+          case 520:
+            DetectCapital.main();
+            break;
+          case 521:
+            LongestUncommonSubsequenceI.main();
+            break;
+          case 541:
+            ReverseStringII.main();
+            break;
+          case 551:
+            StudentAttendanceRecordI.main();
+            break;
+          case 557:
+            ReverseStringIII.main();
+            break;
+          case 657:
+            RobotReturnToOrigin.main();
+            break;
+          case 680:
+            ValidPalindromeII.main();
+            break;
+          case 696:
+            CountBinarySubstrings.main();
+            break;
+          case 709:
+            ToLowerCase.main();
+            break;
+          case 796:
+            RotateString.main();
+            break;
+          case 819:
+            MostCommonWord.main();
+            break;
+          case 821:
+            ShortestDistanceToCharacter.main();
+            break;
+          case 824:
+            GoatLatin.main();
+            break;
+          case 830:
+            PositionsOfLargeGroups.main();
+            break;
+          case 844:
+            BackspaceStringCompare.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
             }
-          } while (subKey != 0);
-          break; 
-            
-        case 4:
-          do {
-            displayLinkedListMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 21:
-                MergeTwoSortedLists.main();
-                break;
-              case 83:
-                RemoveDuplicateSortedList.main();
-                break;
-              case 141:
-                LinkedListCycle.main();
-                break;
-              case 160:
-                IntersectionTwoLinkedLists.main();
-                break;
-              case 203:
-                RemoveLinkedListElements.main();
-                break;
-              case 206:
-                ReverseLinkedList.main();
-                break;
-              case 233:
-                PalindromeLinkedList.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 5:
-          do {
-            displayTreeMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 94:
-                BinaryTreeInorderTraversal.main();
-                break;
-              case 100:
-                SameTree.main();
-                break;
-              case 101:
-                SymmetricTree.main();
-                break;
-              case 104:
-                MaximumDepthBinaryTree.main();
-                break;
-              case 108:
-                SortedArrayToBinarySearchTree.main();
-                break;
-              case 110:
-                BalancedBinaryTree.main();
-                break;
-              case 111:
-                MinimumDepthBinaryTree.main();
-                break;
-              case 112:
-                PathSum.main();
-                break;
-              case 144:
-                BinaryTreePreorderTraversal.main();
-                break;
-              case 145:
-                BinaryTreePostorderTraversal.main();
-                break;
-              case 222:
-                CountCompleteTreeNodes.main();
-                break;
-              case 226:
-                InvertBinaryTree.main();
-                break;
-              case 257:
-                BinaryTreePaths.main();
-                break;
-              case 404:
-                SumOfLeftLeaves.main();
-                break;
-              case 501:
-                FindModeBinarySearchTree.main();
-                break;
-              case 530:
-                MinimumAbsoluteDifferenceBST.main();
-                break;
-              case 543:
-                DiameterOfBinaryTree.main();
-                break;
-              case 559:
-                MaximumDepthNaryTree.main();
-                break;
-              case 563:
-                BinaryTreeTilt.main();
-                break;
-              case 572:
-                SubtreeOfAnotherTree.main();
-                break;
-              case 589:
-                NaryTreePreorderTraversal.main();
-                break;
-              case 590:
-                NaryTreePostorderTraversal.main();
-                break;
-              case 617:
-                MergeTwoBinaryTrees.main();
-                break;
-              case 637:
-                AverageOfLevelsBinaryTree.main();
-                break;
-              case 653:
-                TwoSumIV.main();
-                break;
-              case 671:
-                SecondMinimumNodeBinaryTree.main();
-                break;
-              case 700:
-                SearchInBinarySearchTree.main();
-                break;
-              case 783:
-                MinimumDistanceBSTNodes.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-
-        case 6:
-          do {
-            displayHashTableMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 1:
-                TwoSum.main();
-                break;
-              case 13:
-                RomanToInteger.main();
-                break;
-              case 169:
-                MajorityElement.main();
-                break;
-              case 202:
-                HappyNumber.main();
-                break;
-              case 205:
-                IsomorphicStrings.main();
-                break;
-              case 217:
-                ContainsDuplicate.main();
-                break;
-              case 219:
-                ContainsDuplicateII.main();
-                break;
-              case 242:
-                ValidAnagram.main();
-                break;
-              case 268:
-                MissingNumber.main();
-                break;
-              case 290:
-                WordPattern.main();
-                break;
-              case 349:
-                IntersectionTwoArrays.main();
-                break;
-              case 350:
-                IntersectionTwoArraysII.main();
-                break;
-              case 383:
-                RansomNote.main();
-                break;
-              case 387:
-                FirstUniqueCharacterString.main();
-                break;
-              case 389:
-                FindTheDifference.main();
-                break;
-              case 409:
-                LongestPalindrome.main();
-                break;
-              case 448:
-                FindAllNumbersDisappear.main();
-                break;
-              case 496:
-                NextGreaterElementI.main();
-                break;
-              case 500:
-                KeyboardRow.main();
-                break;
-              case 575:
-                DistributeCandies.main();
-                break;
-              case 594:
-                LongestHarmoniousSubsequence.main();
-                break;
-              case 599:
-                MinimumIndexSumOfTwoArrays.main();
-                break;
-              case 645:
-                SetMismatch.main();
-                break;
-              case 697:
-                DegreeOfArray.main();
-                break;
-              case 705:
-                DesignHashSet.main();
-                break;
-              case 706:
-                DesignHashMap.main();
-                break;
-              case 748:
-                ShortestCompletingWord.main();
-                break;
-              case 771:
-                JewelsAndStones.main();
-                break;
-              case 804:
-                UniqueMorseCodeWords.main();
-                break;
-              case 859:
-                BuddyStrings.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 7:
-          do {
-            displayStackQueueMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 225:
-                StackUsingQueues.main();
-                break;
-              case 232:
-                QueueUsingStacks.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 8:
-          do {
-            displaySearchMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 35:
-                SearchInsertPosition.main();
-                break;
-              case 278:
-                FirstBadVersion.main();
-                break;
-              case 703:
-                KthLargestElement.main();
-                break;
-              case 704:
-                BinarySearch.main();
-                break;
-              case 744:
-                FindSmallestGreaterThanTarget.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 9:
-          do {
-            displayDatabaseMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              
-              case 175:
-                CombineTwoTables.main();
-                break;
-              case 181:
-                EmployeesEarnMoreThanManagers.main();
-                break;
-              case 182:
-                DuplicateEmails.main();
-                break;
-              case 183:
-                CustomersWhoNeverOrder.main();
-                break;
-              case 196:
-                DeleteDuplicateEmails.main();
-                break;
-              case 197:
-                RisingTemperature.main();
-                break;
-              case 511:
-                GamePlayAnalysisI.main();
-                break;
-              case 577:
-                EmployeeBonus.main();
-                break;
-              case 584:
-                FindCustomerReferee.main();
-                break;
-              case 586:
-                CustomerPlacingLargestNumberOrders.main();
-                break;
-              case 595:
-                BigCountries.main();
-                break;
-              case 596:
-                ClassesMoreThanFiveStudents.main();
-                break;
-              case 607:
-                SalesPerson.main();
-                break;
-              case 610:
-                TriangleJudgement.main();
-                break;
-              case 619:
-                BiggestSingleNumber.main();
-                break;
-              case 620:
-                NotBoringMovies.main();
-                break;
-              case 627:
-                SwapSalary.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 10:
-          do {
-            displayDynamicMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 70:
-                ClimbingStairs.main();
-                break;
-              case 118:
-                PascalsTriangle.main();
-                break;
-              case 119:
-                PascalsTriangleII.main();
-                break;
-              case 121:
-                BestTimeBuySellStock.main();
-                break;
-              case 338:
-                CountingBits.main();
-                break;
-              case 392:
-                IsSubsequence.main();
-                break;
-              case 509:
-                FibonacciNumber.main();
-                break;
-              case 746:
-                MinCostClimbingStairs.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 11:
-          do {
-            displayShellMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 193:
-                ValidPhoneNumbers.main();
-                break;
-              case 195:
-                TenthLine.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 12:
-          do {
-            displayMatrixMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 463:
-                IslandPerimeter.main();
-                break;
-              case 566:
-                ReshapeMatrix.main();
-                break;
-              case 661:
-                ImageSmoother.main();
-                break;
-              case 733:
-                FloodFill.main();
-                break;
-              case 766:
-                ToeplitzMatrix.main();
-                break;
-              case 832:
-                FlippingImage.main();
-                break;
-              case 867:
-                TransposeMatrix.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-          case 13:
-            do {
-              displayGeometryMenu();
-              subKey = keyboard.nextInt();
-              keyboard.nextLine();
-              switch (subKey) {
-                case 812:
-                  LargestTriangleArea.main();
-                  break;
-                case 836:
-                  RectangleOverlap.main();
-                  break;
-                default:
-                  if (subKey != 0) {
-                    System.out.println("Invalid Input!");
-                  }
-                  break;
-              }
-            } while (subKey != 0);
-            break; 
-        case 14:
-          do {
-            displayBitMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 67:
-                AddBinary.main();
-                break;
-              case 190:
-                ReverseBits.main();
-                break;
-              case 191:
-                NumberOfOneBits.main();
-                break;
-              case 401:
-                BinaryWatch.main();
-                break;
-              case 405:
-                ConvertNumberToHexadecimal.main();
-                break;
-              case 461:
-                HammingDistance.main();
-                break;
-              case 476:
-                NumberComplement.main();
-                break;
-              case 693:
-                BinaryNumberAlternatingBits.main();
-                break;
-              case 762:
-                PrimeNumberOfSetBits.main();
-                break;
-              case 868:
-                BinaryGap.main();
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break; 
-        case 15:
-          do {
-            displayPremiumMenu();
-            subKey = keyboard.nextInt();
-            keyboard.nextLine();
-            switch (subKey) {
-              case 157:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 163:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 170:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 243:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 246:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 252:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 266:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 270:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 293:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 346:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 359:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 408:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 422:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 512:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 597:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 603:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 604:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 613:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 734:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 760:
-                System.out.println("Subscribe to unlock.");
-                break;
-              case 800:
-                System.out.println("Subscribe to unlock.");
-                break;
-              default:
-                if (subKey != 0) {
-                  System.out.println("Invalid Input!");
-                }
-                break;
-            }
-          } while (subKey != 0);
-          break;   
-        default:
-          if (inputKey != 0) {
-            System.out.println("Invalid Input!");
+            break;
           }
-          break;
+        } while (subKey != 0);
+        break; 
+      case 3:
+        do {
+          displayMathMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 9:
+            PalindromeNumber.main();
+            break;
+          case 66:
+            PlusOne.main();
+            break;
+          case 69:
+            Sqrt.main();
+            break;
+          case 168:
+            ExcelSheetColumnTitle.main();
+            break;
+          case 171:
+            ExcelSheetColumnNumber.main();
+            break;
+          case 231:
+            PowerOfTwo.main();
+            break;
+          case 258:
+            AddDigits.main();
+            break;
+          case 263:
+            UglyNumber.main();
+            break;
+          case 292:
+            NimGame.main();
+            break;
+          case 326:
+            PowerOfThree.main();
+            break;
+          case 342:
+            PowerOfFour.main();
+            break;
+          case 367:
+            ValidPerfectSquare.main();
+            break;
+          case 374:
+            GuessNumberHigherLower.main();
+            break;
+          case 441:
+            ArrangingCoins.main();
+            break;
+          case 492:
+            ConstructRectangle.main();
+            break;
+          case 504:
+            BaseSeven.main();
+            break;
+          case 507:
+            PerfectNumber.main();
+            break;
+          case 628:
+            MaximumProductOfThreeNumbers.main();
+            break;
+          case 728:
+            SelfDividingNumbers.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+            
+      case 4:
+        do {
+          displayLinkedListMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 21:
+            MergeTwoSortedLists.main();
+            break;
+          case 83:
+            RemoveDuplicateSortedList.main();
+            break;
+          case 141:
+            LinkedListCycle.main();
+            break;
+          case 160:
+            IntersectionTwoLinkedLists.main();
+            break;
+          case 203:
+            RemoveLinkedListElements.main();
+            break;
+          case 206:
+            ReverseLinkedList.main();
+            break;
+          case 233:
+            PalindromeLinkedList.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 5:
+        do {
+          displayTreeMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 94:
+            BinaryTreeInorderTraversal.main();
+            break;
+          case 100:
+            SameTree.main();
+            break;
+          case 101:
+            SymmetricTree.main();
+            break;
+          case 104:
+            MaximumDepthBinaryTree.main();
+            break;
+          case 108:
+            SortedArrayToBinarySearchTree.main();
+            break;
+          case 110:
+            BalancedBinaryTree.main();
+            break;
+          case 111:
+            MinimumDepthBinaryTree.main();
+            break;
+          case 112:
+            PathSum.main();
+            break;
+          case 144:
+            BinaryTreePreorderTraversal.main();
+            break;
+          case 145:
+            BinaryTreePostorderTraversal.main();
+            break;
+          case 222:
+            CountCompleteTreeNodes.main();
+            break;
+          case 226:
+            InvertBinaryTree.main();
+            break;
+          case 257:
+            BinaryTreePaths.main();
+            break;
+          case 404:
+            SumOfLeftLeaves.main();
+            break;
+          case 501:
+            FindModeBinarySearchTree.main();
+            break;
+          case 530:
+            MinimumAbsoluteDifferenceBST.main();
+            break;
+          case 543:
+            DiameterOfBinaryTree.main();
+            break;
+          case 559:
+            MaximumDepthNaryTree.main();
+            break;
+          case 563:
+            BinaryTreeTilt.main();
+            break;
+          case 572:
+            SubtreeOfAnotherTree.main();
+            break;
+          case 589:
+            NaryTreePreorderTraversal.main();
+            break;
+          case 590:
+            NaryTreePostorderTraversal.main();
+            break;
+          case 617:
+            MergeTwoBinaryTrees.main();
+            break;
+          case 637:
+            AverageOfLevelsBinaryTree.main();
+            break;
+          case 653:
+            TwoSumIV.main();
+            break;
+          case 671:
+            SecondMinimumNodeBinaryTree.main();
+            break;
+          case 700:
+            SearchInBinarySearchTree.main();
+            break;
+          case 783:
+            MinimumDistanceBSTNodes.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+
+      case 6:
+        do {
+          displayHashTableMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 1:
+            TwoSum.main();
+            break;
+          case 13:
+            RomanToInteger.main();
+            break;
+          case 169:
+            MajorityElement.main();
+            break;
+          case 202:
+            HappyNumber.main();
+            break;
+          case 205:
+            IsomorphicStrings.main();
+            break;
+          case 217:
+            ContainsDuplicate.main();
+            break;
+          case 219:
+            ContainsDuplicateII.main();
+            break;
+          case 242:
+            ValidAnagram.main();
+            break;
+          case 268:
+            MissingNumber.main();
+            break;
+          case 290:
+            WordPattern.main();
+            break;
+          case 349:
+            IntersectionTwoArrays.main();
+            break;
+          case 350:
+            IntersectionTwoArraysII.main();
+            break;
+          case 383:
+            RansomNote.main();
+            break;
+          case 387:
+            FirstUniqueCharacterString.main();
+            break;
+          case 389:
+            FindTheDifference.main();
+            break;
+          case 409:
+            LongestPalindrome.main();
+            break;
+          case 448:
+            FindAllNumbersDisappear.main();
+            break;
+          case 496:
+            NextGreaterElementI.main();
+            break;
+          case 500:
+            KeyboardRow.main();
+            break;
+          case 575:
+            DistributeCandies.main();
+            break;
+          case 594:
+            LongestHarmoniousSubsequence.main();
+            break;
+          case 599:
+            MinimumIndexSumOfTwoArrays.main();
+            break;
+          case 645:
+            SetMismatch.main();
+            break;
+          case 697:
+            DegreeOfArray.main();
+            break;
+          case 705:
+            DesignHashSet.main();
+            break;
+          case 706:
+            DesignHashMap.main();
+            break;
+          case 748:
+            ShortestCompletingWord.main();
+            break;
+          case 771:
+            JewelsAndStones.main();
+            break;
+          case 804:
+            UniqueMorseCodeWords.main();
+            break;
+          case 859:
+            BuddyStrings.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 7:
+        do {
+          displayStackQueueMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 225:
+            StackUsingQueues.main();
+            break;
+          case 232:
+            QueueUsingStacks.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 8:
+        do {
+          displaySearchMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 35:
+            SearchInsertPosition.main();
+            break;
+          case 278:
+            FirstBadVersion.main();
+            break;
+          case 703:
+            KthLargestElement.main();
+            break;
+          case 704:
+            BinarySearch.main();
+            break;
+          case 744:
+            FindSmallestGreaterThanTarget.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 9:
+        do {
+          displayDatabaseMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 175:
+            CombineTwoTables.main();
+            break;
+          case 181:
+            EmployeesEarnMoreThanManagers.main();
+            break;
+          case 182:
+            DuplicateEmails.main();
+            break;
+          case 183:
+            CustomersWhoNeverOrder.main();
+            break;
+          case 196:
+            DeleteDuplicateEmails.main();
+            break;
+          case 197:
+            RisingTemperature.main();
+            break;
+          case 511:
+            GamePlayAnalysisI.main();
+            break;
+          case 577:
+            EmployeeBonus.main();
+            break;
+          case 584:
+            FindCustomerReferee.main();
+            break;
+          case 586:
+            CustomerPlacingLargestNumberOrders.main();
+            break;
+          case 595:
+            BigCountries.main();
+            break;
+          case 596:
+            ClassesMoreThanFiveStudents.main();
+            break;
+          case 607:
+            SalesPerson.main();
+            break;
+          case 610:
+            TriangleJudgement.main();
+            break;
+          case 619:
+            BiggestSingleNumber.main();
+            break;
+          case 620:
+            NotBoringMovies.main();
+            break;
+          case 627:
+            SwapSalary.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 10:
+        do {
+          displayDynamicMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 70:
+            ClimbingStairs.main();
+            break;
+          case 118:
+            PascalsTriangle.main();
+            break;
+          case 119:
+            PascalsTriangleII.main();
+            break;
+          case 121:
+            BestTimeBuySellStock.main();
+            break;
+          case 338:
+            CountingBits.main();
+            break;
+          case 392:
+            IsSubsequence.main();
+            break;
+          case 509:
+            FibonacciNumber.main();
+            break;
+          case 746:
+            MinCostClimbingStairs.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 11:
+        do {
+          displayShellMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 193:
+            ValidPhoneNumbers.main();
+            break;
+          case 195:
+            TenthLine.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 12:
+        do {
+          displayMatrixMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 463:
+            IslandPerimeter.main();
+            break;
+          case 566:
+            ReshapeMatrix.main();
+            break;
+          case 661:
+            ImageSmoother.main();
+            break;
+          case 733:
+            FloodFill.main();
+            break;
+          case 766:
+            ToeplitzMatrix.main();
+            break;
+          case 832:
+            FlippingImage.main();
+            break;
+          case 867:
+            TransposeMatrix.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 13:
+        do {
+          displayGeometryMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 812:
+            LargestTriangleArea.main();
+            break;
+          case 836:
+            RectangleOverlap.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 14:
+        do {
+          displayBitMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 67:
+            AddBinary.main();
+            break;
+          case 190:
+            ReverseBits.main();
+            break;
+          case 191:
+            NumberOfOneBits.main();
+            break;
+          case 401:
+            BinaryWatch.main();
+            break;
+          case 405:
+            ConvertNumberToHexadecimal.main();
+            break;
+          case 461:
+            HammingDistance.main();
+            break;
+          case 476:
+            NumberComplement.main();
+            break;
+          case 693:
+            BinaryNumberAlternatingBits.main();
+            break;
+          case 762:
+            PrimeNumberOfSetBits.main();
+            break;
+          case 868:
+            BinaryGap.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 15:
+        do {
+          displayPremiumMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 157:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 163:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 170:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 243:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 246:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 252:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 266:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 270:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 293:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 346:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 359:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 408:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 422:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 512:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 597:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 603:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 604:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 613:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 734:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 760:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 800:
+            System.out.println("Subscribe to unlock.");
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break;   
+      default:
+        if (inputKey != 0) {
+          System.out.println("Invalid Input!");
+        }
+        break;
       }
     } while (inputKey != 0);
   }
