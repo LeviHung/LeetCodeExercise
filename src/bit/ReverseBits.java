@@ -1,4 +1,4 @@
-package string;
+package bit;
 import java.math.BigInteger;
 
 // https://www.binaryhexconverter.com/decimal-to-binary-converter

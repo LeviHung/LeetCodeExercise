@@ -34,9 +34,7 @@ import string.LongestCommonPrefix;
 import string.ValidParentheses;
 import string.FirstOccurrenceString;
 import string.LengthOfLastWord;
-import string.AddBinary;
 import string.ValidPalindrome;
-import string.ReverseBits;
 import string.ReverseString;
 import string.ReverseVowelsString;
 import string.FizzBuzz;
@@ -65,7 +63,6 @@ import math.PlusOne;
 import math.Sqrt;
 import math.ExcelSheetColumnTitle;
 import math.ExcelSheetColumnNumber;
-import math.NumberOfOneBits;
 import math.PowerOfTwo;
 import math.AddDigits;
 import math.UglyNumber;
@@ -74,18 +71,12 @@ import math.PowerOfThree;
 import math.PowerOfFour;
 import math.ValidPerfectSquare;
 import math.GuessNumberHigherLower;
-import math.BinaryWatch;
-import math.ConvertNumberToHexadecimal;
 import math.ArrangingCoins;
-import math.HammingDistance;
-import math.NumberComplement;
 import math.ConstructRectangle;
 import math.BaseSeven;
 import math.PerfectNumber;
 import math.MaximumProductOfThreeNumbers;
-import math.BinaryNumberAlternatingBits;
 import math.SelfDividingNumbers;
-import math.PrimeNumberOfSetBits;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -205,6 +196,15 @@ import matrix.TransposeMatrix;
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
 
+import bit.AddBinary;
+import bit.ReverseBits;
+import bit.NumberOfOneBits;
+import bit.BinaryWatch;
+import bit.ConvertNumberToHexadecimal;
+import bit.HammingDistance;
+import bit.NumberComplement;
+import bit.BinaryNumberAlternatingBits;
+import bit.PrimeNumberOfSetBits;
 import bit.BinaryGap;
 
 class LeetCodeExercise 
@@ -328,14 +328,8 @@ class LeetCodeExercise
               case 58:
                 LengthOfLastWord.main();
                 break;
-              case 67:
-                AddBinary.main();
-                break;
               case 125:
                 ValidPalindrome.main();
-                break;
-              case 190:
-                ReverseBits.main();
                 break;
               case 344:
                 ReverseString.main();
@@ -432,9 +426,6 @@ class LeetCodeExercise
               case 171:
                 ExcelSheetColumnNumber.main();
                 break;
-              case 191:
-                NumberOfOneBits.main();
-                break;
               case 231:
                 PowerOfTwo.main();
                 break;
@@ -459,20 +450,8 @@ class LeetCodeExercise
               case 374:
                 GuessNumberHigherLower.main();
                 break;
-              case 401:
-                BinaryWatch.main();
-                break;
-              case 405:
-                ConvertNumberToHexadecimal.main();
-                break;
               case 441:
                 ArrangingCoins.main();
-                break;
-              case 461:
-                HammingDistance.main();
-                break;
-              case 476:
-                NumberComplement.main();
                 break;
               case 492:
                 ConstructRectangle.main();
@@ -486,14 +465,8 @@ class LeetCodeExercise
               case 628:
                 MaximumProductOfThreeNumbers.main();
                 break;
-              case 693:
-                BinaryNumberAlternatingBits.main();
-                break;
               case 728:
                 SelfDividingNumbers.main();
-                break;
-              case 762:
-                PrimeNumberOfSetBits.main();
                 break;
               default:
                 if (subKey != 0) {
@@ -976,6 +949,33 @@ class LeetCodeExercise
             subKey = keyboard.nextInt();
             keyboard.nextLine();
             switch (subKey) {
+              case 67:
+                AddBinary.main();
+                break;
+              case 190:
+                ReverseBits.main();
+                break;
+              case 191:
+                NumberOfOneBits.main();
+                break;
+              case 401:
+                BinaryWatch.main();
+                break;
+              case 405:
+                ConvertNumberToHexadecimal.main();
+                break;
+              case 461:
+                HammingDistance.main();
+                break;
+              case 476:
+                NumberComplement.main();
+                break;
+              case 693:
+                BinaryNumberAlternatingBits.main();
+                break;
+              case 762:
+                PrimeNumberOfSetBits.main();
+                break;
               case 868:
                 BinaryGap.main();
                 break;
@@ -1137,9 +1137,7 @@ class LeetCodeExercise
     System.out.println("20. Valid Parentheses");
     System.out.println("28. Find the First Occurrence String");
     System.out.println("58. Length of Last Word");
-    System.out.println("67. Add Binary");
     System.out.println("125. Valid Palindrome");
-    System.out.println("190. Reverse Bits");
     System.out.println("344. Reverse String");
     System.out.println("345. Reverse Vowels String");
     System.out.println("412. Fizz Buzz");
@@ -1175,7 +1173,6 @@ class LeetCodeExercise
     System.out.println("69. Sqrt");
     System.out.println("168. Excel Sheet Column Title");
     System.out.println("171. Excel Sheet Column Number");
-    System.out.println("191. Number Of One Bits");
     System.out.println("231. Power Of Two");
     System.out.println("258. Add Digits");
     System.out.println("263. Ugly Number");
@@ -1184,18 +1181,12 @@ class LeetCodeExercise
     System.out.println("342. Power Of Four");
     System.out.println("367. Valid Perfect Square");
     System.out.println("374. Guess Number Higher or Lower");
-    System.out.println("401. Binary Watch");
-    System.out.println("405. Convert Number To Hexadecimal");
     System.out.println("441. Arranging Coins");
-    System.out.println("461. Hamming Distance");
-    System.out.println("476. Number Complement");
     System.out.println("492. Construct Rectangle");
     System.out.println("504. Base Seven");
     System.out.println("507. Perfect Number");
     System.out.println("628. Maximum Product of Three Numbers");
-    System.out.println("693. Binary Number Alternating Bits");
     System.out.println("728. Self Dividing Numbers");
-    System.out.println("762. Prime Number Of Set Bits");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1389,7 +1380,16 @@ class LeetCodeExercise
 
   public static void displayBitMenu()
   {
-    System.out.println("\n--------------- Bit Manipulation -----");
+    System.out.println("\n---------- Bit Manipulation ----------");
+    System.out.println("67. Add Binary");
+    System.out.println("190. Reverse Bits");
+    System.out.println("191. Number Of One Bits");
+    System.out.println("401. Binary Watch");
+    System.out.println("405. Convert Number To Hexadecimal");
+    System.out.println("461. Hamming Distance");
+    System.out.println("476. Number Complement");
+    System.out.println("693. Binary Number Alternating Bits");
+    System.out.println("762. Prime Number Of Set Bits");
     System.out.println("868. Binary Gap");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");

@@ -1,4 +1,4 @@
-package string;
+package bit;
 import java.math.BigInteger;
 
 public class AddBinary
