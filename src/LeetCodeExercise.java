@@ -85,6 +85,7 @@ import linkedlist.IntersectionTwoLinkedLists;
 import linkedlist.RemoveLinkedListElements;
 import linkedlist.ReverseLinkedList;
 import linkedlist.PalindromeLinkedList;
+import linkedlist.MiddleOfLinkedList;
 
 import tree.BinaryTreeInorderTraversal;
 import tree.SameTree;
@@ -504,6 +505,9 @@ class LeetCodeExercise
             break;
           case 233:
             PalindromeLinkedList.main();
+            break;
+          case 876:
+            MiddleOfLinkedList.main();
             break;
           default:
             if (subKey != 0) {
@@ -1205,6 +1209,7 @@ class LeetCodeExercise
     System.out.println("203. Remove Linked List Elements");
     System.out.println("206. Reverse Linked List");
     System.out.println("233. Palindrome Linked List");
+    System.out.println("876. Middle Of Linked List");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
