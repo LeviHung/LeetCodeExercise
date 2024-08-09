@@ -197,6 +197,7 @@ import matrix.TransposeMatrix;
 
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
+import geometry.ProjectionAreaOf3DShapes;
 
 import bit.AddBinary;
 import bit.ReverseBits;
@@ -942,6 +943,9 @@ class LeetCodeExercise
           case 836:
             RectangleOverlap.main();
             break;
+            case 883:
+              ProjectionAreaOf3DShapes.main();
+              break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1382,6 +1386,7 @@ class LeetCodeExercise
     System.out.println("\n--------------- Geometry -------------");
     System.out.println("812. Largest Triangle Area");
     System.out.println("836. Rectangle Overlap");
+    System.out.println("883. Projection Area of 3D Shapes");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
