@@ -29,6 +29,7 @@ import array.FindPivotIndex;
 import array.LargestNumberAtLeastTwice;
 import array.NumberOfLinesWriteString;
 import array.LemonadeChange;
+import array.MonotonicArray;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -307,6 +308,9 @@ class LeetCodeExercise
             break;
           case 860:
             LemonadeChange.main();
+            break;
+          case 896:
+            MonotonicArray.main();
             break;
           default:
             if (subKey != 0) {
@@ -1148,6 +1152,7 @@ class LeetCodeExercise
     System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("806. Number Of Lines to Write String");
     System.out.println("860. Lemonade Change");
+    System.out.println("896. Monotonic Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
