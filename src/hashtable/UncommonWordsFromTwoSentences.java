@@ -65,7 +65,7 @@ public class UncommonWordsFromTwoSentences
 
   public static String[] uncommonFromSentencesOpt(String s1, String s2) 
   {
-    HashMap<String,Integer> map=new HashMap();
+    HashMap<String,Integer> map=new HashMap<>();
     String one[]=s1.split(" ");
     String two[]=s2.split(" ");
     for(String a:one){
@@ -74,7 +74,7 @@ public class UncommonWordsFromTwoSentences
     for(String b:two){
       map.put(b,map.getOrDefault(b,0)+1);
     }
-    List<String> list=new ArrayList();
+    List<String> list=new ArrayList<>();
     for(String k:map.keySet()){
       if(map.get(k)==1){
         list.add(k);
