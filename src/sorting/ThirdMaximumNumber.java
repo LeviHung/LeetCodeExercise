@@ -1,4 +1,4 @@
-package array;
+package sorting;
 import java.util.Arrays;
 
 public class ThirdMaximumNumber
@@ -64,7 +64,7 @@ public class ThirdMaximumNumber
 
   public static void main()
   {
-    ThridMaximumNumber.readme();
+    ThirdMaximumNumber.readme();
     
     // nums = [3,2,1] => 1
     int [] nums = {3, 2, 1};

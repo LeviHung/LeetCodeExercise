@@ -8,17 +8,12 @@ import java.util.List;
 
 import array.RemoveDuplicateSortedArray;
 import array.RemoveElement;
-import array.MergeSortedArray;
 import array.SingleNumber;
 import array.SummaryRanges;
 import array.MoveZeroes;
 import array.RangeSumQuery;
-import array.ThirdMaximumNumber;
-import array.AssignCookies;
 import array.MaxConsecutiveOnes;
 import array.TeemoAttacking;
-import array.RelativeRanks;
-import array.ArrayPartition;
 import array.RangeAdditionII;
 import array.CanPlaceFlowers;
 import array.MaximumAverageSubarrayI;
@@ -26,7 +21,6 @@ import array.LongestContinuousIncreasingSubsequence;
 import array.BaseballGame;
 import array.OneBitTwoBitCharacters;
 import array.FindPivotIndex;
-import array.LargestNumberAtLeastTwice;
 import array.NumberOfLinesWriteString;
 import array.LemonadeChange;
 import array.MonotonicArray;
@@ -76,7 +70,6 @@ import math.ArrangingCoins;
 import math.ConstructRectangle;
 import math.BaseSeven;
 import math.PerfectNumber;
-import math.MaximumProductOfThreeNumbers;
 import math.SelfDividingNumbers;
 
 import linkedlist.MergeTwoSortedLists;
@@ -215,6 +208,13 @@ import bit.BinaryNumberAlternatingBits;
 import bit.PrimeNumberOfSetBits;
 import bit.BinaryGap;
 
+import sorting.MergeSortedArray;
+import sorting.ThirdMaximumNumber;
+import sorting.AssignCookies;
+import sorting.RelativeRanks;
+import sorting.ArrayPartition;
+import sorting.MaximumProductOfThreeNumbers;
+import sorting.LargestNumberAtLeastTwice;
 import sorting.SortArrayByParity;
 
 class LeetCodeExercise 
@@ -249,9 +249,6 @@ class LeetCodeExercise
           case 27:
             RemoveElement.main();
             break;
-          case 88:
-            MergeSortedArray.main();
-            break;
           case 136:
             SingleNumber.main();
             break;
@@ -264,23 +261,11 @@ class LeetCodeExercise
           case 303:
             RangeSumQuery.main();
             break;
-          case 414:
-            ThirdMaximumNumber.main();
-            break;
-          case 455:
-            AssignCookies.main();
-            break;
           case 485:
             MaxConsecutiveOnes.main();
             break;
           case 495:
             TeemoAttacking.main();
-            break;
-          case 506:
-            RelativeRanks.main();
-            break;
-          case 561:
-            ArrayPartition.main();
             break;
           case 598:
             RangeAdditionII.main();
@@ -302,9 +287,6 @@ class LeetCodeExercise
             break;
           case 724:
             FindPivotIndex.main();
-            break;
-          case 747:
-            LargestNumberAtLeastTwice.main();
             break;
           case 806:
             NumberOfLinesWriteString.main();
@@ -474,9 +456,6 @@ class LeetCodeExercise
             break;
           case 507:
             PerfectNumber.main();
-            break;
-          case 628:
-            MaximumProductOfThreeNumbers.main();
             break;
           case 728:
             SelfDividingNumbers.main();
@@ -1026,6 +1005,27 @@ class LeetCodeExercise
           subKey = keyboard.nextInt();
           keyboard.nextLine();
           switch (subKey) {
+          case 88:
+            MergeSortedArray.main();
+            break;
+          case 414:
+            ThirdMaximumNumber.main();
+            break;
+          case 455:
+            AssignCookies.main();
+            break;
+          case 506:
+            RelativeRanks.main();
+            break;
+          case 561:
+            ArrayPartition.main();
+            break;
+          case 628:
+            MaximumProductOfThreeNumbers.main();
+            break;
+          case 747:
+            LargestNumberAtLeastTwice.main();
+            break;
           case 905:
             SortArrayByParity.main();
             break;
@@ -1155,17 +1155,12 @@ class LeetCodeExercise
     System.out.println("\n--------------- Array ----------------");
     System.out.println("26. Remove Duplicates from Sorted Array");
     System.out.println("27. Remove Element");
-    System.out.println("88. Merge Sorted Array");
     System.out.println("136. Single Number");
     System.out.println("228. Summary Ranges");
     System.out.println("283. Move Zeroes");
     System.out.println("303. Range Sum Query");
-    System.out.println("414. Third Maximum Number");
-    System.out.println("455. Assign Cookies");
     System.out.println("485. MaxConsecutiveOnes");
     System.out.println("495. TeemoAttacking");
-    System.out.println("506. Relative Ranks");
-    System.out.println("561. Array Partition");
     System.out.println("598. RangeAdditionII");
     System.out.println("605. Can Place Flowers");
     System.out.println("643. Maximum Average Subarray I");
@@ -1173,7 +1168,6 @@ class LeetCodeExercise
     System.out.println("682. Baseball Game");
     System.out.println("717. One Bit and Two Bit Characters");
     System.out.println("724. Find Pivot Index");
-    System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("806. Number Of Lines to Write String");
     System.out.println("860. Lemonade Change");
     System.out.println("896. Monotonic Array");
@@ -1237,7 +1231,6 @@ class LeetCodeExercise
     System.out.println("492. Construct Rectangle");
     System.out.println("504. Base Seven");
     System.out.println("507. Perfect Number");
-    System.out.println("628. Maximum Product of Three Numbers");
     System.out.println("728. Self Dividing Numbers");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
@@ -1458,6 +1451,13 @@ class LeetCodeExercise
   public static void displaySortingMenu()
   {
     System.out.println("\n--------------- Sorting --------------");
+    System.out.println("88. Merge Sorted Array");
+    System.out.println("414. Third Maximum Number");
+    System.out.println("455. Assign Cookies");
+    System.out.println("506. Relative Ranks");
+    System.out.println("561. Array Partition");
+    System.out.println("628. Maximum Product of Three Numbers");
+    System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("905. Sort Array by Parity");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
