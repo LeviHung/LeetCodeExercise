@@ -71,6 +71,7 @@ import math.ConstructRectangle;
 import math.BaseSeven;
 import math.PerfectNumber;
 import math.SelfDividingNumbers;
+import math.SmallestRangeI;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -459,6 +460,9 @@ class LeetCodeExercise
             break;
           case 728:
             SelfDividingNumbers.main();
+            break;
+          case 908:
+            SmallestRangeI.main();
             break;
           default:
             if (subKey != 0) {
@@ -1232,6 +1236,7 @@ class LeetCodeExercise
     System.out.println("504. Base Seven");
     System.out.println("507. Perfect Number");
     System.out.println("728. Self Dividing Numbers");
+    System.out.println("908. Smallest Range I");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
