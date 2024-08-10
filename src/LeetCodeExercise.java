@@ -117,6 +117,7 @@ import tree.SecondMinimumNodeBinaryTree;
 import tree.SearchInBinarySearchTree;
 import tree.MinimumDistanceBSTNodes;
 import tree.LeafSimilarTrees;
+import tree.IncreasingOrderSearchTree;
 
 import hashtable.TwoSum;
 import hashtable.RomanToInteger;
@@ -617,6 +618,9 @@ class LeetCodeExercise
             break;
           case 872:
             LeafSimilarTrees.main();
+            break;
+          case 897:
+            IncreasingOrderSearchTree.main();
             break;
           default:
             if (subKey != 0) {
@@ -1268,6 +1272,7 @@ class LeetCodeExercise
     System.out.println("700. Search In Binary Search Tree");
     System.out.println("783. Minimum Distance between BST Nodes");
     System.out.println("872. Leaf Similar Trees");
+    System.out.println("897. Increasing Order Search Tree");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
