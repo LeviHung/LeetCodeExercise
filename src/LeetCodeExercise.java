@@ -145,6 +145,7 @@ import hashtable.UniqueMorseCodeWords;
 import hashtable.BuddyStrings;
 import hashtable.UncommonWordsFromTwoSentences;
 import hashtable.FairCandySwap;
+import hashtable.XOfAKindInADeckOfCards;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -717,6 +718,9 @@ class LeetCodeExercise
             break;
           case 888:
             FairCandySwap.main();
+            break;
+          case 914:
+            XOfAKindInADeckOfCards.main();
             break;
           default:
             if (subKey != 0) {
@@ -1331,6 +1335,7 @@ class LeetCodeExercise
     System.out.println("859. Buddy Strings.");
     System.out.println("884. Uncommon Words from Two Sentences");
     System.out.println("888. Fair Candy Swap");
+    System.out.println("914. X of a Kind in a Deck of Cards");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
