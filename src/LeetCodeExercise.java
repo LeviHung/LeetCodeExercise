@@ -215,6 +215,8 @@ import bit.BinaryNumberAlternatingBits;
 import bit.PrimeNumberOfSetBits;
 import bit.BinaryGap;
 
+import sorting.SortArrayByParity;
+
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -1020,6 +1022,23 @@ class LeetCodeExercise
         break; 
       case 15:
         do {
+          displaySortingMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 905:
+            SortArrayByParity.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 16:
+        do {
           displayPremiumMenu();
           subKey = keyboard.nextInt();
           keyboard.nextLine();
@@ -1124,7 +1143,8 @@ class LeetCodeExercise
     System.out.println("12. Matrix");
     System.out.println("13. Geometry");
     System.out.println("14. Bit Manipulation");
-    System.out.println("15. Premium");
+    System.out.println("15. Sorting");
+    System.out.println("16. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -1430,6 +1450,15 @@ class LeetCodeExercise
     System.out.println("693. Binary Number Alternating Bits");
     System.out.println("762. Prime Number Of Set Bits");
     System.out.println("868. Binary Gap");
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+
+  public static void displaySortingMenu()
+  {
+    System.out.println("\n--------------- Sorting --------------");
+    System.out.println("905. Sort Array by Parity");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
