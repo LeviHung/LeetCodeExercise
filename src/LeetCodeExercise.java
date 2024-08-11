@@ -53,6 +53,7 @@ import string.GoatLatin;
 import string.PositionsOfLargeGroups;
 import string.BackspaceStringCompare;
 import string.ReverseOnlyLetters;
+import string.LongPressedName;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -398,6 +399,9 @@ class LeetCodeExercise
             break;
           case 917:
             ReverseOnlyLetters.main();
+            break;
+          case 925:
+            LongPressedName.main();
             break;
           default:
             if (subKey != 0) {
@@ -1223,6 +1227,7 @@ class LeetCodeExercise
     System.out.println("830. Positions Of Large Groups");
     System.out.println("844. Backspace String Compare");
     System.out.println("917. Reverse Only Letters");
+    System.out.println("925. Long Pressed Name");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
