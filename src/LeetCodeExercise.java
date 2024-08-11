@@ -219,6 +219,7 @@ import sorting.ArrayPartition;
 import sorting.MaximumProductOfThreeNumbers;
 import sorting.LargestNumberAtLeastTwice;
 import sorting.SortArrayByParity;
+import sorting.SortArrayByParityII;
 
 class LeetCodeExercise 
 {
@@ -1041,6 +1042,9 @@ class LeetCodeExercise
           case 905:
             SortArrayByParity.main();
             break;
+          case 922:
+            SortArrayByParityII.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1474,6 +1478,7 @@ class LeetCodeExercise
     System.out.println("628. Maximum Product of Three Numbers");
     System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("905. Sort Array by Parity");
+    System.out.println("922. Sort Array by Parity II");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
