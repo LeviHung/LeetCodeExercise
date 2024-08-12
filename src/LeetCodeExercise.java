@@ -24,6 +24,7 @@ import array.FindPivotIndex;
 import array.NumberOfLinesWriteString;
 import array.LemonadeChange;
 import array.MonotonicArray;
+import array.ValidMountainArray;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -305,6 +306,9 @@ class LeetCodeExercise
           case 896:
             MonotonicArray.main();
             break;
+          case 941:
+            ValidMountainArray.main();
+            break;      
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1203,6 +1207,7 @@ class LeetCodeExercise
     System.out.println("806. Number Of Lines to Write String");
     System.out.println("860. Lemonade Change");
     System.out.println("896. Monotonic Array");
+    System.out.println("941. Valid Mountain Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
