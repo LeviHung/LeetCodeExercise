@@ -22,6 +22,7 @@ import array.NumberOfLinesWriteString;
 import array.LemonadeChange;
 import array.MonotonicArray;
 import array.ValidMountainArray;
+import array.DeleteColumnsToMakeSorted;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -303,6 +304,9 @@ class LeetCodeExercise
           case 941:
             ValidMountainArray.main();
             break;      
+          case 944:
+            DeleteColumnsToMakeSorted.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1226,6 +1230,7 @@ class LeetCodeExercise
     System.out.println("860. Lemonade Change");
     System.out.println("896. Monotonic Array");
     System.out.println("941. Valid Mountain Array");
+    System.out.println("944. Delete Columns to Make Sorted");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
