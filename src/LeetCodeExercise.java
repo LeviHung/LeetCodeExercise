@@ -226,6 +226,8 @@ import sorting.LargestNumberAtLeastTwice;
 import sorting.SortArrayByParity;
 import sorting.SortArrayByParityII;
 
+import twopointers.DIStringMatch;
+
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -1075,6 +1077,23 @@ class LeetCodeExercise
         break; 
       case 16:
         do {
+          displayTwoPointersMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 942:
+            DIStringMatch.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 17:
+        do {
           displayPremiumMenu();
           subKey = keyboard.nextInt();
           keyboard.nextLine();
@@ -1180,7 +1199,8 @@ class LeetCodeExercise
     System.out.println("13. Geometry");
     System.out.println("14. Bit Manipulation");
     System.out.println("15. Sorting");
-    System.out.println("16. Premium");
+    System.out.println("16. Two Pointers");
+    System.out.println("17. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -1504,6 +1524,15 @@ class LeetCodeExercise
     System.out.println("747. LargestNumberAtLeastTwice");
     System.out.println("905. Sort Array by Parity");
     System.out.println("922. Sort Array by Parity II");
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+
+  public static void displayTwoPointersMenu()
+  {
+    System.out.println("\n------------- Two Pointers------------");
+    System.out.println("942. DI String Match");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
