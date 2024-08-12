@@ -1,4 +1,4 @@
-package string;
+package twopointers;
 
 import java.util.Arrays;
 
@@ -67,7 +67,7 @@ public class ShortestDistanceToCharacter
 
   public static void main()
   {
-    AddStrings.readme();
+      ShortestDistanceToCharacter.readme();
     String s;
     char c;
     // s = "loveleetcode", c = "e" => [3,2,1,0,1,0,0,1,2,2,1,0]

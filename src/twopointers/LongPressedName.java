@@ -1,4 +1,4 @@
-package string;
+package twopointers;
 
 public class LongPressedName
 {

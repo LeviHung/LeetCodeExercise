@@ -6,11 +6,8 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.List;
 
-import array.RemoveDuplicateSortedArray;
-import array.RemoveElement;
 import array.SingleNumber;
 import array.SummaryRanges;
-import array.MoveZeroes;
 import array.RangeSumQuery;
 import array.MaxConsecutiveOnes;
 import array.TeemoAttacking;
@@ -28,11 +25,7 @@ import array.ValidMountainArray;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
-import string.FirstOccurrenceString;
 import string.LengthOfLastWord;
-import string.ValidPalindrome;
-import string.ReverseString;
-import string.ReverseVowelsString;
 import string.FizzBuzz;
 import string.AddStrings;
 import string.NumberOfSegmentsString;
@@ -40,21 +33,13 @@ import string.RepeatedSubstringPattern;
 import string.LicenseKeyFormatting;
 import string.DetectCapital;
 import string.LongestUncommonSubsequenceI;
-import string.ReverseStringII;
 import string.StudentAttendanceRecordI;
-import string.ReverseStringIII;
 import string.RobotReturnToOrigin;
-import string.ValidPalindromeII;
-import string.CountBinarySubstrings;
 import string.ToLowerCase;
 import string.RotateString;
 import string.MostCommonWord;
-import string.ShortestDistanceToCharacter;
 import string.GoatLatin;
 import string.PositionsOfLargeGroups;
-import string.BackspaceStringCompare;
-import string.ReverseOnlyLetters;
-import string.LongPressedName;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -226,6 +211,22 @@ import sorting.LargestNumberAtLeastTwice;
 import sorting.SortArrayByParity;
 import sorting.SortArrayByParityII;
 
+import twopointers.RemoveDuplicateSortedArray;
+import twopointers.RemoveElement;
+
+import twopointers.ValidPalindrome;
+import twopointers.MoveZeroes;
+import twopointers.FirstOccurrenceString;
+import twopointers.ReverseString;
+import twopointers.ReverseVowelsString;
+import twopointers.ReverseStringII;
+import twopointers.ReverseStringIII;
+import twopointers.ValidPalindromeII;
+import twopointers.CountBinarySubstrings;
+import twopointers.ShortestDistanceToCharacter;
+import twopointers.BackspaceStringCompare;
+import twopointers.ReverseOnlyLetters;
+import twopointers.LongPressedName;
 import twopointers.DIStringMatch;
 
 class LeetCodeExercise 
@@ -254,21 +255,12 @@ class LeetCodeExercise
           subKey = keyboard.nextInt();
           keyboard.nextLine();
           switch (subKey) {
-          case 26:
-            RemoveDuplicateSortedArray.main();
-            break;
-          case 27:
-            RemoveElement.main();
-            break;
           case 136:
             SingleNumber.main();
             break;
           case 228:
             SummaryRanges.main();
             break;  
-          case 283:
-            MoveZeroes.main();
-            break;
           case 303:
             RangeSumQuery.main();
             break;
@@ -331,20 +323,8 @@ class LeetCodeExercise
           case 20:
             ValidParentheses.main();
             break;
-          case 28:
-            FirstOccurrenceString.main();
-            break;
           case 58:
             LengthOfLastWord.main();
-            break;
-          case 125:
-            ValidPalindrome.main();
-            break;
-          case 344:
-            ReverseString.main();
-            break;
-          case 345:
-            ReverseVowelsString.main();
             break;
           case 412:
             FizzBuzz.main();
@@ -367,23 +347,11 @@ class LeetCodeExercise
           case 521:
             LongestUncommonSubsequenceI.main();
             break;
-          case 541:
-            ReverseStringII.main();
-            break;
           case 551:
             StudentAttendanceRecordI.main();
             break;
-          case 557:
-            ReverseStringIII.main();
-            break;
           case 657:
             RobotReturnToOrigin.main();
-            break;
-          case 680:
-            ValidPalindromeII.main();
-            break;
-          case 696:
-            CountBinarySubstrings.main();
             break;
           case 709:
             ToLowerCase.main();
@@ -394,23 +362,11 @@ class LeetCodeExercise
           case 819:
             MostCommonWord.main();
             break;
-          case 821:
-            ShortestDistanceToCharacter.main();
-            break;
           case 824:
             GoatLatin.main();
             break;
           case 830:
             PositionsOfLargeGroups.main();
-            break;
-          case 844:
-            BackspaceStringCompare.main();
-            break;
-          case 917:
-            ReverseOnlyLetters.main();
-            break;
-          case 925:
-            LongPressedName.main();
             break;
           default:
             if (subKey != 0) {
@@ -1081,6 +1037,51 @@ class LeetCodeExercise
           subKey = keyboard.nextInt();
           keyboard.nextLine();
           switch (subKey) {
+          case 26:
+            RemoveDuplicateSortedArray.main();
+            break;
+          case 27:
+            RemoveElement.main();
+            break;
+          case 28:
+            FirstOccurrenceString.main();
+            break;
+          case 125:
+            ValidPalindrome.main();
+            break;
+          case 283:
+            MoveZeroes.main();
+            break;
+          case 344:
+            ReverseString.main();
+            break;
+          case 345:
+            ReverseVowelsString.main();
+            break;
+          case 541:
+            ReverseStringII.main();
+            break;
+          case 557:
+            ReverseStringIII.main();
+            break;
+          case 680:
+            ValidPalindromeII.main();
+            break;
+          case 696:
+            CountBinarySubstrings.main();
+            break;
+          case 821:
+            ShortestDistanceToCharacter.main();
+            break;
+          case 844:
+            BackspaceStringCompare.main();
+            break;
+          case 917:
+            ReverseOnlyLetters.main();
+            break;
+          case 925:
+            LongPressedName.main();
+            break;
           case 942:
             DIStringMatch.main();
             break;
@@ -1209,11 +1210,8 @@ class LeetCodeExercise
   public static void displayArrayMenu()
   {
     System.out.println("\n--------------- Array ----------------");
-    System.out.println("26. Remove Duplicates from Sorted Array");
-    System.out.println("27. Remove Element");
     System.out.println("136. Single Number");
     System.out.println("228. Summary Ranges");
-    System.out.println("283. Move Zeroes");
     System.out.println("303. Range Sum Query");
     System.out.println("485. MaxConsecutiveOnes");
     System.out.println("495. TeemoAttacking");
@@ -1238,11 +1236,7 @@ class LeetCodeExercise
     System.out.println("\n--------------- String ---------------");
     System.out.println("14. Longes Common Prefix");
     System.out.println("20. Valid Parentheses");
-    System.out.println("28. Find the First Occurrence String");
     System.out.println("58. Length of Last Word");
-    System.out.println("125. Valid Palindrome");
-    System.out.println("344. Reverse String");
-    System.out.println("345. Reverse Vowels String");
     System.out.println("412. Fizz Buzz");
     System.out.println("415. Add Strings");
     System.out.println("434. Number Of Segments in a String");
@@ -1250,21 +1244,13 @@ class LeetCodeExercise
     System.out.println("482. License Key Formatting");
     System.out.println("520. Detect Capital");
     System.out.println("521. Longest Uncommon Subsequence I");
-    System.out.println("541. ReverseStringII");
     System.out.println("551. Student Attendance Record I");
-    System.out.println("557. Reverse String III");
     System.out.println("657. Robot Return To Origin");
-    System.out.println("680. Valid Palindrome II");
-    System.out.println("696. Count Binary Substrings");
     System.out.println("709. To Lower Case");
     System.out.println("796. Rotate String");
     System.out.println("819. Most Common Word");
-    System.out.println("821. Shortest Distance To a Character");
     System.out.println("824. Goat Latin");
     System.out.println("830. Positions Of Large Groups");
-    System.out.println("844. Backspace String Compare");
-    System.out.println("917. Reverse Only Letters");
-    System.out.println("925. Long Pressed Name");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1532,6 +1518,21 @@ class LeetCodeExercise
   public static void displayTwoPointersMenu()
   {
     System.out.println("\n------------- Two Pointers------------");
+    System.out.println("26. Remove Duplicates from Sorted Array");
+    System.out.println("27. Remove Element");
+    System.out.println("28. Find the First Occurrence String");
+    System.out.println("125. Valid Palindrome");
+    System.out.println("283. Move Zeroes");
+    System.out.println("344. Reverse String");
+    System.out.println("345. Reverse Vowels String");
+    System.out.println("541. Reverse StringII");
+    System.out.println("557. Reverse String III");
+    System.out.println("680. Valid Palindrome II");
+    System.out.println("696. Count Binary Substrings");
+    System.out.println("821. Shortest Distance To a Character");
+    System.out.println("844. Backspace String Compare");
+    System.out.println("917. Reverse Only Letters");
+    System.out.println("925. Long Pressed Name");
     System.out.println("942. DI String Match");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
