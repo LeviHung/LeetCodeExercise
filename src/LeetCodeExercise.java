@@ -137,6 +137,7 @@ import hashtable.UncommonWordsFromTwoSentences;
 import hashtable.FairCandySwap;
 import hashtable.XOfAKindInADeckOfCards;
 import hashtable.UniqueEmailAddresses;
+import hashtable.VerifyingAlienDictionary;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -705,6 +706,9 @@ class LeetCodeExercise
             break;
           case 929:
             UniqueEmailAddresses.main();
+            break;
+          case 953:
+            VerifyingAlienDictionary.main();
             break;
           default:
             if (subKey != 0) {
@@ -1380,6 +1384,7 @@ class LeetCodeExercise
     System.out.println("888. Fair Candy Swap");
     System.out.println("914. X of a Kind in a Deck of Cards");
     System.out.println("929. Unique Email Addresses");
+    System.out.println("953. Verifying an Alien Dictionary");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
