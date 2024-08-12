@@ -152,6 +152,7 @@ import hashtable.UniqueEmailAddresses;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
+import stackqueue.NumberOfRecentCalls;
 
 import search.SearchInsertPosition;
 import search.FirstBadVersion;
@@ -754,6 +755,9 @@ class LeetCodeExercise
             break;
           case 232:
             QueueUsingStacks.main();
+            break;
+          case 933:
+            NumberOfRecentCalls.main();
             break;
           default:
             if (subKey != 0) {
@@ -1364,6 +1368,7 @@ class LeetCodeExercise
     System.out.println("\n--------------- Stack Queue ----------");
     System.out.println("225. Implement Stack Using Queues");
     System.out.println("232. Implelemt Queue Using Stacks");
+    System.out.println("933. Number of Recent Calls");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
