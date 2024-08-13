@@ -191,6 +191,7 @@ import matrix.FloodFill;
 import matrix.ToeplitzMatrix;
 import matrix.FlippingImage;
 import matrix.TransposeMatrix;
+import matrix.AvailableCapturesForRook;
 
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
@@ -942,6 +943,9 @@ class LeetCodeExercise
           case 867:
             TransposeMatrix.main();
             break;
+          case 999:
+            AvailableCapturesForRook.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1506,6 +1510,7 @@ class LeetCodeExercise
     System.out.println("766. Toeplitz Matrix");
     System.out.println("832. Flipping Image");
     System.out.println("867. Transpose Matrix");
+    System.out.println("999. Available Captures for Rook");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
