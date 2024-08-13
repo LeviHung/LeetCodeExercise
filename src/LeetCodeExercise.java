@@ -142,6 +142,7 @@ import hashtable.XOfAKindInADeckOfCards;
 import hashtable.UniqueEmailAddresses;
 import hashtable.VerifyingAlienDictionary;
 import hashtable.NRepeatedElementIn2NArray;
+import hashtable.FindTownJudge;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -727,6 +728,9 @@ class LeetCodeExercise
             break;
           case 961:
             NRepeatedElementIn2NArray.main();
+            break;
+          case 997:
+            FindTownJudge.main();
             break;
           default:
             if (subKey != 0) {
@@ -1413,6 +1417,7 @@ class LeetCodeExercise
     System.out.println("929. Unique Email Addresses");
     System.out.println("953. Verifying an Alien Dictionary");
     System.out.println("961. N Repeated Element in Size 2N Array");
+    System.out.println("997. Find the Town Judge");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
