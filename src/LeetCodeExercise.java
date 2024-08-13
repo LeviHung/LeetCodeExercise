@@ -138,6 +138,7 @@ import hashtable.FairCandySwap;
 import hashtable.XOfAKindInADeckOfCards;
 import hashtable.UniqueEmailAddresses;
 import hashtable.VerifyingAlienDictionary;
+import hashtable.NRepeatedElementIn2NArray;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -709,6 +710,9 @@ class LeetCodeExercise
             break;
           case 953:
             VerifyingAlienDictionary.main();
+            break;
+          case 961:
+            NRepeatedElementIn2NArray.main();
             break;
           default:
             if (subKey != 0) {
@@ -1385,6 +1389,7 @@ class LeetCodeExercise
     System.out.println("914. X of a Kind in a Deck of Cards");
     System.out.println("929. Unique Email Addresses");
     System.out.println("953. Verifying an Alien Dictionary");
+    System.out.println("961. N Repeated Element in Size 2N Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
