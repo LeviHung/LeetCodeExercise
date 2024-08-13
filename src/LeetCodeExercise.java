@@ -104,6 +104,7 @@ import tree.LeafSimilarTrees;
 import tree.IncreasingOrderSearchTree;
 import tree.RangeSumOfBST;
 import tree.UnivaluedBinaryTree;
+import tree.CousinsInBinaryTree;
 
 import hashtable.TwoSum;
 import hashtable.RomanToInteger;
@@ -600,6 +601,9 @@ class LeetCodeExercise
             break;
           case 965:
             UnivaluedBinaryTree.main();
+            break;
+          case 993:
+            CousinsInBinaryTree.main();
             break;
           default:
             if (subKey != 0) {
@@ -1364,6 +1368,7 @@ class LeetCodeExercise
     System.out.println("897. Increasing Order Search Tree");
     System.out.println("938. Range Sum of BST");
     System.out.println("965. Univalued Binary Tree");
+    System.out.println("993. Cousins In Binary Tree");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
