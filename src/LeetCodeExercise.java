@@ -215,6 +215,7 @@ import sorting.LargestNumberAtLeastTwice;
 import sorting.SortArrayByParity;
 import sorting.SortArrayByParityII;
 import sorting.LargestPerimeterTriangle;
+import sorting.SquaresOfSortedArray;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -1043,6 +1044,9 @@ class LeetCodeExercise
           case 976:
             LargestPerimeterTriangle.main();
             break;
+          case 977:
+            SquaresOfSortedArray.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1535,6 +1539,7 @@ class LeetCodeExercise
     System.out.println("905. Sort Array by Parity");
     System.out.println("922. Sort Array by Parity II");
     System.out.println("976. Largest Perimeter Triangle");
+    System.out.println("977. Squares of a Sorted Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
