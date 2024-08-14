@@ -143,6 +143,7 @@ import hashtable.UniqueEmailAddresses;
 import hashtable.VerifyingAlienDictionary;
 import hashtable.NRepeatedElementIn2NArray;
 import hashtable.FindTownJudge;
+import hashtable.FindCommonCharacters;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -732,6 +733,9 @@ class LeetCodeExercise
             break;
           case 997:
             FindTownJudge.main();
+            break;
+          case 1002:
+            FindCommonCharacters.main();
             break;
           default:
             if (subKey != 0) {
@@ -1422,6 +1426,7 @@ class LeetCodeExercise
     System.out.println("953. Verifying an Alien Dictionary");
     System.out.println("961. N Repeated Element in Size 2N Array");
     System.out.println("997. Find the Town Judge");
+    System.out.println("1002. Find Common Characters");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
