@@ -209,6 +209,7 @@ import bit.NumberComplement;
 import bit.BinaryNumberAlternatingBits;
 import bit.PrimeNumberOfSetBits;
 import bit.BinaryGap;
+import bit.ComplementOfBaseTenInteger;
 
 import sorting.MergeSortedArray;
 import sorting.ThirdMaximumNumber;
@@ -1021,6 +1022,9 @@ class LeetCodeExercise
           case 868:
             BinaryGap.main();
             break;
+          case 1009:
+            ComplementOfBaseTenInteger.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1550,6 +1554,7 @@ class LeetCodeExercise
     System.out.println("693. Binary Number Alternating Bits");
     System.out.println("762. Prime Number Of Set Bits");
     System.out.println("868. Binary Gap");
+    System.out.println("1009. Complement of Base Ten Integer");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
