@@ -178,6 +178,7 @@ import database.TriangleJudgement;
 import database.BiggestSingleNumber;
 import database.NotBoringMovies;
 import database.SwapSalary;
+import database.ActorsDirectorsCooperatedThreeTimes;
 
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
@@ -232,6 +233,7 @@ import sorting.SortArrayByParityII;
 import sorting.LargestPerimeterTriangle;
 import sorting.SquaresOfSortedArray;
 import sorting.MaximizeSumArrayAfterKNegations;
+import sorting.HeightChecker;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -883,6 +885,9 @@ class LeetCodeExercise
           case 627:
             SwapSalary.main();
             break;
+          case 1050:
+            ActorsDirectorsCooperatedThreeTimes.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1110,6 +1115,9 @@ class LeetCodeExercise
             break;
           case 1005:
             MaximizeSumArrayAfterKNegations.main();
+            break;
+          case 1051:
+            HeightChecker.main();
             break;
           default:
             if (subKey != 0) {
@@ -1525,6 +1533,7 @@ class LeetCodeExercise
     System.out.println("619. Biggest Single Number");
     System.out.println("620. Not Boring Movies");
     System.out.println("627. Swap Salary");
+    System.out.println("1050. Actors Directors Cooperated Three Times");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1620,6 +1629,7 @@ class LeetCodeExercise
     System.out.println("976. Largest Perimeter Triangle");
     System.out.println("977. Squares of a Sorted Array");
     System.out.println("1005. Maximize Sum of Array After K Negations");
+    System.out.println("1051. Height Checker");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
