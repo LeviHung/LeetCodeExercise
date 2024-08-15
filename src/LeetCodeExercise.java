@@ -158,6 +158,7 @@ import search.FirstBadVersion;
 import search.KthLargestElement;
 import search.BinarySearch;
 import search.FindSmallestGreaterThanTarget;
+import search.LastStoneWeight;
 
 import database.CombineTwoTables;
 import database.EmployeesEarnMoreThanManagers;
@@ -809,6 +810,9 @@ class LeetCodeExercise
             break;
           case 744:
             FindSmallestGreaterThanTarget.main();
+            break;
+          case 1046:
+            LastStoneWeight.main();
             break;
           default:
             if (subKey != 0) {
@@ -1490,6 +1494,7 @@ class LeetCodeExercise
     System.out.println("703. Kth Largest Element in a Stream");
     System.out.println("704. Binary Search");
     System.out.println("744. Find Smallest Greater Than Target");
+    System.out.println("1046. Last Stone Weight");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
