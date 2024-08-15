@@ -43,6 +43,7 @@ import string.MostCommonWord;
 import string.GoatLatin;
 import string.PositionsOfLargeGroups;
 import string.RemoveOutermostParentheses;
+import string.RemoveAllAdjacentDuplicateString;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -397,6 +398,9 @@ class LeetCodeExercise
             break;
           case 1021:
             RemoveOutermostParentheses.main();
+            break;
+          case 1047:
+            RemoveAllAdjacentDuplicateString.main();
             break;
           default:
             if (subKey != 0) {
@@ -1338,6 +1342,7 @@ class LeetCodeExercise
     System.out.println("824. Goat Latin");
     System.out.println("830. Positions Of Large Groups");
     System.out.println("1021. Remove Outermost Parentheses");
+    System.out.println("1047. Remove All Adjacent Duplicate in String2");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
