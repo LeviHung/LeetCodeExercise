@@ -203,6 +203,7 @@ import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
 import geometry.ProjectionAreaOf3DShapes;
 import geometry.SurfaceAreaOf3DShapes;
+import geometry.ValidBoomerang;
 
 import bit.AddBinary;
 import bit.ReverseBits;
@@ -999,6 +1000,9 @@ class LeetCodeExercise
           case 892:
             SurfaceAreaOf3DShapes.main();
             break;
+          case 1037:
+            ValidBoomerang.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1565,6 +1569,7 @@ class LeetCodeExercise
     System.out.println("836. Rectangle Overlap");
     System.out.println("883. Projection Area of 3D Shapes");
     System.out.println("892. Surface Area of 3D Shapes");
+    System.out.println("1037. Valid Boomerang");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
