@@ -1258,7 +1258,76 @@ class LeetCodeExercise
           case 800:
             System.out.println("Subscribe to unlock.");
             break;
-          default:
+            case 1056:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1064:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1065:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1069:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1076:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1082:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1083:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1085:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1086:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1099:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1113:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1118:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1119:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1133:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1134:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1142:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1150:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1165:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1173:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1176:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1180:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1196:
+              System.out.println("Subscribe to unlock.");
+              break;
+            case 1213:
+              System.out.println("Subscribe to unlock.");
+              break;
+            default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
             }
@@ -1683,6 +1752,30 @@ class LeetCodeExercise
     System.out.println("734. Sentence Similarity");
     System.out.println("760. Find Anagram Mappings");
     System.out.println("800. Similar Rgb Color");
+    System.out.println("1056. Confusing Number");
+    System.out.println("1064. Fixed Point");
+    System.out.println("1065. Index Pairs of a String");
+    System.out.println("1069. Product Sales Analysis II");
+    System.out.println("1076. Project Employees II");
+    System.out.println("1082. Sales Analysis I");
+    System.out.println("1083. Sales Analysis II");
+    System.out.println("1085. Sum of Digits in the Minimum Number");
+    System.out.println("1086. High Five");
+    System.out.println("1099. Two Sum Less Than K");
+    System.out.println("1113. Reported Posts");
+    System.out.println("1118. Number of Days in a Month");
+    System.out.println("1119. Remove Vowels from a String");
+    System.out.println("1133. Largest Unique Number");
+    System.out.println("1134. Armstrong Number");
+    System.out.println("1142. User Activity for the Past 30 Day II");
+    System.out.println("1150. Check if a Number is Majority Element in a Sorted Array");
+    System.out.println("1165. Single-Row Keyboard");
+    System.out.println("1173. Immediate Food Delivery I");
+    System.out.println("1176. Diet Plan Performance");
+    System.out.println("1180. Count Substrings with Only One Distinct Letter ");
+    System.out.println("1196. How Many Apples Can You Put into the Basket");
+    System.out.println("1213. Intersection of Three Sorted Arrays");
+    System.out.println("");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
