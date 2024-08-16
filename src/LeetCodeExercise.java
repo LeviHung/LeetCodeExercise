@@ -242,7 +242,6 @@ import sorting.HeightChecker;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
-
 import twopointers.ValidPalindrome;
 import twopointers.MoveZeroes;
 import twopointers.FirstOccurrenceString;
@@ -257,6 +256,7 @@ import twopointers.BackspaceStringCompare;
 import twopointers.ReverseOnlyLetters;
 import twopointers.LongPressedName;
 import twopointers.DIStringMatch;
+import twopointers.DuplicateZeros;
 
 class LeetCodeExercise 
 {
@@ -1201,6 +1201,9 @@ class LeetCodeExercise
           case 942:
             DIStringMatch.main();
             break;
+          case 1089:
+            DuplicateZeros.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1748,6 +1751,7 @@ class LeetCodeExercise
     System.out.println("917. Reverse Only Letters");
     System.out.println("925. Long Pressed Name");
     System.out.println("942. DI String Match");
+    System.out.println("1089. Duplicate Zeros");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
