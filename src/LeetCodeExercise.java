@@ -66,6 +66,7 @@ import math.SelfDividingNumbers;
 import math.SmallestRangeI;
 import math.AddToArrayFormInteger;
 import math.DivisorGame;
+import math.GreatestCommonDivisorOfStrings;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -481,6 +482,9 @@ class LeetCodeExercise
             break;
           case 1025:
             DivisorGame.main();
+            break;
+          case 1071:
+            GreatestCommonDivisorOfStrings.main();
             break;
           default:
             if (subKey != 0) {
@@ -1453,6 +1457,7 @@ class LeetCodeExercise
     System.out.println("908. Smallest Range I");
     System.out.println("989. Add to Array Form of Integer");
     System.out.println("1025. Divisor Game");
+    System.out.println("1071. Greatest Common Divisor of Strings");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1607,7 +1612,7 @@ class LeetCodeExercise
     System.out.println("620. Not Boring Movies");
     System.out.println("627. Swap Salary");
     System.out.println("1050. Actors Directors Cooperated Three Times");
-    System.out.println("1068. Product Sales Analysis I"):
+    System.out.println("1068. Product Sales Analysis I");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
