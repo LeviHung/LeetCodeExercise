@@ -179,6 +179,7 @@ import database.BiggestSingleNumber;
 import database.NotBoringMovies;
 import database.SwapSalary;
 import database.ActorsDirectorsCooperatedThreeTimes;
+import database.ProductSalesAnalysisI;
 
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
@@ -887,6 +888,9 @@ class LeetCodeExercise
             break;
           case 1050:
             ActorsDirectorsCooperatedThreeTimes.main();
+            break;
+          case 1068:
+            ProductSalesAnalysisI.main();
             break;
           default:
             if (subKey != 0) {
@@ -1603,6 +1607,7 @@ class LeetCodeExercise
     System.out.println("620. Not Boring Movies");
     System.out.println("627. Swap Salary");
     System.out.println("1050. Actors Directors Cooperated Three Times");
+    System.out.println("1068. Product Sales Analysis I"):
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
