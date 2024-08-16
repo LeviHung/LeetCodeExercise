@@ -68,6 +68,7 @@ import math.SmallestRangeI;
 import math.AddToArrayFormInteger;
 import math.DivisorGame;
 import math.GreatestCommonDivisorOfStrings;
+import math.DistributeCandiesToPeople;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -491,6 +492,9 @@ class LeetCodeExercise
             break;
           case 1071:
             GreatestCommonDivisorOfStrings.main();
+            break;
+          case 1103:
+            DistributeCandiesToPeople.main();
             break;
           default:
             if (subKey != 0) {
@@ -1474,6 +1478,7 @@ class LeetCodeExercise
     System.out.println("989. Add to Array Form of Integer");
     System.out.println("1025. Divisor Game");
     System.out.println("1071. Greatest Common Divisor of Strings");
+    System.out.println("1103. Distribute Candies to People");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
