@@ -187,6 +187,7 @@ import database.ActorsDirectorsCooperatedThreeTimes;
 import database.ProductSalesAnalysisI;
 import database.ProjectEmployeesI;
 import database.SalesAnalysisIII;
+import database.UserActivityForPastThirtyDays;
 
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
@@ -922,6 +923,9 @@ class LeetCodeExercise
             break;
           case 1084:
             SalesAnalysisIII.main();
+            break;
+          case 1141:
+            UserActivityForPastThirtyDays.main();
             break;
           default:
             if (subKey != 0) {
@@ -1672,7 +1676,8 @@ class LeetCodeExercise
     System.out.println("1050. Actors Directors Cooperated Three Times");
     System.out.println("1068. Product Sales Analysis I");
     System.out.println("1075. Project Employees I");
-    System.out.println("1084 Sales Analysis III");
+    System.out.println("1084. Sales Analysis III");
+    System.out.println("1141. User Activity For Past Thirty Days");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
