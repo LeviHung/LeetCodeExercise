@@ -1222,6 +1222,23 @@ class LeetCodeExercise
         break; 
       case 17:
         do {
+          displayConcurrencyMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 1114:
+            PrintInOrder.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 18:
+        do {
           displayPremiumMenu();
           subKey = keyboard.nextInt();
           keyboard.nextLine();
@@ -1289,76 +1306,76 @@ class LeetCodeExercise
           case 800:
             System.out.println("Subscribe to unlock.");
             break;
-            case 1056:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1064:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1065:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1069:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1076:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1082:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1083:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1085:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1086:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1099:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1113:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1118:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1119:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1133:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1134:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1142:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1150:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1165:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1173:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1176:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1180:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1196:
-              System.out.println("Subscribe to unlock.");
-              break;
-            case 1213:
-              System.out.println("Subscribe to unlock.");
-              break;
-            default:
+          case 1056:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1064:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1065:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1069:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1076:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1082:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1083:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1085:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1086:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1099:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1113:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1118:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1119:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1133:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1134:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1142:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1150:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1165:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1173:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1176:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1180:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1196:
+            System.out.println("Subscribe to unlock.");
+            break;
+          case 1213:
+            System.out.println("Subscribe to unlock.");
+            break;
+          default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
             }
@@ -1397,7 +1414,8 @@ class LeetCodeExercise
     System.out.println("14. Bit Manipulation");
     System.out.println("15. Sorting");
     System.out.println("16. Two Pointers");
-    System.out.println("17. Premium");
+    System.out.println("17. Concurrency");
+    System.out.println("18. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -1762,6 +1780,15 @@ class LeetCodeExercise
     System.out.println("925. Long Pressed Name");
     System.out.println("942. DI String Match");
     System.out.println("1089. Duplicate Zeros");
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+
+  public static void displayConcurrencyMenu()
+  {
+    System.out.println("\n------------- Concurrency--------------");
+    System.out.println("1114. Print in Order");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
