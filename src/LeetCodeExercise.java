@@ -241,6 +241,7 @@ import sorting.LargestPerimeterTriangle;
 import sorting.SquaresOfSortedArray;
 import sorting.MaximizeSumArrayAfterKNegations;
 import sorting.HeightChecker;
+import sorting.RelativeSortArray;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -260,6 +261,7 @@ import twopointers.LongPressedName;
 import twopointers.DIStringMatch;
 import twopointers.DuplicateZeros;
 
+import concurrency.PrintInOrder;
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -1147,6 +1149,9 @@ class LeetCodeExercise
           case 1051:
             HeightChecker.main();
             break;
+          case 1122:
+            RelativeSortArray.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1755,6 +1760,7 @@ class LeetCodeExercise
     System.out.println("977. Squares of a Sorted Array");
     System.out.println("1005. Maximize Sum of Array After K Negations");
     System.out.println("1051. Height Checker");
+    System.out.println("1122. Relative Sort Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
