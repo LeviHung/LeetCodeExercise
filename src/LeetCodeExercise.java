@@ -71,6 +71,7 @@ import math.DivisorGame;
 import math.GreatestCommonDivisorOfStrings;
 import math.DistributeCandiesToPeople;
 import math.DayOfTheYear;
+import math.PrimeArrangements;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -155,6 +156,7 @@ import hashtable.NRepeatedElementIn2NArray;
 import hashtable.FindTownJudge;
 import hashtable.FindCommonCharacters;
 import hashtable.NumberOfEquivalentDominoPairs;
+import hashtable.FindWordsCanBeFormedByCharacters;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -510,6 +512,9 @@ class LeetCodeExercise
           case 1154:
             DayOfTheYear.main();
             break;
+          case 1175:
+            PrimeArrangements.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -796,6 +801,9 @@ class LeetCodeExercise
             break;
           case 1128:
             NumberOfEquivalentDominoPairs.main();
+            break;
+          case 1160:
+            FindWordsCanBeFormedByCharacters.main();
             break;
           default:
             if (subKey != 0) {
@@ -1528,6 +1536,7 @@ class LeetCodeExercise
     System.out.println("1071. Greatest Common Divisor of Strings");
     System.out.println("1103. Distribute Candies to People");
     System.out.println("1154. Day of the Year");
+    System.out.println("1175. Prime Arrangements");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1633,6 +1642,7 @@ class LeetCodeExercise
     System.out.println("997. Find the Town Judge");
     System.out.println("1002. Find Common Characters");
     System.out.println("1128. Number of Equivalent Domino Pairs");
+    System.out.println("1160. Find Words can Be Formed by Characters");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
