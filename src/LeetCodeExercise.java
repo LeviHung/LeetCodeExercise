@@ -196,6 +196,7 @@ import dynamic.CountingBits;
 import dynamic.IsSubsequence;
 import dynamic.FibonacciNumber;
 import dynamic.MinCostClimbingStairs;
+import dynamic.NthTribonacciNumber;
 
 import shell.ValidPhoneNumbers;
 import shell.TenthLine;
@@ -960,6 +961,9 @@ class LeetCodeExercise
           case 746:
             MinCostClimbingStairs.main();
             break;
+          case 1137:
+            NthTribonacciNumber.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1685,6 +1689,7 @@ class LeetCodeExercise
     System.out.println("392. Is Subsequence");
     System.out.println("509. Fibonacci Number");
     System.out.println("746. Min Cost Climbing Stairs");
+    System.out.println("1137. N-th Tribonacci Number");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
