@@ -70,6 +70,7 @@ import math.AddToArrayFormInteger;
 import math.DivisorGame;
 import math.GreatestCommonDivisorOfStrings;
 import math.DistributeCandiesToPeople;
+import math.DayOfTheYear;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -505,6 +506,9 @@ class LeetCodeExercise
             break;
           case 1103:
             DistributeCandiesToPeople.main();
+            break;
+          case 1154:
+            DayOfTheYear.main();
             break;
           default:
             if (subKey != 0) {
@@ -1523,6 +1527,7 @@ class LeetCodeExercise
     System.out.println("1025. Divisor Game");
     System.out.println("1071. Greatest Common Divisor of Strings");
     System.out.println("1103. Distribute Candies to People");
+    System.out.println("1154. Day of the Year");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
