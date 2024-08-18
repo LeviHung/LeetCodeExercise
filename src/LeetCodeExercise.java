@@ -24,6 +24,7 @@ import array.MonotonicArray;
 import array.ValidMountainArray;
 import array.DeleteColumnsToMakeSorted;
 import array.PartitionArrayThreePartsEqualSum;
+import array.DistanceBetweenBusStops;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -349,6 +350,9 @@ class LeetCodeExercise
             break;
           case 1013:
             PartitionArrayThreePartsEqualSum.main();
+            break;
+          case 1184:
+            DistanceBetweenBusStops.main();
             break;
           default:
             if (subKey != 0) {
@@ -1479,6 +1483,7 @@ class LeetCodeExercise
     System.out.println("941. Valid Mountain Array");
     System.out.println("944. Delete Columns to Make Sorted");
     System.out.println("1013. Partition Array into Three Parts with Equal Sum");
+    System.out.println("1184. Distance between Bus Stops");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
