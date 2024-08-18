@@ -159,6 +159,7 @@ import hashtable.FindTownJudge;
 import hashtable.FindCommonCharacters;
 import hashtable.NumberOfEquivalentDominoPairs;
 import hashtable.FindWordsCanBeFormedByCharacters;
+import hashtable.MaximumNumberOfBalloons;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -813,6 +814,9 @@ class LeetCodeExercise
             break;
           case 1160:
             FindWordsCanBeFormedByCharacters.main();
+            break;
+          case 1189:
+            MaximumNumberOfBalloons.main();
             break;
           default:
             if (subKey != 0) {
@@ -1657,6 +1661,7 @@ class LeetCodeExercise
     System.out.println("1002. Find Common Characters");
     System.out.println("1128. Number of Equivalent Domino Pairs");
     System.out.println("1160. Find Words can Be Formed by Characters");
+    System.out.println("1189. Maximum Number of Balloons");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
