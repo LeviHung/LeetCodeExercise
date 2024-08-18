@@ -8,6 +8,7 @@ public class DayOfTheWeek
     int nowYear = 2024;
     int nowMonth = 8;
     int nowDay = 18;
+    int nowIndex = 0; // It's Sunday.
     int totalDays = 0;
     boolean isYesterday = true;
     if (year == nowYear) {
@@ -50,12 +51,9 @@ public class DayOfTheWeek
 
     int index;
     if (isYesterday == true) {
-        index = 7 - (totalDays % 7);
-        if (index == 7) {
-            index = 0;
-        }
+      index = (nowIndex + 7 - (totalDays % 7))%7;
     } else {
-        index = totalDays % 7;
+      index = (nowIndex + totalDays) % 7;
     } 
     return daysOfWeek[index];
   }
