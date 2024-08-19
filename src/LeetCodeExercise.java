@@ -196,6 +196,7 @@ import database.SalesAnalysisIII;
 import database.UserActivityForPastThirtyDays;
 import database.ArticleViewsI;
 import database.ReformatDepartmentTable;
+import database.QueriesQualityPercentage;
 
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
@@ -960,6 +961,9 @@ class LeetCodeExercise
           case 1179:
             ReformatDepartmentTable.main();
             break;
+          case 1211:
+            QueriesQualityPercentage.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1722,6 +1726,7 @@ class LeetCodeExercise
     System.out.println("1141. User Activity For Past Thirty Days");
     System.out.println("1148. Article Views I");
     System.out.println("1179. Reformat Department Table");
+    System.out.println("1211. Queries Quality Percentage");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
