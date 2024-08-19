@@ -253,6 +253,7 @@ import sorting.SquaresOfSortedArray;
 import sorting.MaximizeSumArrayAfterKNegations;
 import sorting.HeightChecker;
 import sorting.RelativeSortArray;
+import sorting.MinimumAbsoluteDifference;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -1196,6 +1197,9 @@ class LeetCodeExercise
           case 1122:
             RelativeSortArray.main();
             break;
+          case 1200:
+            MinimumAbsoluteDifference.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1816,6 +1820,7 @@ class LeetCodeExercise
     System.out.println("1005. Maximize Sum of Array After K Negations");
     System.out.println("1051. Height Checker");
     System.out.println("1122. Relative Sort Array");
+    System.out.println("1200. Minimum Absolute Difference");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
