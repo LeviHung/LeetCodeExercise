@@ -47,6 +47,7 @@ import string.RemoveOutermostParentheses;
 import string.RemoveAllAdjacentDuplicateString;
 import string.OccurrencesAfterBigram;
 import string.DefangingIPAddress;
+import string.SplitAStringInBalancedStrings;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -435,6 +436,9 @@ class LeetCodeExercise
             break;
           case 1108:
             DefangingIPAddress.main();
+            break;
+          case 1121:
+            SplitAStringInBalancedStrings.main();
             break;
           default:
             if (subKey != 0) {
@@ -1533,6 +1537,7 @@ class LeetCodeExercise
     System.out.println("1047. Remove All Adjacent Duplicate in String2");
     System.out.println("1078. Occurrences After Bigram");
     System.out.println("1108. Defanging an IP Address");
+    System.out.println("1121. Split a String in Balanced Strings");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
