@@ -228,6 +228,7 @@ import geometry.RectangleOverlap;
 import geometry.ProjectionAreaOf3DShapes;
 import geometry.SurfaceAreaOf3DShapes;
 import geometry.ValidBoomerang;
+import geometry.CheckIfItIsAStraightLine;
 
 import bit.AddBinary;
 import bit.ReverseBits;
@@ -1103,6 +1104,9 @@ class LeetCodeExercise
           case 1037:
             ValidBoomerang.main();
             break;
+          case 1232:
+            CheckIfItIsAStraightLine.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1793,6 +1797,7 @@ class LeetCodeExercise
     System.out.println("883. Projection Area of 3D Shapes");
     System.out.println("892. Surface Area of 3D Shapes");
     System.out.println("1037. Valid Boomerang");
+    System.out.println("1232. Check If It Is a Straight Line");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
