@@ -224,6 +224,7 @@ import matrix.FlippingImage;
 import matrix.TransposeMatrix;
 import matrix.AvailableCapturesForRook;
 import matrix.MatrixCellsInDistanceOrder;
+import matrix.ReconstructATwoRowBinaryMatrix;
 
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
@@ -1083,6 +1084,9 @@ class LeetCodeExercise
           case 1030:
             MatrixCellsInDistanceOrder.main();
             break;
+          case 1253:
+            ReconstructATwoRowBinaryMatrix.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1794,6 +1798,7 @@ class LeetCodeExercise
     System.out.println("867. Transpose Matrix");
     System.out.println("999. Available Captures for Rook");
     System.out.println("1030. Matrix Cells in Distance Order");
+    System.out.println("1253. Reconstruct a Two Row Binary Matrix");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
