@@ -77,6 +77,7 @@ import math.PrimeArrangements;
 import math.DayOfTheWeek;
 import math.MinimumCostToMoveChips;
 import math.CellsWithOddValuesInAMatrix;
+import math.SubtractProductAndSumOfDigitalInteger;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -545,6 +546,9 @@ class LeetCodeExercise
             break;
           case 1252:
             CellsWithOddValuesInAMatrix.main();
+            break;
+          case 1281:
+            SubtractProductAndSumOfDigitalInteger.main();
             break;
           default:
             if (subKey != 0) {
@@ -1606,6 +1610,7 @@ class LeetCodeExercise
     System.out.println("1185. Day of the Week");
     System.out.println("1127. Minimum Cost To Move Chips to the Same Position");
     System.out.println("1252. Cells with Odd Values in a Matrix");
+    System.out.println("1281. Subtract Product and Sum of Digital Integer");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
