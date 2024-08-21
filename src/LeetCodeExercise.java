@@ -28,6 +28,7 @@ import array.DistanceBetweenBusStops;
 import array.ElementAppearingMoreThan25Percent;
 import array.FindNumbersWithEvenNumberOfDigits;
 import array.ReplaceElementsWithGreatestElementOnRightSide;
+import array.DecompressRunLengthEncodedList;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -383,6 +384,9 @@ class LeetCodeExercise
             break;
           case 1299:
             ReplaceElementsWithGreatestElementOnRightSide.main();
+            break;
+          case 1313:
+            DecompressRunLengthEncodedList.main();
             break;
           default:
             if (subKey != 0) {
@@ -1571,6 +1575,7 @@ class LeetCodeExercise
     System.out.println("1287. Element Appearing More Than 25 Percent");
     System.out.println("1295. Find Numbers with Even Number of Digits");
     System.out.println("1299. Replace Elements with Greatest Element on Right Side");
+    System.out.println("1313. Decompress Run Length Encoded List");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
