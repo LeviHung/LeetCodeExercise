@@ -212,6 +212,7 @@ import database.ReformatDepartmentTable;
 import database.QueriesQualityPercentage;
 import database.AverageSellingPrice;
 import database.StudentsAndExaminations;
+import database.ListProductsOrderedInAPeriod;
 
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
@@ -1029,6 +1030,9 @@ class LeetCodeExercise
           case 1280:
             StudentsAndExaminations.main();
             break;
+          case 1327:
+            ListProductsOrderedInAPeriod.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1822,6 +1826,7 @@ class LeetCodeExercise
     System.out.println("1211. Queries Quality Percentage");
     System.out.println("1251. Average Selling Price");
     System.out.println("1280. Students and Examinations");
+    System.out.println("1327. List Products Ordered in a Period");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
