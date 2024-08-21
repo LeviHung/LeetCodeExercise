@@ -25,6 +25,7 @@ import array.ValidMountainArray;
 import array.DeleteColumnsToMakeSorted;
 import array.PartitionArrayThreePartsEqualSum;
 import array.DistanceBetweenBusStops;
+import array.ElementAppearingMoreThan25Percent;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -87,6 +88,7 @@ import linkedlist.RemoveLinkedListElements;
 import linkedlist.ReverseLinkedList;
 import linkedlist.PalindromeLinkedList;
 import linkedlist.MiddleOfLinkedList;
+import linkedlist.ConvertBinaryNumberInLinkedListToInteger;
 
 import tree.BinaryTreeInorderTraversal;
 import tree.SameTree;
@@ -369,6 +371,9 @@ class LeetCodeExercise
           case 1184:
             DistanceBetweenBusStops.main();
             break;
+          case 1287:
+            ElementAppearingMoreThan25Percent.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -588,6 +593,9 @@ class LeetCodeExercise
             break;
           case 876:
             MiddleOfLinkedList.main();
+            break;
+          case 1290:
+            ConvertBinaryNumberInLinkedListToInteger.main();
             break;
           default:
             if (subKey != 0) {
@@ -1544,6 +1552,7 @@ class LeetCodeExercise
     System.out.println("944. Delete Columns to Make Sorted");
     System.out.println("1013. Partition Array into Three Parts with Equal Sum");
     System.out.println("1184. Distance between Bus Stops");
+    System.out.println("1287. Element Appearing More Than 25 Percent");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
@@ -1627,6 +1636,7 @@ class LeetCodeExercise
     System.out.println("206. Reverse Linked List");
     System.out.println("233. Palindrome Linked List");
     System.out.println("876. Middle Of Linked List");
+    System.out.println("1290. Convert Binary Number in Linked List to Integer");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
