@@ -26,6 +26,7 @@ import array.DeleteColumnsToMakeSorted;
 import array.PartitionArrayThreePartsEqualSum;
 import array.DistanceBetweenBusStops;
 import array.ElementAppearingMoreThan25Percent;
+import array.FindNumbersWithEvenNumberOfDigits;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -373,6 +374,9 @@ class LeetCodeExercise
             break;
           case 1287:
             ElementAppearingMoreThan25Percent.main();
+            break;
+          case 1295:
+            FindNumbersWithEvenNumberOfDigits.main();
             break;
           default:
             if (subKey != 0) {
@@ -1553,6 +1557,7 @@ class LeetCodeExercise
     System.out.println("1013. Partition Array into Three Parts with Equal Sum");
     System.out.println("1184. Distance between Bus Stops");
     System.out.println("1287. Element Appearing More Than 25 Percent");
+    System.out.println("1295. Find Numbers with Even Number of Digits");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
