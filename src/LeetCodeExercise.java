@@ -84,6 +84,7 @@ import math.MinimumCostToMoveChips;
 import math.CellsWithOddValuesInAMatrix;
 import math.SubtractProductAndSumOfDigitalInteger;
 import math.FindNUniqueIntegersSumUpToZero;
+import math.ConvertIntegerToSumOfTwoNoZeroIntegers;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -574,6 +575,9 @@ class LeetCodeExercise
             break;
           case 1304:
             FindNUniqueIntegersSumUpToZero.main();
+            break;
+          case 1317:
+            ConvertIntegerToSumOfTwoNoZeroIntegers.main();
             break;
           default:
             if (subKey != 0) {
@@ -1645,6 +1649,7 @@ class LeetCodeExercise
     System.out.println("1252. Cells with Odd Values in a Matrix");
     System.out.println("1281. Subtract Product and Sum of Digital Integer");
     System.out.println("1304. Find N Unique Integers Sum up to Zero");
+    System.out.println("1317. Convert Integer to Sum of Two No Zero Integers");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
