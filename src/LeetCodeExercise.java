@@ -277,6 +277,7 @@ import sorting.HeightChecker;
 import sorting.RelativeSortArray;
 import sorting.MinimumAbsoluteDifference;
 import sorting.RankTransformOfAnArray;
+import sorting.TheKWeakestRowsInAMatrix;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -1293,6 +1294,9 @@ class LeetCodeExercise
           case 1331:
             RankTransformOfAnArray.main();
             break;
+          case 1337:
+            TheKWeakestRowsInAMatrix.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1940,6 +1944,7 @@ class LeetCodeExercise
     System.out.println("1122. Relative Sort Array");
     System.out.println("1200. Minimum Absolute Difference");
     System.out.println("1331. Rank Transform of a15n Array");
+    System.out.println("1337. The K Weakest Rows in a Matrix");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
