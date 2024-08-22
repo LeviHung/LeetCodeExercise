@@ -295,6 +295,7 @@ import twopointers.ReverseOnlyLetters;
 import twopointers.LongPressedName;
 import twopointers.DIStringMatch;
 import twopointers.DuplicateZeros;
+import twopointers.RemovePalindromicSubsequences;
 
 import concurrency.PrintInOrder;
 class LeetCodeExercise 
@@ -1357,6 +1358,9 @@ class LeetCodeExercise
           case 1089:
             DuplicateZeros.main();
             break;
+          case 1332:
+            RemovePalindromicSubsequences.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1961,6 +1965,7 @@ class LeetCodeExercise
     System.out.println("925. Long Pressed Name");
     System.out.println("942. DI String Match");
     System.out.println("1089. Duplicate Zeros");
+    System.out.println("1332. Remove Palindromic Subsequences");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
