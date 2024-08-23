@@ -87,6 +87,7 @@ import math.FindNUniqueIntegersSumUpToZero;
 import math.ConvertIntegerToSumOfTwoNoZeroIntegers;
 import math.MaximumSixNineNumber;
 import math.NumberOfStepsToReduceANumberToZero;
+import math.NumberOfDaysBetweenTwoDates;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -593,6 +594,9 @@ class LeetCodeExercise
             break;
           case 1342:
             NumberOfStepsToReduceANumberToZero.main();
+            break;
+          case 1360:
+            NumberOfDaysBetweenTwoDates.main();
             break;
           default:
             if (subKey != 0) {
@@ -1688,6 +1692,7 @@ class LeetCodeExercise
     System.out.println("1317. Convert Integer to Sum of Two No Zero Integers");
     System.out.println("1323. Maximum Six Nine Number");
     System.out.println("1342. Number of Steps to Reduce a Number to Zero");
+    System.out.println("1360. Number of Days Between Two Days");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
