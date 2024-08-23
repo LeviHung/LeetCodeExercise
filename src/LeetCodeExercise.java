@@ -248,6 +248,7 @@ import matrix.ReconstructATwoRowBinaryMatrix;
 import matrix.ShiftTwoDGrid;
 import matrix.FindWinnerOnATicTacToeGame;
 import matrix.CountNegativeNumberInASortedMatrix;
+import matrix.LuckyNumbersInAMatrix;
 
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
@@ -1184,6 +1185,9 @@ class LeetCodeExercise
           case 1351:
             CountNegativeNumberInASortedMatrix.main();
             break;
+          case 1380:
+            LuckyNumbersInAMatrix.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1934,6 +1938,7 @@ class LeetCodeExercise
     System.out.println("1260. Shift Two D Grid");
     System.out.println("1275. Find Winner on a Tic Tac Toe Game");
     System.out.println("1351. Count Negative Number in a Sorted Matrix");
+    System.out.println("1380. Lucky Numbers in A Matrix");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
