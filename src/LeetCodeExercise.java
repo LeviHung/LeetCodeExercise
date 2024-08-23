@@ -219,6 +219,7 @@ import database.QueriesQualityPercentage;
 import database.AverageSellingPrice;
 import database.StudentsAndExaminations;
 import database.ListProductsOrderedInAPeriod;
+import database.ReplaceEmployeeIDWithUniqueIdentifier;
 
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
@@ -1062,6 +1063,9 @@ class LeetCodeExercise
           case 1327:
             ListProductsOrderedInAPeriod.main();
             break;
+          case 1378:
+            ReplaceEmployeeIDWithUniqueIdentifier.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1877,6 +1881,7 @@ class LeetCodeExercise
     System.out.println("1251. Average Selling Price");
     System.out.println("1280. Students and Examinations");
     System.out.println("1327. List Products Ordered in a Period");
+    System.out.println("1378. Replace Employee ID With Unique Identifier");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
