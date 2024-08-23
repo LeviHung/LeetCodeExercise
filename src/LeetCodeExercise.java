@@ -241,6 +241,7 @@ import matrix.MatrixCellsInDistanceOrder;
 import matrix.ReconstructATwoRowBinaryMatrix;
 import matrix.ShiftTwoDGrid;
 import matrix.FindWinnerOnATicTacToeGame;
+import matrix.CountNegativeNumberInASortedMatrix;
 
 import geometry.LargestTriangleArea;
 import geometry.RectangleOverlap;
@@ -1155,6 +1156,9 @@ class LeetCodeExercise
           case 1275:
             FindWinnerOnATicTacToeGame.main();
             break;
+          case 1351:
+            CountNegativeNumberInASortedMatrix.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1895,6 +1899,7 @@ class LeetCodeExercise
     System.out.println("1253. Reconstruct a Two Row Binary Matrix");
     System.out.println("1260. Shift Two D Grid");
     System.out.println("1275. Find Winner on a Tic Tac Toe Game");
+    System.out.println("1351. Count Negative Number in a Sorted Matrix");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
