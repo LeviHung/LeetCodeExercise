@@ -33,6 +33,7 @@ import array.FindTheDistanceValueBetweenTwoArrays;
 import array.CreateTargetArrayInTheGivenOrder;
 import array.MinimumValueToGetPositiveSum;
 import array.KidsWithTheGreatestNumberOfCandies;
+import array.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -428,6 +429,9 @@ class LeetCodeExercise
             break;
           case 1431:
             KidsWithTheGreatestNumberOfCandies.main();
+            break;
+          case 1437:
+            CheckIfAllOnesAreAtLeastLengthKPlacesAway.main();
             break;
           default:
             if (subKey != 0) {
@@ -1696,6 +1700,7 @@ class LeetCodeExercise
     System.out.println("1389. Create Target Array in the Given Order");
     System.out.println("1413. Minimum Value to Get Positive Sum");
     System.out.println("1431. Kids with the Greatest Number of Candies");
+    System.out.println("1437. Check If All Ones Are At L east Length K Places Away");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
