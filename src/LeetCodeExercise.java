@@ -189,6 +189,7 @@ import hashtable.HowManyNumbersAreSmallThanCurrent;
 import hashtable.IncreasingDecreasingString;
 import hashtable.FindLuckyIntegerInAnArray;
 import hashtable.CountLargestGroup;
+import hashtable.DestinationCity;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -952,6 +953,9 @@ class LeetCodeExercise
             break;
           case 1399:
             CountLargestGroup.main();
+            break;
+          case 1436:
+            DestinationCity.main();
             break;
           default:
             if (subKey != 0) {
@@ -1883,6 +1887,7 @@ class LeetCodeExercise
     System.out.println("1370. Increasing Decreasing String");
     System.out.println("1394. Find Lucky Integer in an Array");
     System.out.println("1399. Count Largest Group");
+    System.out.println("1436. Destination City");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
