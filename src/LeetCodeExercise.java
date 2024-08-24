@@ -29,6 +29,7 @@ import array.ElementAppearingMoreThan25Percent;
 import array.FindNumbersWithEvenNumberOfDigits;
 import array.ReplaceElementsWithGreatestElementOnRightSide;
 import array.DecompressRunLengthEncodedList;
+import array.FindTheDistanceValueBetweenTwoArrays;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -404,6 +405,9 @@ class LeetCodeExercise
             break;
           case 1313:
             DecompressRunLengthEncodedList.main();
+            break;
+          case 1385:
+            FindTheDistanceValueBetweenTwoArrays.main();
             break;
           default:
             if (subKey != 0) {
@@ -1644,6 +1648,7 @@ class LeetCodeExercise
     System.out.println("1295. Find Numbers with Even Number of Digits");
     System.out.println("1299. Replace Elements with Greatest Element on Right Side");
     System.out.println("1313. Decompress Run Length Encoded List");
+    System.out.println("1385. Find The Distance Value Between Two Arrays");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
