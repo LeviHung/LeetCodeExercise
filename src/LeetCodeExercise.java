@@ -31,6 +31,7 @@ import array.ReplaceElementsWithGreatestElementOnRightSide;
 import array.DecompressRunLengthEncodedList;
 import array.FindTheDistanceValueBetweenTwoArrays;
 import array.CreateTargetArrayInTheGivenOrder;
+import array.MinimumValueToGetPositiveSum;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -417,6 +418,9 @@ class LeetCodeExercise
             break;
           case 1389:
             CreateTargetArrayInTheGivenOrder.main();
+            break;
+          case 1413:
+            MinimumValueToGetPositiveSum.main();
             break;
           default:
             if (subKey != 0) {
@@ -1674,6 +1678,7 @@ class LeetCodeExercise
     System.out.println("1313. Decompress Run Length Encoded List");
     System.out.println("1385. Find The Distance Value Between Two Arrays");
     System.out.println("1389. Create Target Array in the Given Order");
+    System.out.println("1413. Minimum Value to Get Positive Sum");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
