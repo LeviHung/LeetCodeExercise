@@ -182,6 +182,7 @@ import hashtable.MaximumNumberOfBalloons;
 import hashtable.CheckIfNAndItsDoubleExist;
 import hashtable.HowManyNumbersAreSmallThanCurrent;
 import hashtable.IncreasingDecreasingString;
+import hashtable.FindLuckyIntegerInAnArray;
 
 import stackqueue.StackUsingQueues;
 import stackqueue.QueueUsingStacks;
@@ -922,6 +923,9 @@ class LeetCodeExercise
             break;
           case 1370:
             IncreasingDecreasingString.main();
+            break;
+          case 1394:
+            FindLuckyIntegerInAnArray.main();
             break;
           default:
             if (subKey != 0) {
@@ -1840,6 +1844,7 @@ class LeetCodeExercise
     System.out.println("1346. Check If N and Its Double Exist");
     System.out.println("1365. How Many Numbers Are Small Than Current");
     System.out.println("1370. Increasing Decreasing String");
+    System.out.println("1394. Find Lucky Integer in an Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
