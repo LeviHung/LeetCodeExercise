@@ -56,6 +56,7 @@ import string.DefangingIPAddress;
 import string.SplitAStringInBalancedStrings;
 import string.DecryptStringFromAlphabetToIntegerMapping;
 import string.GenerateAStringWithCharacterHaveOddCounts;
+import string.StringMatchingInAnArray;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -502,6 +503,9 @@ class LeetCodeExercise
             break;
           case 1374:
             GenerateAStringWithCharacterHaveOddCounts.main();
+            break;
+          case 1408:
+            StringMatchingInAnArray.main();
             break;
           default:
             if (subKey != 0) {
@@ -1702,6 +1706,7 @@ class LeetCodeExercise
     System.out.println("1121. Split a String in Balanced Strings");
     System.out.println("1309. Decrypt String From Alphabet to Integer Mapping");
     System.out.println("1374. Generate a String With Character Have Odd Counts");
+    System.out.println("1408. String Matching in an Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
