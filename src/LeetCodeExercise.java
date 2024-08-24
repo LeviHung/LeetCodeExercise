@@ -293,6 +293,7 @@ import sorting.MinimumAbsoluteDifference;
 import sorting.RankTransformOfAnArray;
 import sorting.TheKWeakestRowsInAMatrix;
 import sorting.SortIntegersByNumberOfOneBits;
+import sorting.MinimumSubsequenceInNonIncreasingOrder;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -1357,6 +1358,9 @@ class LeetCodeExercise
           case 1356:
             SortIntegersByNumberOfOneBits.main();
             break;
+          case 1403:
+            MinimumSubsequenceInNonIncreasingOrder.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2020,6 +2024,7 @@ class LeetCodeExercise
     System.out.println("1331. Rank Transform of a15n Array");
     System.out.println("1337. The K Weakest Rows in a Matrix");
     System.out.println("1356. Sort Integers by Number of One Bits");
+    System.out.println("1403. Minimum Subsequence in Non Increasing Order");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
