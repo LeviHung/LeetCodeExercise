@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class FindLuckyIntegerInAnArray
 {
-  public static6 int findLucky(int[] arr) {
+  public static int findLucky(int[] arr) {
       int[] freq = new int [501];
       for (int val: arr) {
           freq[val]++;
