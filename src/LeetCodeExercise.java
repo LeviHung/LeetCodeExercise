@@ -306,6 +306,7 @@ import sorting.TheKWeakestRowsInAMatrix;
 import sorting.SortIntegersByNumberOfOneBits;
 import sorting.MinimumSubsequenceInNonIncreasingOrder;
 import sorting.MakeTwoArraysEqualByReversingSubarrays;
+import sorting.MaximumProductOfTwoElementsInAnArray;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -1409,6 +1410,9 @@ class LeetCodeExercise
           case 1460:
             MakeTwoArraysEqualByReversingSubarrays.main();
             break;
+          case 1464:
+            MaximumProductOfTwoElementsInAnArray.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2085,6 +2089,7 @@ class LeetCodeExercise
     System.out.println("1356. Sort Integers by Number of One Bits");
     System.out.println("1403. Minimum Subsequence in Non Increasing Order");
     System.out.println("1460. Make Two Arrays Equal by Reversing Subarrays");
+    System.out.println("1464. Maximum Product of Two Elements in an Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
