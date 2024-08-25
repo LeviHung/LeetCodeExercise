@@ -64,6 +64,7 @@ import string.StringMatchingInAnArray;
 import string.ReformatTheString;
 import string.MaximumScoreAfterSplittingAString;
 import string.ConsecutiveCharacters;
+import string.CheckIfAWordOccursAsAPrefix;
 
 import math.PalindromeNumber;
 import math.PlusOne;
@@ -535,6 +536,9 @@ class LeetCodeExercise
             break;
           case 1446:
             ConsecutiveCharacters.main();
+            break;
+          case 1455:
+            CheckIfAWordOccursAsAPrefix.main();
             break;
           default:
             if (subKey != 0) {
@@ -1746,6 +1750,7 @@ class LeetCodeExercise
     System.out.println("1417. Reformat the String");
     System.out.println("1422. Maximum Score after Splitting a String");
     System.out.println("1446. Consecutive Characters");
+    System.out.println("1455. Check if a Word Occurs as a Prefix of Any Word in a Sentence");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
