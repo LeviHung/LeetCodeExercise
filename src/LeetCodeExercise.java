@@ -36,6 +36,7 @@ import array.KidsWithTheGreatestNumberOfCandies;
 import array.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 import array.NumberOfStudentsDoingHomeworkAtAGivenTime;
 import array.ShuffleTheArray;
+import array.FinalPricesWithASpecialDiscountInAShop;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -444,6 +445,9 @@ class LeetCodeExercise
             break;
           case 1470:
             ShuffleTheArray.main();
+            break;
+          case 1475:
+            FinalPricesWithASpecialDiscountInAShop.main();
             break;
           default:
             if (subKey != 0) {
@@ -1727,6 +1731,7 @@ class LeetCodeExercise
     System.out.println("1437. Check If All Ones Are At L east Length K Places Away");
     System.out.println("1450. Number of Students Doing Homework at a Given Time");
     System.out.println("1470. Shuffle The Array");
+    System.out.println("1475. Final Prices with a Special Discount in a Shop");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
