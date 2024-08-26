@@ -38,6 +38,7 @@ import array.NumberOfStudentsDoingHomeworkAtAGivenTime;
 import array.ShuffleTheArray;
 import array.FinalPricesWithASpecialDiscountInAShop;
 import array.RunningSumOfOneDArray;
+import array.AverageSalaryExcludingMinimumMaximumSalary;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -454,6 +455,9 @@ class LeetCodeExercise
             break;
           case 1480:
             RunningSumOfOneDArray.main();
+            break;
+          case 1491:
+            AverageSalaryExcludingMinimumMaximumSalary.main();
             break;
           default:
             if (subKey != 0) {
@@ -1745,6 +1749,7 @@ class LeetCodeExercise
     System.out.println("1470. Shuffle The Array");
     System.out.println("1475. Final Prices with a Special Discount in a Shop");
     System.out.println("1480. Running Sum of One D Array");
+    System.out.println("1491. Average Salary Excluding Minimum Maximum Salary");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
