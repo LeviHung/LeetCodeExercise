@@ -314,6 +314,7 @@ import sorting.SortIntegersByNumberOfOneBits;
 import sorting.MinimumSubsequenceInNonIncreasingOrder;
 import sorting.MakeTwoArraysEqualByReversingSubarrays;
 import sorting.MaximumProductOfTwoElementsInAnArray;
+import sorting.CanMakeArithmeticProgressionFromSequence;
 
 import twopointers.RemoveDuplicateSortedArray;
 import twopointers.RemoveElement;
@@ -1441,6 +1442,9 @@ class LeetCodeExercise
           case 1464:
             MaximumProductOfTwoElementsInAnArray.main();
             break;
+          case 1502:
+            CanMakeArithmeticProgressionFromSequence.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2125,6 +2129,7 @@ class LeetCodeExercise
     System.out.println("1403. Minimum Subsequence in Non Increasing Order");
     System.out.println("1460. Make Two Arrays Equal by Reversing Subarrays");
     System.out.println("1464. Maximum Product of Two Elements in an Array");
+    System.out.println("1502. Can Make Arithmetic Progression From Sequence");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
