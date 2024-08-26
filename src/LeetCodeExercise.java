@@ -106,6 +106,7 @@ import math.MaximumSixNineNumber;
 import math.NumberOfStepsToReduceANumberToZero;
 import math.NumberOfDaysBetweenTwoDates;
 import math.XOROperationInAnArray;
+import math.NumberOfGoodPairs;
 
 import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
@@ -684,6 +685,9 @@ class LeetCodeExercise
             break;
           case 1486:
             XOROperationInAnArray.main();
+            break;
+          case 1512:
+            NumberOfGoodPairs.main();
             break;
           default:
             if (subKey != 0) {
@@ -1843,6 +1847,7 @@ class LeetCodeExercise
     System.out.println("1342. Number of Steps to Reduce a Number to Zero");
     System.out.println("1360. Number of Days Between Two Days");
     System.out.println("1486. XOR Operation in an Array");
+    System.out.println("1512. Number of Good Pairs");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
