@@ -37,6 +37,7 @@ import array.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 import array.NumberOfStudentsDoingHomeworkAtAGivenTime;
 import array.ShuffleTheArray;
 import array.FinalPricesWithASpecialDiscountInAShop;
+import array.RunningSumOfOneDArray;
 
 import string.LongestCommonPrefix;
 import string.ValidParentheses;
@@ -448,6 +449,9 @@ class LeetCodeExercise
             break;
           case 1475:
             FinalPricesWithASpecialDiscountInAShop.main();
+            break;
+          case 1480:
+            RunningSumOfOneDArray.main();
             break;
           default:
             if (subKey != 0) {
@@ -1728,10 +1732,11 @@ class LeetCodeExercise
     System.out.println("1389. Create Target Array in the Given Order");
     System.out.println("1413. Minimum Value to Get Positive Sum");
     System.out.println("1431. Kids with the Greatest Number of Candies");
-    System.out.println("1437. Check If All Ones Are At L east Length K Places Away");
+    System.out.println("1437. Check If All Ones Are At Least Length K Places Away");
     System.out.println("1450. Number of Students Doing Homework at a Given Time");
     System.out.println("1470. Shuffle The Array");
     System.out.println("1475. Final Prices with a Special Discount in a Shop");
+    System.out.println("1480. Running Sum of One D Array");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
