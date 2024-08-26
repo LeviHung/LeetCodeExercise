@@ -239,6 +239,7 @@ import database.StudentsAndExaminations;
 import database.ListProductsOrderedInAPeriod;
 import database.ReplaceEmployeeIDWithUniqueIdentifier;
 import database.TopTravellers;
+import database.GroupSoldProductsByTheDate;
 
 import dynamic.ClimbingStairs;
 import dynamic.PascalsTriangle;
@@ -1146,6 +1147,9 @@ class LeetCodeExercise
           case 1407:
             TopTravellers.main();
             break;
+          case 1484:
+            GroupSoldProductsByTheDate.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -1993,6 +1997,7 @@ class LeetCodeExercise
     System.out.println("1327. List Products Ordered in a Period");
     System.out.println("1378. Replace Employee ID With Unique Identifier");
     System.out.println("1407. Top Travellers");
+    System.out.println("1484. Group Sold Products by the Date");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
