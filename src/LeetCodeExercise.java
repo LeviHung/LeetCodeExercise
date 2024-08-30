@@ -338,6 +338,9 @@ import twopointers.DuplicateZeros;
 import twopointers.RemovePalindromicSubsequences;
 
 import concurrency.PrintInOrder;
+
+import recursion.AddTwoNumbers;
+
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -1548,6 +1551,23 @@ class LeetCodeExercise
         break; 
       case 18:
         do {
+          displayRecursionMenu();
+          subKey = keyboard.nextInt();
+          keyboard.nextLine();
+          switch (subKey) {
+          case 2:
+            AddTwoNumbers.main();
+            break;
+          default:
+            if (subKey != 0) {
+              System.out.println("Invalid Input!");
+            }
+            break;
+          }
+        } while (subKey != 0);
+        break; 
+      case 19:
+        do {
           displayPremiumMenu();
           subKey = keyboard.nextInt();
           keyboard.nextLine();
@@ -1724,7 +1744,8 @@ class LeetCodeExercise
     System.out.println("15. Sorting");
     System.out.println("16. Two Pointers");
     System.out.println("17. Concurrency");
-    System.out.println("18. Premium");
+    System.out.println("18. Recursion");
+    System.out.println("19. Premium");
     System.out.println("0. Exit");
     System.out.println("======================================");
     System.out.print("Enter a choice: ");
@@ -2175,6 +2196,15 @@ class LeetCodeExercise
   {
     System.out.println("\n------------- Concurrency--------------");
     System.out.println("1114. Print in Order");
+    System.out.println("0. Go Back");
+    System.out.println("--------------------------------------");
+    System.out.print("Enter a choice: ");
+  }
+
+  public static void displayRecursionMenu()
+  {
+    System.out.println("\n------------- Recursion --------------");
+    System.out.println("2. Add Two Numbers");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
