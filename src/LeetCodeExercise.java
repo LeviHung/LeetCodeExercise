@@ -108,7 +108,6 @@ import math.NumberOfDaysBetweenTwoDates;
 import math.XOROperationInAnArray;
 import math.NumberOfGoodPairs;
 
-import linkedlist.MergeTwoSortedLists;
 import linkedlist.RemoveDuplicateSortedList;
 import linkedlist.LinkedListCycle;
 import linkedlist.IntersectionTwoLinkedLists;
@@ -339,6 +338,7 @@ import twopointers.RemovePalindromicSubsequences;
 
 import concurrency.PrintInOrder;
 
+import recursion.MergeTwoSortedLists;
 import recursion.AddTwoNumbers;
 
 class LeetCodeExercise 
@@ -707,9 +707,6 @@ class LeetCodeExercise
           subKey = keyboard.nextInt();
           keyboard.nextLine();
           switch (subKey) {
-          case 21:
-            MergeTwoSortedLists.main();
-            break;
           case 83:
             RemoveDuplicateSortedList.main();
             break;
@@ -1555,6 +1552,9 @@ class LeetCodeExercise
           subKey = keyboard.nextInt();
           keyboard.nextLine();
           switch (subKey) {
+          case 21:
+            MergeTwoSortedLists.main();
+            break;
           case 2:
             AddTwoNumbers.main();
             break;
@@ -2204,6 +2204,7 @@ class LeetCodeExercise
   public static void displayRecursionMenu()
   {
     System.out.println("\n------------- Recursion --------------");
+    System.out.println("21. Merge Two Sorted Lists");
     System.out.println("2. Add Two Numbers");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");

@@ -1,4 +1,6 @@
-package linkedlist;
+package recursion;
+
+import linkedlist.ListNode;
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -12,6 +14,35 @@ package linkedlist;
 public class MergeTwoSortedLists
 {
   public static ListNode mergeTwoLists(ListNode list1, ListNode list2)
+  {
+    ListNode list = merge(list1, list2);
+    
+    return list;    
+  }
+
+  public static ListNode merge(ListNode list1, ListNode list2) {
+    if (list1 == null && list2 == null) {
+      return null;
+    } 
+    ListNode node;
+    if (list1 == null) {
+      return list2;
+    } else if (list2 == null) {
+      return list1;
+    }
+
+    if (list1.val < list2.val) {
+      node = new ListNode(list1.val);
+      node.next = merge(list1.next, list2);
+      return node;
+    } else {
+      node = new ListNode(list2.val);
+      node.next = merge(list1, list2.next);
+      return node;
+    }
+  }
+  
+  public static ListNode mergeTwoListsOld(ListNode list1, ListNode list2)
   {
     ListNode head;
     ListNode newList;
