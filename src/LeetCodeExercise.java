@@ -341,6 +341,7 @@ import concurrency.PrintInOrder;
 import recursion.MergeTwoSortedLists;
 import recursion.AddTwoNumbers;
 import recursion.SwapNodesInPairs;
+import recursion.XToThePowerOfN;
 
 class LeetCodeExercise 
 {
@@ -1562,6 +1563,9 @@ class LeetCodeExercise
           case 24:
             SwapNodesInPairs.main();
             break;
+          case 50:
+            XToThePowerOfN.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2211,6 +2215,7 @@ class LeetCodeExercise
     System.out.println("21. Merge Two Sorted Lists");
     System.out.println("2. Add Two Numbers");
     System.out.println("24. Swap Nodes in Pairs");
+    System.out.println("50. X to the Power of N");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
