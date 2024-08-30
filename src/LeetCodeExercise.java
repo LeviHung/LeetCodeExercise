@@ -80,7 +80,6 @@ import math.PowerOfTwo;
 import math.AddDigits;
 import math.UglyNumber;
 import math.NimGame;
-import math.PowerOfFour;
 import math.ValidPerfectSquare;
 import math.GuessNumberHigherLower;
 import math.ArrangingCoins;
@@ -339,9 +338,11 @@ import concurrency.PrintInOrder;
 
 import recursion.MergeTwoSortedLists;
 import recursion.PowerOfThree;
+import recursion.PowerOfFour;
 
 import recursion.AddTwoNumbers;
 import recursion.SwapNodesInPairs;
+
 import recursion.XToThePowerOfN;
 import recursion.ReorderList;
 import recursion.DifferentWaysToAddParentheses;
@@ -615,9 +616,6 @@ class LeetCodeExercise
             break;
           case 292:
             NimGame.main();
-            break;
-          case 342:
-            PowerOfFour.main();
             break;
           case 367:
             ValidPerfectSquare.main();
@@ -1560,6 +1558,9 @@ class LeetCodeExercise
           case 326:
             PowerOfThree.main();
             break;
+          case 342:
+            PowerOfFour.main();
+            break;
           case 2:
             AddTwoNumbers.main();
             break;
@@ -1859,7 +1860,6 @@ class LeetCodeExercise
     System.out.println("258. Add Digits");
     System.out.println("263. Ugly Number");
     System.out.println("292. Nim Game");
-    System.out.println("342. Power Of Four");
     System.out.println("367. Valid Perfect Square");
     System.out.println("374. Guess Number Higher or Lower");
     System.out.println("441. Arranging Coins");
@@ -2222,6 +2222,7 @@ class LeetCodeExercise
     System.out.println("\n------------- Recursion --------------");
     System.out.println("21. Merge Two Sorted Lists");
     System.out.println("326. Power Of Three");
+    System.out.println("342. Power Of Four");
     System.out.println("2. Add Two Numbers");
     System.out.println("24. Swap Nodes in Pairs");
     System.out.println("50. X to the Power of N");
