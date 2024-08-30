@@ -343,6 +343,8 @@ import recursion.AddTwoNumbers;
 import recursion.SwapNodesInPairs;
 import recursion.XToThePowerOfN;
 import recursion.ReorderList;
+import recursion.DifferentWaysToAddParentheses;
+
 class LeetCodeExercise 
 {
   public static void main(String[] args)
@@ -1569,6 +1571,9 @@ class LeetCodeExercise
           case 143:
             ReorderList.main();
             break;
+          case 241:
+            DifferentWaysToAddParentheses.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2220,6 +2225,7 @@ class LeetCodeExercise
     System.out.println("24. Swap Nodes in Pairs");
     System.out.println("50. X to the Power of N");
     System.out.println("143. Reorder List");
+    System.out.println("241. Different Ways to Add Parentheses");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
