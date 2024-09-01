@@ -348,6 +348,7 @@ import recursion.ReorderList;
 import recursion.DifferentWaysToAddParentheses;
 import recursion.EliminationGame;
 import recursion.DecodeString;
+import recursion.PredictTheWinner;
 
 class LeetCodeExercise 
 {
@@ -1584,6 +1585,9 @@ class LeetCodeExercise
           case 394:
             DecodeString.main();
             break;
+          case 486:
+            PredictTheWinner.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2238,6 +2242,7 @@ class LeetCodeExercise
     System.out.println("241. Different Ways to Add Parentheses");
     System.out.println("390. Elimination Game");
     System.out.println("394. Decode String");
+    System.out.println("486. Predict The Winner");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
