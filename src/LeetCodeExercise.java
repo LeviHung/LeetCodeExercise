@@ -347,6 +347,7 @@ import recursion.XToThePowerOfN;
 import recursion.ReorderList;
 import recursion.DifferentWaysToAddParentheses;
 import recursion.EliminationGame;
+import recursion.DecodeString;
 
 class LeetCodeExercise 
 {
@@ -1580,6 +1581,9 @@ class LeetCodeExercise
           case 390:
             EliminationGame.main();
             break;
+          case 394:
+            DecodeString.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2233,6 +2237,7 @@ class LeetCodeExercise
     System.out.println("143. Reorder List");
     System.out.println("241. Different Ways to Add Parentheses");
     System.out.println("390. Elimination Game");
+    System.out.println("394. Decode String");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
