@@ -351,6 +351,7 @@ import recursion.DecodeString;
 import recursion.PredictTheWinner;
 import recursion.KThSymbolInGrammar;
 import recursion.AllPossibleFullBinaryTrees;
+import recursion.FindKThBitInNThBinaryString;
 
 class LeetCodeExercise 
 {
@@ -1596,6 +1597,9 @@ class LeetCodeExercise
           case 894:
             AllPossibleFullBinaryTrees.main();
             break;
+          case 1545:
+            FindKThBitInNThBinaryString.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2253,6 +2257,7 @@ class LeetCodeExercise
     System.out.println("486. Predict The Winner");
     System.out.println("779. K-th Symbol in Grammar");
     System.out.println("894. All Possible Full Binary Trees");
+    System.out.println("1545. Find K-th Bit in N-th Binary String");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
