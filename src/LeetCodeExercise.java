@@ -352,6 +352,7 @@ import recursion.PredictTheWinner;
 import recursion.KThSymbolInGrammar;
 import recursion.AllPossibleFullBinaryTrees;
 import recursion.FindKThBitInNThBinaryString;
+import recursion.FindTheWinnerOfTheCircularGame;
 
 class LeetCodeExercise 
 {
@@ -1600,6 +1601,9 @@ class LeetCodeExercise
           case 1545:
             FindKThBitInNThBinaryString.main();
             break;
+          case 1823:
+            FindTheWinnerOfTheCircularGame.main();
+            break;
           default:
             if (subKey != 0) {
               System.out.println("Invalid Input!");
@@ -2258,6 +2262,7 @@ class LeetCodeExercise
     System.out.println("779. K-th Symbol in Grammar");
     System.out.println("894. All Possible Full Binary Trees");
     System.out.println("1545. Find K-th Bit in N-th Binary String");
+    System.out.println("1823. Find The Winner of The Circular Game");
     System.out.println("0. Go Back");
     System.out.println("--------------------------------------");
     System.out.print("Enter a choice: ");
