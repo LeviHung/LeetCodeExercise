@@ -1,5 +1,5 @@
 package hashtable;
-import java.util.HashMap;
+
 import java.util.Arrays;
 
 public class ValidAnagram
